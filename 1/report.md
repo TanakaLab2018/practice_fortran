@@ -15,5 +15,17 @@ Homebrewがインストールされていること
 次のコマンドをTerminalに入力してみてください
 
 `
-brew install git
+  brew install git
 `
+
+# Gitを使うための準備をしましょう
+
+* まずatomを開いて, Terminal や コマンドプロンプト (いつもプログラムをコンパイルする所)を開きましょう.
+
+* つづいて, 次のように入力してみてください.
+
+`
+  git clone https://github.com/TanakaLab2018/practice_fortran.git
+`
+
+そうすると, 'practice_fortran'というフォルダが出来上がると思います.
