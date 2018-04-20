@@ -26,8 +26,10 @@ Homebrewがインストールされていること
 
 * つづいて, 次のように入力してみてください.
 
-`
-  git clone https://github.com/TanakaLab2018/practice_fortran.git
-`
+> ` git clone https://github.com/TanakaLab2018/practice_fortran.git`
 
-そうすると, 'practice_fortran'というフォルダが出来上がると思います.
+* そうすると, 'practice_fortran'というフォルダが出来上がると思うので, 次のコマンドを入力してください.
+
+* ` cd practice_fortran `
+
+*
