@@ -32,4 +32,4 @@ Homebrewがインストールされていること
 
 * ` cd practice_fortran `
 
-*
+* test
