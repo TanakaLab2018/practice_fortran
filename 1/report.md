@@ -68,4 +68,4 @@ Homebrewがインストールされていること
 
 # サイトで確認してみよう
 
-先程, `push`というコマンドを打ちましたが, このおかげで[このサイト](https://github.com/TanakaLab2018/practice_fortran.git)に先程作ったファイルが反映されていたら成功です!
+先程, `push`というコマンドを打ちましたが, そのおかげで[このサイト](https://github.com/TanakaLab2018/practice_fortran.git)に先程作ったファイルが反映されていたら成功です!
