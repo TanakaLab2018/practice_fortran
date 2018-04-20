@@ -30,6 +30,4 @@ Homebrewがインストールされていること
 
 * そうすると, 'practice_fortran'というフォルダが出来上がると思うので, 次のコマンドを入力してください.
 
-* ` cd practice_fortran `
-
-*
+> ` cd practice_fortran `
