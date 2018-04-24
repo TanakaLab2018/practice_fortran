@@ -1,19 +1,25 @@
 program hello_world
   implicit none
-  double precision a,b,c,x1,x2
+  double precision a,b,x,f
   integer i
   write(*,*) "what is a?"
   read(*,*) a
   write(*,*) "what is b?"
   read(*,*) b
-  write(*,*) "what is c"
-  read(*,*) c
-  x1=(-b+sqrt(b**2-4*a*c))/2*a
-  x2=(-b-sqrt(b**2-4*a*c))/2*a
-  if(b**2-4*a*c>=0) then
-    write(*,*) "ax^2+bx+c=0 answer is"
-    write(*,*) x1,x2
+  do i=1,100
+    x=(a+b)/2.0
+    if(f(a)*f(x)>0) then
+      a=x
     else
-    write(*,*) "answer is none"
+      b=x
     end if
-  end program hello_world
+    if(b-a<10.0**(-8)) exit
+  end do
+  write(*,*) "sqrt(2)"
+  write(*,*) a,b,x
+end program hello_world
+
+function f(x)
+  double precision  x, f
+  f = x**2-2.0
+ end function
