@@ -1,6 +1,7 @@
 import numpy as np
 
 N = 2 #行列サイズ
+
 #NxNサイズの行列を0~10の範囲でランダムに生成
 A = np.random.randint(0,10,N*N).reshape((N,N))
 B = np.random.randint(0,10,N*N).reshape((N,N))
