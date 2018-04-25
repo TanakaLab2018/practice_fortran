@@ -5,6 +5,7 @@ def f(x):
     return -5.
 
 N = 100 #分割数
+
 t_range = 1. #時間の幅
 h = t_range/float(N)    #刻み幅
 
