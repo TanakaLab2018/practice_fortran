@@ -14,6 +14,14 @@ Homebrew を導入していると思うので, Terminalを開いて次のよう�
 
 これのみで完了です.
 
+何らかのfortranのファイル(foo.f90)をコンパイルするときに
+
+```
+  gfortran foo.f90 -lm -lblas -llapack
+```
+
+と入力して問題なく動けば正常にインストールされています.
+
 ## Windowsへのインストール方法
 
 Windowsへのインストールは実はかなり面倒くさいです...
@@ -29,4 +37,13 @@ Windowsへのインストールは実はかなり面倒くさいです...
 
   の三つのフォルダがあると思います.
 
-4. [ここ](package_windows/)にも同様に, bin, lib, include の三つのフォルダがあるので, その中身を自分のパソコンの *bin*, *lib*, *include* の中にコピーしてみください.
+4. [ここのディレクトリ](package_windows/)にも同様に, bin, lib, include の三つのフォルダがあるので, その中身を自分のパソコンの *bin*, *lib*, *include* の中にコピーしてみください.
+
+
+何らかのfortranのファイル(foo.f90)をコンパイルするときに
+
+```
+  gfortran foo.f90 -lm -lblas -llapack
+```
+
+と入力して問題なく動けば正常にインストールされています.
