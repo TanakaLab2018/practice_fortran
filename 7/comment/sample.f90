@@ -4,24 +4,25 @@ program inverse
   double precision A(N,N), A_inv(N,N), C(N,N), work(N)
   integer :: lda=N, ipiv(N), info, lwork=N
 
-  call random_number(A)   ! ランダムで2x2行列を生成
 
   print *,"A="
+    call random_number(A)   ! ランダムで2x2行列を生成
   call print_matrix(A,N)    !行列の表示のためのサブルーチン
 
-  A_inv = A   !行列を保存するために, A_invにAを代入しておいた
-  call dgetrf(N, N, A_inv, lda, ipiv, info)
-  call dgetri(N, A_inv, lda, ipiv, work, lwork, info)
-
   print *,"A_inv"
+    A_inv = A   !行列を保存するために, A_invにAを代入しておいた
+    call dgetrf(N, N, A_inv, lda, ipiv, info)
+    call dgetri(N, A_inv, lda, ipiv, work, lwork, info)
   call print_matrix(A_inv,N)
 
-  call dgemm('N', 'N', N, N, N, 1.d0, A, N, A_inv, N, 0.d0, C, N)
-
   print *,"C"
+    call dgemm('N', 'N', N, N, N, 1.d0, A, N, A_inv, N, 0.d0, C, N)
   call print_matrix(C,N)
 
 end program inverse
+
+
+
 
 !:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 !::: 行列表示のためのサブルーチン
