@@ -15,3 +15,7 @@
 つまり, まとめると次の通り.
 
 > <img src="https://latex.codecogs.com/gif.latex?u(x,t+\Delta&space;t)\approx&space;2u(x,t)-u(x,t-\Delta&space;t)+\frac{\Delta&space;t^2k}{\Delta&space;x^2}\frac{U(x+\Delta&space;x,t)-2u(x,t)+u(x+\Delta&space;x,t)}{\Delta&space;x^2}" />
+
+今回は初期条件として
+
+<img src="https://latex.codecogs.com/gif.latex?u(x,t)=u(x,t-\Delta&space;t)=\begin{cases}x&(0\le&space;x\le0.5\\-x+1&(0.5\le&space;x\le1.0)\end{cases}" />
