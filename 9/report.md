@@ -2,7 +2,9 @@
 
 端っこが固定された一次元の弦についての運動方程式は次のようになります.
 
+```
 <img src="https://latex.codecogs.com/gif.latex?\frac{\partial^2}{\partial&space;t^2}u(x,t)=k\frac{\partial^2}{\partial&space;x^2}u(x,t)" />
+```
 
 この方程式の右辺について中心差分をとると次のように書けます.
 
