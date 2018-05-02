@@ -1,5 +1,12 @@
 # 連成振動を解いてみましょう
 
+連成振動の時間発展を解くプログラムを作成して, データをファイルにしてみましょう.
+
+またそのファイルを用いて, gnuplot内でプロットをしてみましょう.
+
+それももしできたら, gnuplotを使ってgifファイルを作成してみましょう.
+
+## 問題
 Nこの連成振動問題を考えてみます.
 
 この問題は次のような連立微分方程式で書き表すことができます.
@@ -20,6 +27,6 @@ Nこの連成振動問題を考えてみます.
 
 > <img src="https://latex.codecogs.com/gif.latex?{\bf&space;x}(t_{j+1})={\bf&space;x}(t_j)+{\bf&space;v}(t_j)\Delta&space;t" />
 
-ただしCは係数の行列であり, 両端を固定端とすれば
+ただしCは係数の行列を表してまして, 両端を固定端とすれば次のようになります.
 
 > <img src="https://latex.codecogs.com/gif.latex?{\bf&space;C}=\begin{pmatrix}-2&&1&&0&&\cdots&&0\\1&&-2&&1&&\;&&\vdots\\\0&&\ddots&&\ddots&&\ddots&&0\\\vdots&&\;&&1&&-2&&1\\0&&\cdots&&0&&1&&-2\end{pmatrix}" />
