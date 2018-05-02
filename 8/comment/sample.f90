@@ -4,7 +4,7 @@ PROGRAM eigen_of_matrix
   INTEGER,PARAMETER ::  lda=N, ldvl=N, ldvr=N, lwork=10*N
   CHARACTER         ::  jobvr='N', jobvl='V'
   INTEGER           :: info
-  DOUBLE PRECISION   A(lda,N), VL(ldvl,N), VR(ldvr,N), WORK(lwork), WR(N), WI(N)
+  DOUBLE PRECISION   A(lda,N), Vl(ldvl,N), Vr(ldvr,N), Work(lwork), Wr(N), Wi(N)
 
   A(1,1) = 3.0
   A(1,2) = 1.0
@@ -12,34 +12,35 @@ PROGRAM eigen_of_matrix
   A(2,2) = 2.0
 
   PRINT *, 'A='
-  CALL print_matrix(A,N,N)
+  CALL Print_Matrix(A,N,N)
 
-  CALL DGEEV( jobvl, jobvr, N, A, lda, wr, wi, vl, ldvl, vr, ldvr, work, lwork, info )
+  CALL DGEEV( jobvl, jobvr, N, A, lda, Wr, Wi, Vl, ldvl, Vr, ldvr, Work, lwork, info )
 
   PRINT *, 'wr=(固有値の実数部分)'
-  CALL print_matrix(wr,N,1)
+  CALL Print_Matrix(Wr,N,1)
   PRINT *, 'wi=(固有値の虚数部分)'
-  CALL print_matrix(wi,N,1)
+  CALL Print_Matrix(Wi,N,1)
 
   PRINT *, 'vl=(固有ベクトル)'
-  CALL print_matrix(vl,N,N)
-
-
+  CALL Print_Matrix(Vl,N,N)
 
 END PROGRAM eigen_of_matrix
 
 
 !:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 !::: 行列表示のためのサブルーチン
+
 !::: 引数はprint_matrix(_表示したい(N,M)行列の配列_, _正方行列の行数_)
-subroutine print_matrix(X,N,M)
-  integer i, j, N, M
-  double precision X(N,M)
-  do i=1,N
-    do j=1,M
-      write(*,fmt='(f15.8)',advance='no') X(i,j)
-    end do
-    write(*,*)
-  end do
-  print *, "==============================="
-end subroutine
+
+SUBROUTINE Print_Matrix(X,N,M)
+  INTEGER i, j, N, M
+  DOUBLE PRECISION X(N,M)
+  DO i=1,N
+    DO j=1,M
+      WRITE(*,fmt='(f15.8)',advance='no') X(i,j)
+    END DO
+    WRITE(*,*)
+  END DO
+  PRINT *, "==============================="
+END SUBROUTINE
