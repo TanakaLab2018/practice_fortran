@@ -7,9 +7,9 @@ PROGRAM eigen_of_matrix
   DOUBLE PRECISION  :: A(lda,N), Vl(ldvl,N), Vr(ldvr,N), Work(lwork), Wr(N), Wi(N)
 
   A(1,1) = 3.0
-  A(1,2) = 1.0
-  A(2,1) = 2.0
-  A(2,2) = 2.0
+  A(1,2) = -1.0
+  A(2,1) = -1.0
+  A(2,2) = 3.0
 
   PRINT *, 'A='
   CALL print_matrix(A,N,N)
