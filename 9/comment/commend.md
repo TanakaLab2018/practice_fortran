@@ -12,3 +12,28 @@
 ```
 
 ぜひ試してみてください.
+
+
+## make_movieファイルについて
+
+### windowsの場合
+1. 左下の検索の画面で **PowerShell** を検索してみて下さい.
+
+2. Windows PowerShellを右クリックして「管理者として実行」を選択してください.
+
+3. 出てきたターミナルに次のコマンドを入力してください.　
+  > ```Set-ExecutionPolicy RemoteSigned```
+
+4. 選択入力画面が出てくるので, ```y```を入力してください.
+
+5. atomのターミナルを開いてください.
+
+6. 次のように *make_movie* のファイルを実行すると, gifが出来上がります.
+  > ```.\make_movie.ps1```
+
+### macの場合
+1. 次のように入力してください.
+  > ``` chmod +x make_movie.sh ```
+
+2. 次のように *make_movie* のファイルを実行すると, gifが出来上がります.
+  > ``` .\make_movie.sh ```

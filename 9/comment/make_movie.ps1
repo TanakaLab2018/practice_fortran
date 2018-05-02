@@ -10,5 +10,5 @@ gnuplot -e "
   "
 Write-Host "Created the 'movie.gif'"
 
-rm sample.exe
+rm .\sample.exe
 rm *.txt

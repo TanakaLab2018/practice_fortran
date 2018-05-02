@@ -11,4 +11,3 @@ do for [i=1:300]{
   }
 
 set out
-set terminal windows
