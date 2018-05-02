@@ -1,10 +1,11 @@
 program index
   implicit none
-  double precision a(2*2),x(2),b(2*2),lworko,work(2)
-  integer n,lwork,info
-  write(*,*) "Ax=λBx call x"
-  n=2
-  lwork=2
+  integer, parameter :: n=2
+  integer, parameter :: lda=n,ldvl=n,ldvr=n,lwork=10*n
+  integer info
+  double precision A(n*n),vl(n*n),vr(n*n),work(lwork),wr(n),wi(n)
+
+  write(*,*) "Ax=λx call x,λ"
   a(1)=3.0
   a(2)=-1.0
   a(3)=-1.0
@@ -12,20 +13,28 @@ program index
   write(*,*) "index A"
   write(*,*) a(1),a(3)
   write(*,*) a(2),a(4)
-  b(1)=1.0
-  b(2)=0.0
-  b(3)=0.0
-  b(4)=1.0
-  write(*,*) "index B"
-  write(*,*) b(1),b(3)
-  write(*,*) b(2),b(4)
 
-  call dsygv(1,'V','U',n,a,n,b,n,x,lwork,-1,info)
-  call dsygv(1,'V','U',n,a,n,b,n,x,work,lwork,info)
+  call dgeev('V','N',n,a,lda,wr,wi,vl,ldvl,vr, ldvr, work, lwork, info )
 
-  write(*,*) "eigenvalue vector x"
-  write(*,*) x(1),x(2)
+  write(*,*) "eigenvalue λ real"
+  call force(wr,n,1)
+  write(*,*) "eigenvalue λ imagin"
+  call force(wi,n,1)
+  write(*,*) "eigenvalue vector x imagin"
+  call force(vl,n,n)
 
   write(*,*) "example completed."
 
 end program index
+
+subroutine force(x,n,m)
+  integer i,j,n,m
+  double precision x(n,m)
+  do i=1,n,1
+    do j=1,m,1
+      write(*,fmt='(f15.8)',advance="no") x(i,j)
+    end do
+    write(*,*)
+  end do
+  write(*,*) "==========================="
+end subroutine
