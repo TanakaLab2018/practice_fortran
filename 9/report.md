@@ -19,3 +19,7 @@ Nこの連成振動問題を考えてみます.
 > <img src="https://latex.codecogs.com/gif.latex?{\bf&space;v}(t_{j+1})={\bf&space;v}(t_j)-\frac{k}{m}{\bf&space;C}{\bf&space;x}(t_j)\Delta&space;t" />
 
 > <img src="https://latex.codecogs.com/gif.latex?{\bf&space;x}(t_{j+1})={\bf&space;x}(t_j)+{\bf&space;v}(t_j)\Delta&space;t" />
+
+ただしCは係数の行列であり, 両端を固定端とすれば
+
+> <img src="https://latex.codecogs.com/gif.latex?{\bf&space;C}=\begin{pmatrix}-2&&1&&0&&\cdots&&0\\1&&-2&&1&&\;&&\vdots\\\0&&\ddots&&\ddots&&\ddots&&0\\\vdots&&\;&&1&&-2&&1\\0&&\cdots&&0&&1&&-2\end{pmatrix}" />
