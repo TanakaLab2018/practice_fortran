@@ -49,13 +49,13 @@ Windowsへのインストールは実はかなり面倒くさいです...
 9. Configure を押してください.
 
 10. 次のようなウインドウが出てくるので, *MinGW Makefiles* を選択して, *Specify native compilers* を選び, Next を押してください.
-  ![image1](image1.png)
+  ![image1](image1.png =100x100)
 
 11. 次のようなウインドウが出てくるので, 画像に書いてある通りにコンパイラの名前を入力して, Finish を押してください.
-  ![image2](image2.png)
+  ![image2](image2.png =100x100)
 
 12. もう一度 Configure を押してください. すると次のような赤いウインドウが出てくると思います.
-  ![image3](image3.png)
+  ![image3](image3.png =100x100)
 
 13. 図のようにチェックを入れてください. *CMAKE_INSTALL_PREFIX* の Value を押して, 先程作成した *build* を探して選んでください.
 
