@@ -26,7 +26,7 @@ Homebrew を導入していると思うので, Terminalを開いて次のよう�
 
 Windowsへのインストールは実はかなり面倒くさいです...
 
-[こちらのサイト](http://icl.cs.utk.edu/lapack-for-windows/lapack/)の下のほうを参考に入れていきます.
+[こちらのサイト](http://icl.cs.utk.edu/lapack-for-windows/lapack/)の下のほうを参考にしながら入れていきます.
 
 1. [lapack.tar.gz](http://netlib.org/lapack/lapack.tgz)からファイルをダウンロードします.
 
