@@ -33,4 +33,4 @@ Nこの連成振動問題を考えてみます.
 
 > <img src="https://latex.codecogs.com/gif.latex?{\bf&space;C}=\begin{pmatrix}-2&&1&&0&&\cdots&&0\\1&&-2&&1&&\;&&\vdots\\\0&&\ddots&&\ddots&&\ddots&&0\\\vdots&&\;&&1&&-2&&1\\0&&\cdots&&0&&1&&-2\end{pmatrix}" />
 
-今回は行列の掛け算を用いて行う練習だと思ってください.
+今回は行列の掛け算の練習だと思ってください.
