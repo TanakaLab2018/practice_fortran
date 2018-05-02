@@ -37,7 +37,7 @@ PROGRAM Coupled_Vibration
     v = v_buf - lambda*x_buf*dt
 
     !書き出すファイル"plot_data000i.txt"を生成し, 出力
-    WRITE(filename,'("./txt_dat/plot_data",i4.4,".txt")') i
+    WRITE(filename,'("plot_data",i4.4,".txt")') i
     OPEN (17, FILE=filename, STATUS='replace')
     DO j = 1, SIZE
       WRITE (17, '(f16.8,"  ",f16.8," ",f16.8)') dble(j-1)*dx, x(j), v(j)

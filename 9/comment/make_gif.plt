@@ -6,7 +6,7 @@ set xrange[0:1]
 set yrange[-0.5:0.5]
 
 do for [i=1:300]{
-  filename = sprintf("./txt_dat/plot_data%04d.txt",i)
+  filename = sprintf("plot_data%04d.txt",i)
   plot filename w l
   }
 
