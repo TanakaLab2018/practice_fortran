@@ -27,6 +27,10 @@ Nこの連成振動問題を考えてみます.
 
 > <img src="https://latex.codecogs.com/gif.latex?{\bf&space;x}(t_{j+1})={\bf&space;x}(t_j)+{\bf&space;v}(t_j)\Delta&space;t" />
 
+> <img src="https://latex.codecogs.com/gif.latex?{\bf&space;x}=(x_i,x_2,\cdots,x_N),\;\;{\bf&space;v}=(v_1,v_2,\cdots,v_N)" />
+
 ただしCは係数の行列を表してまして, 両端を固定端とすれば次のようになります.
 
 > <img src="https://latex.codecogs.com/gif.latex?{\bf&space;C}=\begin{pmatrix}-2&&1&&0&&\cdots&&0\\1&&-2&&1&&\;&&\vdots\\\0&&\ddots&&\ddots&&\ddots&&0\\\vdots&&\;&&1&&-2&&1\\0&&\cdots&&0&&1&&-2\end{pmatrix}" />
+
+今回は行列の掛け算を用いて行う練習だと思ってください.
