@@ -19,7 +19,7 @@ PROGRAM Coupled_Vibration
   END DO
 
   !速度の初期値はゼロとする
-  !位置の初期値を与える
+  !位置の初期値を与える(今回は正弦波)
   DO i = 1, SIZE
     x(i) = 0.5d0*sin(2.d0*pi*dble(i-1)*dx)
   END DO
@@ -44,8 +44,6 @@ PROGRAM Coupled_Vibration
     END DO
 
   END DO
-
-
 
 
 END PROGRAM Coupled_Vibration
