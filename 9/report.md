@@ -8,8 +8,14 @@ Nこの連成振動問題を考えてみます.
 
 > <img src="https://latex.codecogs.com/gif.latex?\frac{\partial}{\partial&space;t}x_i=v_i" />
 
-さらに差分法を用いて次のように変形することが可能です.
+上の二つの式は, 差分法を用いて次のように変形することが可能です.
 
 > <img src="https://latex.codecogs.com/gif.latex?v_i(t_{j+1})=v_i(t_j)-\frac{k}{m}(x_{i-1}(t_j)-2x_i(t_j)+x_{i+1}(t_j))\Delta&space;t" />
+
+> <img src="https://latex.codecogs.com/gif.latex?x_i(t_{j+1})=x_i(t_j)+v_i(t_j)\Delta&space;t" />
+
+さらに, xやvをベクトルとして次のような式に落とし込むこともできます.
+
+> <img src="https://latex.codecogs.com/gif.latex?{\bf v}(t_{j+1})={\bf v}(t_j)-\frac{k}{m}{\bf C}{\bf x}(t_j)\Delta&space;t" />
 
 > <img src="https://latex.codecogs.com/gif.latex?x_i(t_{j+1})=x_i(t_j)+v_i(t_j)\Delta&space;t" />
