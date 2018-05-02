@@ -4,12 +4,16 @@ PROGRAM eigen_of_matrix
   INTEGER,PARAMETER ::  lda=N, ldvl=N, ldvr=N, lwork=10*N
   CHARACTER         ::  jobvr='N', jobvl='V'
   INTEGER           :: info
+<<<<<<< HEAD
   DOUBLE PRECISION   A(lda,N), Vl(ldvl,N), Vr(ldvr,N), Work(lwork), Wr(N), Wi(N)
+=======
+  DOUBLE PRECISION  :: A(lda,N), Vl(ldvl,N), Vr(ldvr,N), Work(lwork), Wr(N), Wi(N)
+>>>>>>> 012c2388a7d20d0e75f2c0d494461be41a2f5b82
 
   A(1,1) = 3.0
-  A(1,2) = 1.0
-  A(2,1) = 2.0
-  A(2,2) = 2.0
+  A(1,2) = -1.0
+  A(2,1) = -1.0
+  A(2,2) = 3.0
 
   PRINT *, 'A='
   CALL Print_Matrix(A,N,N)
