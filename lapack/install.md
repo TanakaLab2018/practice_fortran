@@ -71,7 +71,7 @@ Windowsへのインストールは実はかなり面倒くさいです...
 
 18. *build* に新しく **lib**, **bin** ができたら成功です.
 
-19. MinGWの中にある **lib**, **bin** に, 先程出来上がった *build* の中身をコピーしてください.
+19. MinGWの中(gfortranとかがあるところ)にある **lib**, **bin** に, 先程出来上がった *build* の中身をコピーしてください.
 
 ```
   gfortran foo.f90 -lm -lblas -llapack
