@@ -27,7 +27,7 @@ Nこの連成振動問題を考えてみます.
 
 > <img src="https://latex.codecogs.com/gif.latex?{\bf&space;x}(t_{j+1})={\bf&space;x}(t_j)+{\bf&space;v}(t_j)\Delta&space;t" />
 
-> <img src="https://latex.codecogs.com/gif.latex?{\bf&space;x}=(x_i,x_2,\cdots,x_N),\;\;{\bf&space;v}=(v_1,v_2,\cdots,v_N)" />
+>> <img src="https://latex.codecogs.com/gif.latex?{\bf&space;x}=(x_i,x_2,\cdots,x_N),\;\;{\bf&space;v}=(v_1,v_2,\cdots,v_N)" />
 
 ただしCは係数の行列を表してまして, 両端を固定端とすれば次のようになります.
 
