@@ -4,7 +4,7 @@ PROGRAM eigen_of_matrix
   INTEGER,PARAMETER ::  lda=N, ldvl=N, ldvr=N, lwork=10*N
   CHARACTER         ::  jobvr='N', jobvl='V'
   INTEGER           :: info
-  DOUBLE PRECISION   A(lda,N), VL(ldvl,N), VR(ldvr,N), WORK(lwork), WR(N), WI(N)
+  DOUBLE PRECISION  :: A(lda,N), Vl(ldvl,N), Vr(ldvr,N), Work(lwork), Wr(N), Wi(N)
 
   A(1,1) = 3.0
   A(1,2) = 1.0
@@ -14,7 +14,7 @@ PROGRAM eigen_of_matrix
   PRINT *, 'A='
   CALL print_matrix(A,N,N)
 
-  CALL DGEEV( jobvl, jobvr, N, A, lda, wr, wi, vl, ldvl, vr, ldvr, work, lwork, info )
+  CALL DGEEV( jobvl, jobvr, N, A, lda, Wr, Wi, Vl, ldvl, Vr, ldvr, Work, lwork, info )
 
   PRINT *, 'wr=(固有値の実数部分)'
   CALL print_matrix(wr,N,1)
