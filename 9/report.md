@@ -16,6 +16,6 @@ Nこの連成振動問題を考えてみます.
 
 さらに, xやvをベクトルとして次のような式に落とし込むこともできます.
 
-<img src="https://latex.codecogs.com/gif.latex?{\bf&space;v}(t_{j+1})={\bf&space;v}(t_j)-\frac{k}{m}{\bf&space;C}{\bf&space;x}(t_j)\Delta&space;t" />
+> <img src="https://latex.codecogs.com/gif.latex?{\bf&space;v}(t_{j+1})={\bf&space;v}(t_j)-\frac{k}{m}{\bf&space;C}{\bf&space;x}(t_j)\Delta&space;t" />
 
-> <img src="https://latex.codecogs.com/gif.latex?x_i(t_{j+1})=x_i(t_j)+v_i(t_j)\Delta&space;t" />
+> <img src="https://latex.codecogs.com/gif.latex?{\bf&space;x}(t_{j+1})={\bf&space;x}(t_j)+{\bf&space;v}(t_j)\Delta&space;t" />
