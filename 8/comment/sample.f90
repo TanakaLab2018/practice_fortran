@@ -1,10 +1,10 @@
-PROGRAM eigen_of_matrix
+PROGRAM Eigen_of_Matrix
   IMPLICIT NONE
   INTEGER,PARAMETER ::  N = 2
   INTEGER,PARAMETER ::  lda=N, ldvl=N, ldvr=1, lwork=10*N
   CHARACTER         ::  jobvr='N', jobvl='V'
-  INTEGER           :: info
-  DOUBLE PRECISION   A(lda,N), Vl(ldvl,N), Vr(ldvr,N), Work(lwork), Wr(N), Wi(N)
+  INTEGER           ::  info
+  DOUBLE PRECISION  ::  A(lda,N), Vl(ldvl,N), Vr(ldvr,N), Work(lwork), Wr(N), Wi(N)
 
   A(1,1) = 3.0
   A(1,2) = -1.0
@@ -24,7 +24,7 @@ PROGRAM eigen_of_matrix
   PRINT *, 'Vl=(EigVec)'
   CALL Print_Matrix(Vl,N,N)
 
-END PROGRAM eigen_of_matrix
+END PROGRAM Eigen_of_Matrix
 
 
 !:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
