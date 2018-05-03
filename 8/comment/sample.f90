@@ -1,14 +1,10 @@
 PROGRAM eigen_of_matrix
   IMPLICIT NONE
   INTEGER,PARAMETER ::  N = 2
-  INTEGER,PARAMETER ::  lda=N, ldvl=N, ldvr=N, lwork=10*N
+  INTEGER,PARAMETER ::  lda=N, ldvl=N, ldvr=1, lwork=10*N
   CHARACTER         ::  jobvr='N', jobvl='V'
   INTEGER           :: info
-<<<<<<< HEAD
   DOUBLE PRECISION   A(lda,N), Vl(ldvl,N), Vr(ldvr,N), Work(lwork), Wr(N), Wi(N)
-=======
-  DOUBLE PRECISION  :: A(lda,N), Vl(ldvl,N), Vr(ldvr,N), Work(lwork), Wr(N), Wi(N)
->>>>>>> 012c2388a7d20d0e75f2c0d494461be41a2f5b82
 
   A(1,1) = 3.0
   A(1,2) = -1.0
@@ -20,12 +16,12 @@ PROGRAM eigen_of_matrix
 
   CALL DGEEV( jobvl, jobvr, N, A, lda, Wr, Wi, Vl, ldvl, Vr, ldvr, Work, lwork, info )
 
-  PRINT *, 'wr=(固有値の実数部分)'
+  PRINT *, 'Wr=(Real part of the EigVal)'
   CALL Print_Matrix(Wr,N,1)
-  PRINT *, 'wi=(固有値の虚数部分)'
+  PRINT *, 'Wi=(Imaginaly part of the EigVal)'
   CALL Print_Matrix(Wi,N,1)
 
-  PRINT *, 'vl=(固有ベクトル)'
+  PRINT *, 'Vl=(EigVec)'
   CALL Print_Matrix(Vl,N,N)
 
 END PROGRAM eigen_of_matrix
