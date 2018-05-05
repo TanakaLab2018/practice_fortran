@@ -1,12 +1,12 @@
 PROGRAM Coupled_Vibration
   IMPLICIT NONE
-  INTEGER,PARAMETER   ::  SIZE = 1024,  TIME_COUNT = 30000
+  INTEGER,PARAMETER   ::  SIZE = 1024,  TIME_COUNT = 1000000
   DOUBLE PRECISION    ::  pi = atan(1.d0)*4.d0
   INTEGER             ::  i, j, RANGE
   DOUBLE PRECISION    ::  x(SIZE) = 0, v(SIZE) = 0, C(SIZE,SIZE) = 0
   DOUBLE PRECISION    ::  x_old(SIZE) = 0, v_old(SIZE) = 0, y(SIZE)=0
   DOUBLE PRECISION    ::  lambda = 10.d0, dt = 0.1d0, dx = 1.d0/dble(SIZE-1)
-  CHARACTER           ::  filename*10000
+  CHARACTER           ::  filename*1000
 
   !動画を全部で1000フレームにしたい
   RANGE = TIME_COUNT/1000

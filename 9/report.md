@@ -44,8 +44,9 @@ Nこの連成振動問題を考えてみます.
 
 [参考サイト](http://positron.c.u-tokyo.ac.jp/shindo2014/saito_shindo_chapter5.pdf)
 
-> 追記: 運動方程式の二つ目の式を
+> 追記:
+> > 運動方程式の二つ目の式を
 
-> <img src="https://latex.codecogs.com/gif.latex?{\bf&space;x}(t_{j+1})={\bf&space;x}(t_j)+{\bf&space;v}(t_{j+1})\Delta&space;t" />
+> > <img src="https://latex.codecogs.com/gif.latex?{\bf&space;x}(t_{j+1})={\bf&space;x}(t_j)+{\bf&space;v}(t_{j+1})\Delta&space;t" />
 
-> とするとうまくいきました.
+> > とするとうまくいきました.
