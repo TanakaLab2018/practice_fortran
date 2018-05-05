@@ -28,7 +28,7 @@ END PROGRAM Rashba
 SUBROUTINE Hamiltonian(kx,ky,Hamil)
   DOUBLE PRECISION    ::  kx, ky
   DOUBLE PRECISION    ::  alpha = 1.d0, lambda = 1.d0
-  COMPLEX*16          ::  sig_x(2,2)=0.d0,sig_y(2,2)=0.d0, sig_z(2,2)=0.d0, sig_0(2,2)=0.d0
+  COMPLEX*16          ::  sig_x(2,2)=0.d0, sig_y(2,2)=0.d0, sig_z(2,2)=0.d0, sig_0(2,2)=0.d0
   COMPLEX*16          ::  Hamil(2,2)
 
   sig_x(1,2) = ( 1.d0, 0.d0)
