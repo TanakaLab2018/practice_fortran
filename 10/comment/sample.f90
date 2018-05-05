@@ -24,8 +24,7 @@ PROGRAM Rashba
 END PROGRAM Rashba
 
 
-
-
+!=== ハミルトニアン================
 SUBROUTINE Hamiltonian(kx,ky,Hamil)
   DOUBLE PRECISION    ::  kx, ky
   DOUBLE PRECISION    ::  alpha = 1.d0, lambda = 1.d0
