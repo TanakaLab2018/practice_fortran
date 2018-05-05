@@ -8,7 +8,7 @@ Rashbaスピン軌道相互作用のある系のハミルトニアンは次の�
 
 > <img src="https://latex.codecogs.com/gif.latex?\alpha=1" />
 
-> <img src="https://latex.codecogs.com/gif.latex?"\lambda=1" /hh>
+> <img src="https://latex.codecogs.com/gif.latex?\lambda=1" /hh>
 
 2. DO文を用いて, Brillouin Zone 内すべての波数について固有値を求め, *.txt* ファイルに書き出してみましょう. (ヒント: 2つの固有値のうち, 大きいほうを *data_1.txt* , 小さいほうを *data_2.txt* のように分けておくと便利)
 
