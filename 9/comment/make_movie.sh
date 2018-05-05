@@ -6,6 +6,7 @@ echo "Compile completed"
 
 ./sample
 
+echo "Creating the gif file"
 gnuplot -e "
   load 'make_gif.plt';
   "

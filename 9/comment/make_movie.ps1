@@ -5,6 +5,8 @@ Write-Host "Compile completed"
 
 .\sample.exe
 
+Write-Host "Creating the gif file"
+
 gnuplot -e "
   load 'make_gif.plt';
   "
