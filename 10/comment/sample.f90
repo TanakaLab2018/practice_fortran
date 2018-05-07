@@ -1,6 +1,6 @@
 PROGRAM Rashba
   IMPLICIT NONE
-  INTEGER,PARAMETER   ::  SIZE = 32, N = 2
+  INTEGER,PARAMETER   ::  SIZE = 31, N = 2
   INTEGER,PARAMETER   ::  lda = N, lwork = 10*N
   DOUBLE PRECISION    ::  M_Pi = atan(1d0)*4d0
   DOUBLE PRECISION    ::  kx, ky, dk = 2d0*atan(1d0)*4d0/dble(SIZE-1), rwork(3*N-2), energy(N)
@@ -10,9 +10,9 @@ PROGRAM Rashba
   OPEN(17, FILE='data.txt', STATUS='replace')
 
   DO i = 1, SIZE
-    kx = (dk*dble(i-1) - M_Pi)*1.d0
+    kx = (dk*dble(i-1) - M_Pi)*0.1d0
     DO j = 1, SIZE
-      ky = (dk*dble(j-1) - M_Pi)*1.d0
+      ky = (dk*dble(j-1) - M_Pi)*0.1d0
       CALL Hamiltonian(kx, ky, H)
       CALL ZHEEV('N', 'U', N, H, lda, energy, work, lwork, rwork, info)
       WRITE (17, '(f16.8,"  ",f16.8," ",f16.8,"  ",f16.8)') kx, ky, energy(1), energy(2)
@@ -40,5 +40,5 @@ SUBROUTINE Hamiltonian(kx,ky,Hamil)
   sig_0(1,1) = ( 1.d0, 0.d0)
   sig_0(2,2) = ( 1.d0, 0.d0)
 
-  Hamil = alpha*(kx**2+ky**2)*sig_0 + lambda*(ky*sig_x - kx*sig_y)
+  Hamil = alpha*(kx**2+ky**2)*sig_0 + lambda*(kx*sig_y - ky*sig_x)
 END SUBROUTINE
