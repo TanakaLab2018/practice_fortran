@@ -29,7 +29,7 @@ end program ra
 !==ハミルトニアンについて==
 subroutine hamiltonian(kx,ky,hamil)
   double precision   :: kx,ky
-  double precision   :: alpha=1.d0,lambda=1.d0,m=0.1
+  double precision   :: alpha=1.d0,lambda=1.d0,m=0.05d0
   complex*16         :: sig_x(2,2)=0.d0, sig_y(2,2)=0.d0, sig_z(2,2)=0.d0, sig_0(2,2)=0.d0
   complex*16         :: hamil(2,2)
   sig_x(1,2) = ( 1.d0, 0.d0)

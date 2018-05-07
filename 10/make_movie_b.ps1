@@ -3,15 +3,16 @@ Write-Host "Compile completed"
 
 .\sample.exe
 
-Write-Host "Creating the gif file"
-
 gnuplot -e "
- set pm3d;
- set terminal png optimize delay 2 size 480, 360;
- set output 'Rashba_bry.png';
- splot "date1.txt" w l, "date2.txt" w l;
- set out;
+   set pm3d;
+   splot 'date1.txt' w l, 'date2.txt' w l;
+   pause -1;
+   set terminal png size 480, 360;
+   set output 'Rashba_bry.png';
+   splot 'date1.txt' w l, 'date2.txt' w l;
+   set out;
   "
-Write-Host "Created the 'movie.gif'"
-
 rm .\sample.exe
+
+
+Write-Host "Finished"
