@@ -6,10 +6,11 @@ Write-Host "Compile completed"
 Write-Host "Creating the gif file"
 
 gnuplot -e "
- set terminal png;
- set output 'Rashba_bry.png';
  set pm3d;
- splot "date1.txt" w l, "date2.txt" w l
+ set terminal png optimize delay 2 size 480, 360;
+ set output 'Rashba_bry.png';
+ splot "date1.txt" w l, "date2.txt" w l;
+ set out;
   "
 Write-Host "Created the 'movie.gif'"
 
