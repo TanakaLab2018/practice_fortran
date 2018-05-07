@@ -10,9 +10,9 @@ PROGRAM Rashba
   OPEN(17, FILE='data.txt', STATUS='replace')
 
   DO i = 1, SIZE
-    kx = (dk*dble(i-1) - M_Pi)*0.1d0
+    kx = (dk*dble(i-1) - M_Pi)*1.d0
     DO j = 1, SIZE
-      ky = (dk*dble(j-1) - M_Pi)*0.1d0
+      ky = (dk*dble(j-1) - M_Pi)*1.d0
       CALL Hamiltonian(kx, ky, H)
       CALL ZHEEV('N', 'U', N, H, lda, energy, work, lwork, rwork, info)
       WRITE (17, '(f16.8,"  ",f16.8," ",f16.8,"  ",f16.8)') kx, ky, energy(1), energy(2)
