@@ -2,7 +2,7 @@
 
 Rashbaスピン軌道相互作用のある系のハミルトニアンは次のように表されることが知られています.
 
-> <img src="https://latex.codecogs.com/gif.latex?\frac{\hbar^2{\bf&space;k}^2}{2m}\sigma_0+\lambda(k_y\sigma_x-k_x\sigma_y)" />
+> <img src="https://latex.codecogs.com/gif.latex?H=\frac{\hbar^2{\bf&space;k}^2}{2m}\sigma_0+\lambda(k_y\sigma_x-k_x\sigma_y)" />
 
 1. lapackを使って, あるk=(kx,ky)である時の固有値を求めてみましょう. パラメータは以下の通りにしてみてください.
 
