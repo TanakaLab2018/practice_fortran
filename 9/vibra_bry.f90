@@ -45,5 +45,3 @@ program vibration
   end do
 
 end program vibration
-
-!映像なぜかでません
