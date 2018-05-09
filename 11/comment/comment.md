@@ -1,0 +1,9 @@
+# 柘植さん
+
+atom の上のメニューバーの出し方がわかりました!
+
+1. Ctrl+Shift+P と押す.
+
+2. 「windows toggle menu bar」と入力して見てください.
+
+3. Enterを押せば復活します.
