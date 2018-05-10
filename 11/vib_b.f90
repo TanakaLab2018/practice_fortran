@@ -1,35 +1,53 @@
-program vibration
+program vib
   implicit none
-  integer,parameter  :: n=3,time=10
-  double precision   :: pi=atan(1.d0)*4.d0
-  integer            :: i,j,range
-  double precision   :: x(n)=0,v(n)=0,c(n,n)=0
-  double precision   :: xo(n)=0,vo(n)=0,y(n)=0
-  double precision   :: lambda=10.d0,dt=0.1d0,dx=1.d0/dble(n-1)
-  character          :: filename*1000
+  integer, parameter    :: n=3,lwork=n*10
+  integer               :: i,j
+  double precision      :: c(n,n)=0, m(n,n)=0, d(n)=0
+  integer               :: info
+  double precision      :: lworko=int(lwork)
+  double precision      :: work(lwork)
 
   !係数行列C,格子をばねとしてみてるやつ
   do i=1,n
-    c(i,i)=-2.d0
+    c(i,i)=2.d0
   end do
   do i=1,n
-    c(i,i+1)=1.d0
-    c(i+1,i)=1.d0
+    c(i,i+1)=-1.d0
+    c(i+1,i)=-1.d0
   end do
+  write(*,*) 'C='
+  write(*,*) c
 
-  !初期値の設定(x,v)
+  !重さの入力
   do i=1,n
-    x(i)=0.5d0*sin(2.d0*pi*dble(i-1)*dx)/(dble(i)*dx)
+    write(*,*) 'what m',i
+    read(*,*) m(i,i)
   end do
-  do i=1,time
-    xo=x
-    vo=v
-    !vの連立微分方程式
-    call dgemv('N',n,n,1.d0,c,n,xo,1,0.d0,y,1)
-    v=vo+lambda*y*dt
-    !xの連立微分方程式
-    x=xo+v*dt
-  end do
-  write(*,*) x
+  write(*,*) 'M ='
+  write(*,*) m
 
-end program vibration
+  !固有値計算
+  call DSYGV( 1, 'V', 'U', n, c, n, m, n, d, work, lwork, info)
+
+  !固有ベクトル
+  write(*,*) 'U ='
+  write(*,*) c
+
+  !固有値
+  write(*,*) 'D ='
+  write(*,*) d
+
+  !プロット
+  open(17,file='data1.txt',status='replace')
+    write(*,*) "nambar"
+    read(*,*) j
+    if(j<n+1.and.j>0) then
+      write(17, *) 1,c(1,j)
+      write(17, *) 2,c(2,j)
+      write(17, *) 3,c(3,j)
+    else
+      write(*,*) "none"
+    end if
+  close(17)
+
+end program vib
