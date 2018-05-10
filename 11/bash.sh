@@ -7,7 +7,7 @@ gnuplot -e "
 
   plot for [i=1:7]  'vibKS.txt' u i w l ;
 
- set terminal png;
+ set terminal pngcairo;
  set output 'outKS.png';
  replot;
  "
