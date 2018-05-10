@@ -26,11 +26,14 @@ program vib
   write(*,*) 'M ='
   write(*,*) m
 
+  !固有値計算
   call DSYGV( 1, 'V', 'U', n, c, n, m, n, d, work, lwork, info)
 
+  !固有ベクトル
   write(*,*) 'U ='
   write(*,*) c
 
+  !固有値
   write(*,*) 'D ='
   write(*,*) d
 
