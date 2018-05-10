@@ -1,7 +1,7 @@
 program vib
   implicit none
-  integer, parameter    :: n=3,lwork=n*10
-  integer               :: i,j
+  integer, parameter    :: n=5,lwork=n*10
+  integer               :: i,j,k
   double precision      :: c(n,n)=0, m(n,n)=0, d(n)=0
   integer               :: info
   double precision      :: lworko=int(lwork)
@@ -15,39 +15,35 @@ program vib
     c(i,i+1)=-1.d0
     c(i+1,i)=-1.d0
   end do
-  write(*,*) 'C='
-  write(*,*) c
 
   !重さの入力
   do i=1,n
-    write(*,*) 'what m',i
-    read(*,*) m(i,i)
+    m(i,i)=1.d0
   end do
-  write(*,*) 'M ='
-  write(*,*) m
 
   !固有値計算
   call DSYGV( 1, 'V', 'U', n, c, n, m, n, d, work, lwork, info)
 
-  !固有ベクトル
-  write(*,*) 'U ='
-  write(*,*) c
-
-  !固有値
-  write(*,*) 'D ='
-  write(*,*) d
-
   !プロット
   open(17,file='data1.txt',status='replace')
-    write(*,*) "nambar"
-    read(*,*) j
-    if(j<n+1.and.j>0) then
-      write(17, *) 1,c(1,j)
-      write(17, *) 2,c(2,j)
-      write(17, *) 3,c(3,j)
-    else
-      write(*,*) "none"
-    end if
+      j=1
+    do k=1,n
+      write(17, *) k/10.d0,c(k,j)
+    end do
   close(17)
+
+  open(18,file='data2.txt',status='replace')
+      j=2
+    do k=1,n
+      write(18, *) k/10.d0,c(k,j)
+    end do
+  close(18)
+
+  open(19,file='data3.txt',status='replace')
+      j=3
+    do k=1,n
+      write(19, *) k/10.d0,c(k,j)
+    end do
+  close(19)
 
 end program vib
