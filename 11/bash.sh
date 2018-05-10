@@ -11,3 +11,5 @@ gnuplot -e "
  set output 'outKS.png';
  replot;
  "
+
+rm ./vibKS.out
