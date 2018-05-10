@@ -4,7 +4,7 @@ program vibKS
   double precision :: m(8,8)=0.0d0,w(8),work(30)
 
   integer,parameter :: n=8
-  integer           :: i
+  integer           :: i,j
 
 !微分方程式に現われる行列
 do i=1,n
@@ -19,9 +19,12 @@ m=-m
 !write(*,*) m
 open(11,file='vibKS.txt',status='replace')
 
+write(*,*) "j=?"
+read *, j
+
 call dsyev('v','u',n,m,n,w,work,lwork,info)
 do i=1,n
-write(11,*)  m(i,8)
+write(11,*)  m(i,j)
 end do
 close(11)
  ! print *, m(1,1),m(1,2),m(1,3)
