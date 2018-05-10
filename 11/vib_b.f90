@@ -1,7 +1,7 @@
 program vib
   implicit none
   integer, parameter    :: n=3,lwork=n*10
-  integer               :: i
+  integer               :: i,j
   double precision      :: c(n,n)=0, m(n,n)=0, d(n)=0
   integer               :: info
   double precision      :: lworko=int(lwork)
@@ -36,5 +36,18 @@ program vib
   !固有値
   write(*,*) 'D ='
   write(*,*) d
+
+  !プロット
+  open(17,file='data1.txt',status='replace')
+    write(*,*) "nambar"
+    read(*,*) j
+    if(j<n+1.and.j>0) then
+      write(17, *) 1,c(1,j)
+      write(17, *) 2,c(2,j)
+      write(17, *) 3,c(3,j)
+    else
+      write(*,*) "none"
+    end if
+  close(17)
 
 end program vib
