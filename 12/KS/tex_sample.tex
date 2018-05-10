@@ -1,0 +1,17 @@
+\documentclass{jsarticle}
+\usepackage{amsmath,amssymb}
+
+\begin{document}
+TEXファイルからPDFファイルを生成する方法.
+\begin{enumerate}
+  \item ターミナル上で以下を入力することで, ${\rm <filename>.dvi}$ファイルが生成されます.
+  \begin{equation*}
+      {\rm platex <filename>.tex}
+  \end{equation*}
+  \item ターミナル上で以下を入力することで, ${\rm <filename>.pdf}$ファイルが生成されます.
+  \begin{equation*}
+    {\rm dvipdfmx <filename>.dvi}
+  \end{equation*}
+\end{enumerate}
+
+\end{document}
