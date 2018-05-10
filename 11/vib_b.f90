@@ -26,7 +26,6 @@ program vib
   write(*,*) 'M ='
   write(*,*) m
 
-  call DSYGV( 1, 'V', 'U', n, c, n, m, n, d,lworko,-1,info)
   call DSYGV( 1, 'V', 'U', n, c, n, m, n, d, work, lwork, info)
 
   write(*,*) 'U ='
