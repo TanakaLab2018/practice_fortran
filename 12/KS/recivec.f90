@@ -22,7 +22,7 @@ write (*,*)  e
 
 f(1)=2*pi/V*(a(2)*b(3)-a(3)*b(2))
 f(2)=2*pi/V*(a(3)*b(1)-a(1)*b(3))
-f(3)=2*pi/V*(a(1)*b(2)-a(2)*b(1))
+f(3)=2*pi/V*(a(1)*b(2)-a(2)*b(1))h
 write (*,*)  f
 
 end program recivec
