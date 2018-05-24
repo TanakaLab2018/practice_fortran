@@ -1,8 +1,9 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.14)  23 MAY 2018 13:47
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.14)  24 MAY 2018 11:27
 entering extended mode
  restricted \write18 enabled.
+ Source specials enabled.
  %&-line parsing enabled.
-**./kitaev_bry.tex
+**kitaev_bry.tex
 (./kitaev_bry.tex
 pLaTeX2e <2016/09/08> (based on LaTeX2e <2016/03/31> patch level 3)
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
@@ -218,11 +219,11 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 ] (./kitaev_bry.aux) ) 
 Here is how much of TeX's memory you used:
  1862 strings out of 493670
- 21378 string characters out of 6151242
- 85153 words of memory out of 5000000
+ 21376 string characters out of 6151242
+ 86153 words of memory out of 5000000
  5432 multiletter control sequences out of 15000+600000
  15042 words of font info for 67 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,8n,26p,223b,206s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 27i,9n,26p,221b,210s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on kitaev_bry.dvi (1 page, 2708 bytes).
+Output written on kitaev_bry.dvi (1 page, 3160 bytes).
