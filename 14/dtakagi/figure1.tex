@@ -1,0 +1,60 @@
+% standaloneは図のサイズに合わせてくれる
+\documentclass[platex,dvipdfmx]{standalone}
+
+% プリアンブル%{{{
+\RequirePackage{xcolor}
+\RequirePackage{tikz}
+\usepackage{tikz}%tikzの読み込み
+\usepackage{pxpgfmark}%tikzのnode名を共有
+\usepackage{otf}%ハシゴ高の表示に必要
+\usetikzlibrary{arrows,positioning,plotmarks,external,patterns,angles,
+decorations.pathmorphing,backgrounds,fit,shapes,shadows}
+\usetikzlibrary{shapes.callouts}
+\usepackage{amsmath}%数式
+\usepackage{amssymb}%数式
+\usepackage{amsthm}
+\usepackage{bm}%数式太字
+\usepackage{newtxmath}%数式文字
+\usepackage{newtxtext}%テキスト文字
+\usepackage{graphicx}%図
+\usepackage{physics}%物理系のマクロ
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\usepackage{empheq}%連立方程式を書くやつ
+
+%%ここからpgf設定
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.12}
+%%ここまでpgf設定
+
+%}}}
+
+\begin{document}
+        \begin{tikzpicture}
+            \def\a{0};
+            \def\bx{100};
+            \def\by{65};
+            \useasboundingbox (\a mm, \a mm) rectangle (\a+\bx mm,\a+\by mm);
+            % \draw[step=1mm,color=black!30] (\a mm,\a mm) grid (\a +\bx mm,\a+\by mm);
+            % \draw[step=10mm,color=blue!60] (\a mm,\a mm) grid (\a +\bx mm,\a+\by mm);
+            % \node[color=black] at (0mm,0mm) {$\Huge \bullet$};
+
+            \draw[very thick] (10mm,10mm) -- (20mm,50mm) -- (90mm,50mm) -- (80mm,10mm) -- (10mm,10mm);
+            \draw[very thick,->] (5mm,7mm) -- (18mm,7mm);
+            \draw[very thick,->] (5mm,7mm) -- (8mm,19mm);
+            \node[below] at (15mm,7mm) {\LARGE $x$};
+            \node[left] at (7mm,17mm) {\LARGE $y$};
+            \draw[very thick,dashed] (20mm,50mm) -- (20mm,58mm);
+            \draw[very thick,dashed] (90mm,50mm) -- (90mm,58mm);
+            \draw[thick,<->] (20mm,54mm) -- (90mm,54mm);
+            \node[above] at (50mm,54mm) {\Huge $L_x$};
+            \draw[very thick,dashed] (90mm,50mm) -- (90mm+8mm,50mm-2mm);
+            \draw[very thick,dashed] (80mm,10mm) -- (80mm+8mm,10mm-2mm);
+            \draw[thick,<->] (94mm,49mm) -- (84mm,9mm);
+            \node[right] at (89mm,29mm) {\Huge $L_y$};
+            \node at (50mm,45mm) {\large $x$方向: 開境界};
+            \node[rotate=75] at (80mm,30mm) {\large $y$方向: 周期境界};
+        \end{tikzpicture}
+\end{document}
+
+
