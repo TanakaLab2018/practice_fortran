@@ -7,19 +7,19 @@
 \usepackage{here}
 
 \begin{document}
-\part{kitaevモデルハミルトニアンについて}
+\part{BdGモデルハミルトニアンについて}
 	\section{定義}
-		kitaevモデルハミルトニアン$\mathcal{H}$は以下のように表される。
+		BdGモデルハミルトニアン$\mathcal{H}$は以下のように表される。
 
-		\begin{equation}
+		\begin{align}
 			\mathcal{H}=\int \vec{\Psi}^\dagger \tilde{H}\vec{\Psi}dr
-		\end{equation}
+		\end{align}
 
-		\begin{equation}
+		\begin{align}
 			\int dr=\int dxdy
-		\end{equation}
+		\end{align}
 
-		\begin{equation}
+		\begin{align}
 			\vec{\Psi}=
 			\begin{bmatrix}
 				\Psi_\uparrow \\
@@ -27,32 +27,39 @@
 				\Psi_\uparrow^\dagger \\
 				\Psi_\downarrow^\dagger
 			\end{bmatrix}
-		\end{equation}
+		\end{align}
 
-		\begin{equation}
+		\begin{align}
 			\tilde{H}=
 			\begin{bmatrix}
 				\hat{h}(r) & \hat{\Delta}(r) \\
 				-\hat{\Delta}^\ast(r) & -\hat{h}^\ast(r)
 			\end{bmatrix}
-		\end{equation}
+		\end{align}
 
-		\begin{equation}
+		\begin{align}
 			\hat{h}=\left[-\frac{\bar{h}^2}{2m}\nabla^2-\mu_F \right]\hat{\sigma_0}　\\
 			\left( \hat{\sigma_0}:単位行列 \right)
-		\end{equation}
+		\end{align}
 
-		\begin{equation}
+		\begin{align}
 			\hat{\Delta}(r)=
 			\begin{cases}
-				\Delta_0 \left( i \hat{sigma_2} \right) & \left( s-wave \right) \\
-				\Delta_0\frac{i\partial x}{k_F}\hat{sigma_1} & \left( P_x-wave \right) \\
-				\Delta_0\frac{1}{k_f} \left( \hat{sigma_1}+i\hat{sigma_2} \right) & \left( P_x+iP_y \right)
+				\Delta_0 \left( i \hat{\sigma_2} \right) & \left( s-wave \right) \\
+				\Delta_0\frac{i\partial x}{k_F}\hat{\sigma_1} & \left( p_x-wave \right) \\
+				\Delta_0\frac{1}{k_f} \left( \hat{\sigma_1}+i\hat{\sigma_2} \right) & \left( p_x+ip_y \right)
 			\end{cases}
-		\end{equation}
+			\label{Delta}
+		\end{align}
 
-		\begin{equation}
+		\begin{align}
 			\vec{\Psi}=\frac{1}{\sqrt{Ly}}\sum_{k_y} \vec{\Psi}_{k_y}(x) e^{ik_yy}
-		\end{equation}
+		\end{align}
 
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=1]{figure1}
+			\caption{考える系}
+			\label{system}
+		\end{figure}
 \end{document}
