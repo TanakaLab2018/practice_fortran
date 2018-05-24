@@ -1,4 +1,5 @@
 \documentclass{jarticle}
+\usepackage{amsmath,amssymb}
 \begin{document}
 \title{Kitaevモデルのハミルトニアン}
 \maketitle
@@ -8,31 +9,14 @@
 
 ハミルトニアンは以下の式で表される。
 \begin{equation}
-  H=\int\vec{\psi}^\dagger(x,y)\tilde{H}\vec{\psi}(x,y)dr
+  H=\int\vec{\Psi}^\dagger(x,y)\tilde{H}\vec{\Psi}(x,y)dr
 \end{equation}
 
 \begin{equation}
-  
-\end{equation}}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\tilde{H}=
+\begin{pmatrix}
+	\hat{h}(r) & \hat{\Delta}(r) \\ 
+	-\hat{\Delta}^{*}(r) & -\hat{h}^{*}(r)
+\end{pmatrix} 
+\end{equation}
 \end {document}
