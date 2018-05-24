@@ -1,0 +1,40 @@
+\documentclass{jarticle}
+\usepackage{amsmath,amssymb}
+\begin{document}
+\title{Kitaevモデルのハミルトニアン}
+%%% Kitaevモデルではないので名前を変えましょう（言うのが遅れてごめんなさい）
+% \title{BdGハミルトニアン}
+
+\maketitle
+
+\tableofcontents
+
+%%% 目次と文章の間に改ページを入れましょう
+% \newpage
+
+\section{導入}
+
+ハミルトニアンは以下の式で表される。
+\begin{equation}
+  H=\int\vec{\Psi}^\dagger(x,y)\tilde{H}\vec{\Psi}(x,y)dr
+\end{equation}
+%%% equationは古い環境でスペースにバグがあるのでalign環境を使いましょう
+% \begin{align}
+%   H=\int\vec{\Psi}^\dagger(x,y)\tilde{H}\vec{\Psi}(x,y)dr
+% \end{align}
+
+\begin{equation}
+\tilde{H}=
+\begin{pmatrix}
+	\hat{h}(r) & \hat{\Delta}(r) \\ 
+	-\hat{\Delta}^{*}(r) & -\hat{h}^{*}(r)
+\end{pmatrix} 
+\end{equation}
+% \begin{align}
+% \tilde{H}=
+% \begin{pmatrix}
+% 	\hat{h}(r) & \hat{\Delta}(r) \\ 
+% 	-\hat{\Delta}^{*}(r) & -\hat{h}^{*}(r)
+% \end{pmatrix} 
+% \end{align}
+\end {document}
