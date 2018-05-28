@@ -1,4 +1,4 @@
-\documentclass{jarticle}
+H\documentclass{jarticle}
 \usepackage{amsmath,amssymb}
 \usepackage{amsmath}
 \usepackage[dvipdfmx]{graphicx}
@@ -14,7 +14,7 @@
 
 ハミルトニアンは以下の式で表される。
 \begin{align}
-  H=\int\vec{\Psi}^\dagger(x,y)\tilde{H}\vec{\Psi}(x,y)dr
+\mathcal{H}=\int\vec{\Psi}^\dagger(x,y)\hat{H}\vec{\Psi}(x,y)dr
 \end{align}
 
 \begin{align}
@@ -22,27 +22,27 @@
 \end{align}
 \begin{align}
 \vec{\Psi}=\begin{bmatrix}
-\psi_{\uparrow} \\ 
-\psi_{\downarrow} \\ 
-\psi_{\uparrow}^\dagger \\ 
+\psi_{\uparrow} \\
+\psi_{\downarrow} \\
+\psi_{\uparrow}^\dagger \\
 \psi_{\downarrow}^\dagger
-\end{bmatrix} 
+\end{bmatrix}
 \end{align}
 \begin{align}
-\tilde{H}=
+\hat{H}=
 \begin{pmatrix}
-	\hat{h}(r) & \hat{\Delta}(r) \\ 
+	\hat{h}(r) & \hat{\Delta}(r) \\
 	-\hat{\Delta}^{*}(r) & -\hat{h}^{*}(r)
-\end{pmatrix} 
+\end{pmatrix}
 \end{align}
 \begin{align}
-\tilde{H}\in\mathbb{C}^4
+\hat{H}\in\mathbb{C}^{4\times 4}
 \end{align}
 \begin{align}
-\hat{\Delta}(r),\tilde{h}(r)\in\mathbb{C}^{2\times 2}
+\hat{\Delta}(r),\hat{h}(r)\in\mathbb{C}^{2\times 2}
 \end{align}
 \begin{align}
-\tilde{h}=
+\hat{h}=
 \begin{bmatrix}
 -\dfrac{\hbar^2}{2m}\nabla^2-\mu_F
 \end{bmatrix}
@@ -58,13 +58,13 @@ $\hat{\sigma}_0$: 単位行列
 \hat{\Delta}(r)=
 \begin{cases}
 $\rm(\hspace{.18em}i\hspace{.18em})\quad$\Delta_0(i\sigma_2)
-& s-wave
+& \mbox{$s$-wave}
 \vspace*{1em}\\
 $\rm(\hspace{.18em}ii\hspace{.18em})$\quad\Delta_0\dfrac{i\partial x}{k_F}\hat\sigma_1
-&p_x-wave
+& \mbox{$p_x$-wave}
 \vspace*{1em}\\
 $\rm(\hspace{.18em}iii\hspace{.18em})$\quad\Delta_0\dfrac{1}{k_F}(\partial x+i\partial y)\hat\sigma_1\
-&p_x+ip_y
+& \mbox{$p_x+ip_y$-wave}
 \end{cases}
 \label{delta}
 \end{align}
@@ -77,7 +77,7 @@ $\rm(\hspace{.18em}iii\hspace{.18em})$\quad\Delta_0\dfrac{1}{k_F}(\partial x+i\p
 \end{figure}
 図\ref{system}の系を考える。$y$方向には境界条件が課されている。
 \begin{align}
- \vec{\Psi}=\dfrac{1}{\sqrt{l_y}}\displaystyle\sum_{k_y}\vec{\Psi}_{k_y}(x)e^{ik_yy}
+ \vec{\Psi}=\dfrac{1}{\sqrt{L_y}}\displaystyle\sum_{k_y}\vec{\Psi}_{k_y}(x)e^{ik_yy}
 \end{align}
 %式\eqref{delta}
 1.(i)の$\hat{\Delta}$を使う\\
@@ -85,30 +85,30 @@ $\rm(\hspace{.18em}iii\hspace{.18em})$\quad\Delta_0\dfrac{1}{k_F}(\partial x+i\p
 \\ ヒント: (1)に(2)を代入しましょう。\\
 \ding{"AD}離散化しましょう\\
 \begin{align}
- H\rightarrow \tilde{H}
+ \mathcal{H}\rightarrow \tilde{\mathcal{H}}
 \end{align}
 \begin{align}
-  \tilde{H}=\vec{\Psi}\tilde{H}\vec{\Psi}
+  \tilde{\mathcal{H}}=\vec{\Psi}\hat{H}\vec{\Psi}
  \end{align}
  \begin{align}
   \vec{\Psi}=\begin{bmatrix}
-  \psi_{1\uparrow} \\ 
-  \psi_{1\downarrow} \\ 
-  \psi_{1\uparrow}^\dagger \\ 
+  \psi_{1\uparrow} \\
+  \psi_{1\downarrow} \\
+  \psi_{1\uparrow}^\dagger \\
   \psi_{1\downarrow}^\dagger\\
-  \psi_{2\uparrow} \\ 
-  \psi_{2\downarrow} \\ 
+  \psi_{2\uparrow} \\
+  \psi_{2\downarrow} \\
   \vdots
  \end{bmatrix}
 \end{align}
 \begin{align}
 \tilde{H}=
 \begin{pmatrix}
-\tilde{H} &  &  &  \\ 
-& \tilde{H} &  &  \\ 
-&  & \tilde{H} &  \\ 
+\hat{H} &  &  &  \\
+& \hat{H} &  &  \\
+&  & \hat{H} &  \\
 &  &  & \ddots
-\end{pmatrix} 
+\end{pmatrix}
 \end{align}
 \begin{align}
 \dfrac{\hbar^2}{2m}=t
@@ -119,7 +119,7 @@ $\rm(\hspace{.18em}iii\hspace{.18em})$\quad\Delta_0\dfrac{1}{k_F}(\partial x+i\p
 \partial_x \psi_i\rightarrow?\\
 \partial^2_x \psi_i\rightarrow?\\
 \end{align}
-刻み幅は１
+刻み幅は$１$
 \ding{"AF}$\tilde{H}$を対角化しましょう。数値計算\\
 ２(ii)の$\hat{\Delta}$を使う\\
 \end{document}
