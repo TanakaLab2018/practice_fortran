@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.14)  30 MAY 2018 11:46
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.14)  30 MAY 2018 16:38
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -238,7 +238,12 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 5.76599pt on input line 67.
 
-[2] [3] (./answer14_bry.aux) ) 
+[2]
+Overfull \hbox (115.03723pt too wide) in paragraph at lines 142--142
+[] 
+ []
+
+[3] (./answer14_bry.aux) ) 
 Here is how much of TeX's memory you used:
  1921 strings out of 493670
  22042 string characters out of 6151242
@@ -248,4 +253,4 @@ Here is how much of TeX's memory you used:
  934 hyphenation exceptions out of 8191
  27i,16n,26p,223b,303s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on answer14_bry.dvi (3 pages, 8132 bytes).
+Output written on answer14_bry.dvi (3 pages, 9172 bytes).
