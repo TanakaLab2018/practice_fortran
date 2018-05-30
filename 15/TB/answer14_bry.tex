@@ -120,26 +120,32 @@
 		これを、式(9)に代入して計算していく。　\\
 		このとき、
 		
-		\begin{align*}
+		\begin{align}
 			\vec{\Psi}_{k_y}^\dagger(x) e^{-ik_yy} \tilde{H}  \vec{\Psi}_{k_y'}(x) e^{ik_y'y} = 
-			e^{-ik_yy} \left[ \Psi_\uparrow^\ast \left( -\frac{\hbar^2}{2m}\nabla^2-\mu_F \right) +\Psi_\downarrow^\ast \Delta_0^\ast \right] \Psi_\uparrow e^{ik'_yy} \\
-			+e^{-ik_yy} \left[ \Psi_\downarrow^\ast \left( -\frac{\hbar^2}{2m}\nabla^2-\mu_F \right) -\Psi_\uparrow^\ast \Delta_0^\ast \right] \Psi_\downarrow e^{ik'_yy} \\
-			+ e^{-ik_yy} \left[ -\Psi_\downarrow^\ast\Delta_0 +\Psi_\uparrow^\ast \left( \frac{\hbar^2}{2m}\nabla^2+\mu_F \right) \right] \Psi_\uparrow e^{ik'_yy} \\
+			e^{-ik_yy} \left[ \Psi_\uparrow^\ast \left( -\frac{\hbar^2}{2m}\nabla^2-\mu_F \right) +\Psi_\downarrow^\ast \Delta_0^\ast \right] \Psi_\uparrow e^{ik'_yy} \nonumber\\
+			+e^{-ik_yy} \left[ \Psi_\downarrow^\ast \left( -\frac{\hbar^2}{2m}\nabla^2-\mu_F \right) -\Psi_\uparrow^\ast \Delta_0^\ast \right] \Psi_\downarrow e^{ik'_yy} \nonumber\\
+			+ e^{-ik_yy} \left[ -\Psi_\downarrow^\ast\Delta_0 +\Psi_\uparrow^\ast \left( \frac{\hbar^2}{2m}\nabla^2+\mu_F \right) \right] \Psi_\uparrow e^{ik'_yy} \nonumber\\
 			+e^{-ik_yy} \left[ \Psi_\uparrow^\ast\Delta_0 +\Psi_\downarrow^\ast \left( \frac{\hbar^2}{2m}\nabla^2+\mu_F \right) \right] \Psi_\downarrow e^{ik'_yy}
-		\end{align*}
+		\end{align}
 		
 		よって、式(1)は、
 		
-		\begin{align*}
+		\begin{align}
 			\mathcal{H}= \frac{1}{L_y}\int dx \sum_{k_y}
-			\left[ \Psi_\uparrow^\ast \left( -\frac{\hbar^2k_y^2}{2m}\nabla^2-\mu_F \right)\Psi_\uparrow
+			\left[ \Psi_\uparrow^\ast \left( -\frac{\hbar^2k_y^2}{2m}-\mu_F \right)\Psi_\uparrow
 			+\Psi_\uparrow^\ast \left( \frac{\partial^2}{\partial x^2}\right)\Psi_\uparrow
-			+\Psi_\downarrow^\ast \Delta_0^\ast \Psi_\uparrow 
-			\Psi_\downarrow^\ast \left( -\frac{\hbar^2k_y^2}{2m}\nabla^2-\mu_F \right)\Psi_\downarrow
+			+\Psi_\downarrow^\ast \Delta_0^\ast \Psi_\uparrow \right. \nonumber \\ \left.+
+			\Psi_\downarrow^\ast \left( -\frac{\hbar^2k_y^2}{2m}-\mu_F \right)\Psi_\downarrow
 			+\Psi_\downarrow^\ast \left( \frac{\partial^2}{\partial x^2} \right) \Psi_\downarrow
-			+\Psi_\uparrow^\ast \Delta_0^\ast \Psi_\downarrow ...
+			-\Psi_\uparrow^\ast \Delta_0^\ast \Psi_\downarrow \cdots
 			\right] 
-		\end{align*}
+		\end{align}
 		
+		\subsection{差分近似をしよう}
+		刻み幅を1として、差分近似をする。微小変化$h$周りにマクロリン展開を行うと、
+		
+		\begin{align}
+			\Psi\left(x+h\right)=\Psi\left(x\right)+h
+		\end{align}
 		
 \end{document}
