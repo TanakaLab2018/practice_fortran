@@ -13,6 +13,7 @@
 
 		\begin{align}
 			\mathcal{H}=\int \vec{\Psi}^\dagger \tilde{H}\vec{\Psi}dr
+			\label{hamil0}
 		\end{align}
 
 		\begin{align}
@@ -54,6 +55,7 @@
 
 		\begin{align}
 			\vec{\Psi}=\frac{1}{\sqrt{L_y}}\sum_{k_y} \vec{\Psi}_{k_y}(x) e^{ik_yy}
+			\label{fourier}
 		\end{align}
 
 		\begin{figure}[H]
@@ -65,10 +67,11 @@
 
 	\section{問題}
 		\subsection{ハミルトニアン $\mathcal{H}$ をフーリエ変換せよ}
-		式(1)に式(8)を代入して計算していく。
+		式\eqref{hamil0}に式\eqref{fourier}を代入して計算していく。
 		
 		\begin{align}
 			\mathcal{H}=\int \int \left( \frac{1}{\sqrt{L_y}}\sum_{k_y} \vec{\Psi}^\dagger _{k_y}(x) e^{-ik_yy} \right) \tilde{H} \left( \frac{1}{\sqrt{L_y}}\sum_{k_y'} \vec{\Psi}_{k_y'}(x) e^{ik_y'y} \right) dxdy
+			\label{hamil1}
 		\end{align}
 		
 		ここで
@@ -78,27 +81,18 @@
 			\begin{bmatrix}
 				1 & 0 \\ 
 				0 & 1
-			\end{bmatrix}
-		\end{align}
-		
-		\begin{align}
+			\end{bmatrix},
 			\hat{\sigma}_1=
 			\begin{bmatrix}
 				0 & 1 \\ 
 				1 & 0
-			\end{bmatrix}
-		\end{align}
-		
-		\begin{align}
+			\end{bmatrix},
 			\hat{\sigma}_2=
 			\begin{bmatrix}
 				0 & -i \\ 
 				i & 0
-			\end{bmatrix}
-		\end{align}
-		
-		\begin{align}
-			\hat{\sigma}_0=
+			\end{bmatrix} ,
+			\hat{\sigma}_3=
 			\begin{bmatrix}
 				1 & 0 \\ 
 				0 & -1
@@ -117,7 +111,7 @@
 			\end{bmatrix} 
 		\end{align}
 		
-		これを、式(9)に代入して計算していく。　\\
+		これを、式\eqref{hamil1}に代入して計算していく。　\\
 		このとき、
 		
 		\begin{align}
@@ -128,7 +122,7 @@
 			+e^{-ik_yy} \left[ \Psi_\uparrow^\ast\Delta_0 +\Psi_\downarrow^\ast \left( \frac{\hbar^2}{2m}\nabla^2+\mu_F \right) \right] \Psi_\downarrow e^{ik'_yy}
 		\end{align}
 		
-		よって、式(1)は、
+		よって、式\eqref{hamil1}は、
 		
 		\begin{align}
 			\mathcal{H}= \frac{1}{L_y}\int dx \sum_{k_y}
@@ -139,20 +133,23 @@
 			+\Psi_\downarrow^\ast \left( \frac{\partial^2}{\partial x^2} \right) \Psi_\downarrow
 			-\Psi_\uparrow^\ast \Delta_0^\ast \Psi_\downarrow \cdots
 			\right] 
+			\label{hamil2}
 		\end{align}
 		
 		\subsection{差分近似をしよう}
-		刻み幅を1として、差分近似をする。微小変化$h$周りにマクロリン展開を行うと、
+		刻み幅を1として、差分近似をする。微小変化$h$周りにマクローリン展開を行うと、
 		
 		\begin{align}
 			\Psi\left(x+h\right)=\Psi\left(x\right)+h\frac{\partial}{\partial x}\Psi\left(x\right)+\frac{h^2}{2!}\frac{\partial^2}{\partial x^2}\Psi\left(x\right)
+			\label{macro+}
 		\end{align}
 		
 		\begin{align}
 			\Psi\left(x-h\right)=\Psi\left(x\right)-h\frac{\partial}{\partial x}\Psi\left(x\right)+\frac{h^2}{2!}\frac{\partial^2}{\partial x^2}\Psi\left(x\right)
+			\label{macro-}
 		\end{align}
 		
-		よって、差分近似は式(17),式(18)の方程式で求めることができ、刻み幅$h=1$とすると、
+		よって、差分近似は式\eqref{macro+},式\eqref{macro-}の方程式で求めることができ、刻み幅$h=1$とすると、
 		
 		\begin{align}
 			\frac{\partial}{\partial x}\Psi\left(x\right)=
@@ -162,8 +159,24 @@
 		\begin{align}
 			\frac{\partial^2}{\partial x^2}\Psi\left(x\right)=
 			\Psi\left(x+1\right)-2\Psi\left(x\right)+\Psi\left(x-1\right)
+			\label{macro2}
 		\end{align}
 		
 		\subsection{xを離散化せよ}
+		式\eqref{macro2}を式\eqref{hamil2}に代入して、行列で表す。このとき、離散化した波動関数を以下の式に定義する。
+		
+		\begin{align}
+			\vec{\Psi}=
+			\begin{bmatrix}
+				\Psi_{1\uparrow} \\
+				\Psi_{1\downarrow} \\
+				\Psi_{1\uparrow}^\dagger \\
+				\Psi_{1\downarrow}^\dagger \\
+				\Psi_{2\uparrow} \\
+				\cdot \\
+				\cdot
+			\end{bmatrix},
+			\Psi_{n\pm 1\uparrow}=\Psi_{n\uparrow}\left(x\pm 1\right)
+		\end{align}
 		
 \end{document}
