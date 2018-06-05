@@ -118,8 +118,8 @@
 			\vec{\Psi}_{k_y}^\dagger(x) e^{-ik_yy} \tilde{H}  \vec{\Psi}_{k_y'}(x) e^{ik_y'y} =
 			e^{-ik_yy} \left[ \Psi_\uparrow^\ast \left( -\frac{\hbar^2}{2m}\nabla^2-\mu_F \right) +\Psi_\downarrow^\ast \Delta_0^\ast \right] \Psi_\uparrow e^{ik'_yy} \nonumber\\
 			+e^{-ik_yy} \left[ \Psi_\downarrow^\ast \left( -\frac{\hbar^2}{2m}\nabla^2-\mu_F \right) -\Psi_\uparrow^\ast \Delta_0^\ast \right] \Psi_\downarrow e^{ik'_yy} \nonumber\\
-			+ e^{-ik_yy} \left[ -\Psi_\downarrow^\ast\Delta_0 +\Psi_\uparrow^\ast \left( \frac{\hbar^2}{2m}\nabla^2+\mu_F \right) \right] \Psi_\uparrow e^{ik'_yy} \nonumber\\
-			+e^{-ik_yy} \left[ \Psi_\uparrow^\ast\Delta_0 +\Psi_\downarrow^\ast \left( \frac{\hbar^2}{2m}\nabla^2+\mu_F \right) \right] \Psi_\downarrow e^{ik'_yy}
+			+ e^{-ik_yy} \left[ -\Psi_\downarrow\Delta_0 +\Psi_\uparrow \left( \frac{\hbar^2}{2m}\nabla^2+\mu_F \right) \right] \Psi_\uparrow^\ast e^{ik'_yy} \nonumber\\
+			+e^{-ik_yy} \left[ \Psi_\uparrow\Delta_0 +\Psi_\downarrow \left( \frac{\hbar^2}{2m}\nabla^2+\mu_F \right) \right] \Psi_\downarrow^\ast e^{ik'_yy}
 		\end{align}
 
 		また、
@@ -128,6 +128,12 @@
 		\int \left( \sum_{k_y}\sum_{k'_y}\Psi^\ast(k) e^{-ik_yy}\Psi(k')e^{ik_y'y} \right) dy \nonumber \\
 		=\sum_{k_y}\sum_{k'_y}\Psi^\ast(k) \Psi(k')\delta \left( k-k' \right) \nonumber \\
 		=\sum_{k_y}\Psi^\ast(k)\Psi(k)
+		\end{align}
+		
+		\begin{align}
+			\nabla^2 \left[ \Psi_\uparrow e^{ik'_yy} \right]=
+			\frac{\hbar^2}{2m}
+			\left( -k_y^2\Psi e^{ik'_yy} - e^{ik'_yy}\frac{\partial^2}{\partial x^2}\Psi \right) 
 		\end{align}
 		
 
@@ -192,9 +198,9 @@
 
 		\begin{align}
 			\mathcal{H}= \frac{1}{L_y}\int dx \sum_{k_y}
-			\left[ \Psi_\uparrow^\ast \left( -\frac{\hbar^2k_y^2}{2m}-\mu_F \right)\Psi_\uparrow
-			+\Psi_\uparrow^\ast \left( \Psi\left(x+1\right)-2\Psi\left(x\right)+\Psi\left(x-1\right)
-			\right)+\Psi_\downarrow^\ast \Delta_0^\ast \Psi_\uparrow \cdots
+			\left[ \Psi^\ast_\uparrow \left( -\frac{\hbar^2k_y^2}{2m}-\mu_F \right)\Psi_\uparrow
+			+\Psi^\ast_\uparrow \left( \Psi_\uparrow\left(x+1\right)-2\Psi_\uparrow\left(x\right)+\Psi_\uparrow\left(x-1\right)
+			\right)+\Psi^\ast_\downarrow \Delta_0^\ast \Psi_\uparrow \cdots
 			\right]
 			\label{hamil3}
 		\end{align}
