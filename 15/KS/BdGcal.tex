@@ -1,0 +1,107 @@
+\documentclass{jarticle}
+\usepackage{amsmath,amssymb}
+\usepackage{amsmath}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{here}
+\usepackage{pifont}
+\usepackage[left=2cm, right=2cm]{geometry}
+\begin{document}
+	    \begin{align}
+	   \mathcal{H}=\int\vec{\Psi}^\dagger(x,y)\hat{H}\vec{\Psi}(x,y)dr
+	   \end{align}
+	   に
+	  \begin{align}
+	   \vec{\Psi}=\dfrac{1}{\sqrt{L_y}}\displaystyle\sum_{k_y}\vec{\Psi}_{k_y}(x)e^{ik_yy}
+	  \end{align}
+	  を代入していく。
+	  ここで
+	  \begin{align}
+	  \vec{\Psi}^\dagger=\dfrac{1}{\sqrt{L_y}}\displaystyle\sum_{k_y}\vec{\Psi}^\dagger_{k_y^{'}}(x)e^{-ik_y^{'}y}
+	  \end{align}
+	  であるから
+	   \begin{align}
+	  \mathcal{H}&=\int\dfrac{1}{\sqrt{L_y}}\displaystyle\sum_{k_y}\vec{\Psi}^\dagger_{k_y}(x)e^{-ik_yy}\hat{H}\dfrac{1}{\sqrt{L_y}}\displaystyle\sum_{k_y}\vec{\Psi}_{k_y}(x)e^{ik_yy}(x,y)dr\\&＝\dfrac{1}{L_y}\underline{\int\displaystyle\sum_{k_y}\vec{\Psi}^\dagger_{k_y}(x)e^{-ik_yy}\hat{H}\displaystyle\sum_{k_y}\vec{\Psi}_{k_y}(x)e^{ik_yy}(x,y)dr}
+	  \label{star}
+	  \end{align}
+	   \\となる。下線部について計算していく。
+  \begin{align}
+  \tilde{H}&=
+  \begin{pmatrix}
+  \hat{h}(r) & \hat{\Delta}(r) \\
+  -\hat{\Delta}^{*}(r) & -\hat{h}^{*}(r)
+  \end{pmatrix}
+   \\&=
+     \begin{pmatrix}
+   (-\dfrac{\hbar^2}{2m}\nabla^2-\mu_F)\hat{\sigma}_0 & \Delta_0(i\sigma_2) \\
+   -\Delta^{*}_0(\sigma^{*}_2) & (\dfrac{\hbar^2}{2m}\nabla^2+\mu_F)\hat{\sigma}^{*}_0
+   \end{pmatrix}
+  \end{align}
+  ここで
+  $\hat\sigma_0$、$\hat\sigma_2$はパウリ行列であり、
+  \begin{align}
+  \hat{\sigma_0}=
+  \begin{pmatrix}
+  1 & 0 \\
+  0 & 1
+  \end{pmatrix}
+  \end{align}
+  \begin{align}
+  \hat{\sigma_2}=
+  \begin{pmatrix}
+  0 & -i \\
+  i & 0
+  \end{pmatrix}
+  \end{align}
+  である。
+    \begin{align}
+  \tilde{H}&=
+       \begin{pmatrix}
+  (-\dfrac{\hbar^2}{2m}\nabla^2-\mu_F)\begin{pmatrix}
+  1 & 0 \\
+  0 & 1
+  \end{pmatrix} & \Delta_0i \begin{pmatrix}
+  0 & -i \\
+  i & 0
+  \end{pmatrix} \\
+  -\Delta^{*}_0\begin{pmatrix}
+  0 & -1 \\
+  1& 0
+  \end{pmatrix} & (\dfrac{\hbar^2}{2m}\nabla^2+\mu_F)\begin{pmatrix}
+  1 & 0 \\
+  0 & 1
+  \end{pmatrix}
+  \end{pmatrix}
+  \\&=\begin{pmatrix}
+  \nabla^{'} & 0 & 0 & \Delta_0 \\ 
+  0 & \nabla^{'} & -\Delta_0 & 0 \\ 
+  0 & -\Delta^{*}_0 & -\nabla^{'} & 0 \\ 
+  \Delta^{*}_0 & 0 & 0 & -\nabla^{'}
+  \end{pmatrix} 
+  \end{align}
+  ここで
+  \begin{align}
+  -\dfrac{\hbar^2}{2m}\nabla^2-\mu_F=\nabla^{'}
+  \end{align}
+  とした。式\ref{star}の下線部は
+  \begin{align}
+  \begin{split}
+  	\int&\displaystyle\sum_{k_y}\sum_{k_y^{'}}\begin{pmatrix}
+  	\psi_{\uparrow}^{\dagger}e^{-ik_y^{'}y} & \psi_{\downarrow}^{\dagger}e^{-ik_y^{'}y} & \psi_{\uparrow}e^{-ik_y^{'}y} & \psi_{\downarrow}e^{-ik_y^{'}y}
+  	\end{pmatrix} \begin{pmatrix}
+  	\nabla^{'} & 0 & 0 & \Delta_0 \\ 
+  	0 & \nabla^{'} & -\Delta_0 & 0 \\ 
+  	0 & -\Delta^{*}_0 & -\nabla^{'} & 0 \\ 
+  	\Delta^{*}_0 & 0 & 0 & -\nabla^{'}
+  	\end{pmatrix} \displaystyle\begin{bmatrix}
+  	\psi_{\uparrow}e^{ik_yy} \\
+  	\psi_{\downarrow}e^{ik_yy} \\
+  	\psi_{\uparrow}^{\dagger} e^{ik_yy}\\
+  	\psi_{\downarrow}^{\dagger}e^{ik_yy}
+  	\end{bmatrix}dxdy
+  	\\=&\int\displaystyle\sum_{k_y}\sum_{k_y^{'}}\psi_{\uparrow}^{\dagger}e^{-ik_y^{'}y}(\nabla^{'}\psi_{\uparrow}e^{ik_yy}+\Delta_0\psi_{\downarrow}^{\dagger}e^{ik_yy})
+  	                                                                 +\psi_{\downarrow}^{\dagger}e^{-ik_y^{'}y}(\nabla^{'}\psi_{\downarrow}e^{ik_yy}-\Delta_0\psi_{\uparrow}^{\dagger}e^{ik_yy})\\&
+  	                                                                +\psi_{\uparrow}e^{-ik_y^{'}y}(-\Delta^{*}_0\psi_{\downarrow}^{*}e^{ik_yy}-\nabla^{'}\psi_{\uparrow}^{*}e^{ik_yy})
+  	                                                                 +\psi_{\downarrow}e^{-ik_y^{'}y}(\Delta^{*}_0\psi_{\uparrow}^{*}e^{ik_yy}-\nabla^{'}\psi_{\downarrow}^{*}e^{ik_yy})
+  \end{split}	                                                                 
+\end{align}
+\end{document}
