@@ -5,6 +5,9 @@
 \usepackage{braket}
 \usepackage[dvipdfmx]{graphicx}
 \usepackage{here}
+\makeatletter
+\c@MaxMatrixCols=12
+\makeatother
 
 \begin{document}
 \part{BdGモデルハミルトニアンについて}
@@ -116,37 +119,37 @@
 
 		\begin{align}
 			\vec{\Psi}_{k_y}^\dagger(x) e^{-ik_yy} \tilde{H}  \vec{\Psi}_{k_y'}(x) e^{ik_y'y} =
-			e^{-ik_yy} \left[ \Psi_\uparrow^\ast \left( -\frac{\hbar^2}{2m}\nabla^2-\mu_F \right) +\Psi_\downarrow^\ast \Delta_0^\ast \right] \Psi_\uparrow e^{ik'_yy} \nonumber\\
-			+e^{-ik_yy} \left[ \Psi_\downarrow^\ast \left( -\frac{\hbar^2}{2m}\nabla^2-\mu_F \right) -\Psi_\uparrow^\ast \Delta_0^\ast \right] \Psi_\downarrow e^{ik'_yy} \nonumber\\
-			+ e^{-ik_yy} \left[ -\Psi_\downarrow\Delta_0 +\Psi_\uparrow \left( \frac{\hbar^2}{2m}\nabla^2+\mu_F \right) \right] \Psi_\uparrow^\ast e^{ik'_yy} \nonumber\\
-			+e^{-ik_yy} \left[ \Psi_\uparrow\Delta_0 +\Psi_\downarrow \left( \frac{\hbar^2}{2m}\nabla^2+\mu_F \right) \right] \Psi_\downarrow^\ast e^{ik'_yy}
+			e^{-ik_yy} \left[ \Psi_\uparrow^\dagger \left( -\frac{\hbar^2}{2m}\nabla^2-\mu_F \right) +\Psi_\downarrow^\dagger \Delta_0^\ast \right] \Psi_\uparrow e^{ik'_yy} \nonumber\\
+			+e^{-ik_yy} \left[ \Psi_\downarrow^\dagger \left( -\frac{\hbar^2}{2m}\nabla^2-\mu_F \right) -\Psi_\uparrow^\dagger \Delta_0^\ast \right] \Psi_\downarrow e^{ik'_yy} \nonumber\\
+			+ e^{-ik_yy} \left[ -\Psi_\downarrow\Delta_0 +\Psi_\uparrow \left( \frac{\hbar^2}{2m}\nabla^2+\mu_F \right) \right] \Psi_\uparrow^\dagger e^{ik'_yy} \nonumber\\
+			+e^{-ik_yy} \left[ \Psi_\uparrow\Delta_0 +\Psi_\downarrow \left( \frac{\hbar^2}{2m}\nabla^2+\mu_F \right) \right] \Psi_\downarrow^\dagger e^{ik'_yy}
 		\end{align}
 
 		また、
-		
+
 		\begin{align}
-		\int \left( \sum_{k_y}\sum_{k'_y}\Psi^\ast(k) e^{-ik_yy}\Psi(k')e^{ik_y'y} \right) dy \nonumber \\
-		=\sum_{k_y}\sum_{k'_y}\Psi^\ast(k) \Psi(k')\delta \left( k-k' \right) \nonumber \\
-		=\sum_{k_y}\Psi^\ast(k)\Psi(k)
+		\int \left( \sum_{k_y}\sum_{k'_y}\Psi^\dagger(k) e^{-ik_yy}\Psi(k')e^{ik_y'y} \right) dy \nonumber \\
+		=L_y\sum_{k_y}\sum_{k'_y}\Psi^\dagger(k) \Psi(k')\delta \left( k-k' \right) \nonumber \\
+		=L_y\sum_{k_y}\Psi^\dagger(k)\Psi(k)
 		\end{align}
-		
+
 		\begin{align}
 			\nabla^2 \left[ \Psi_\uparrow e^{ik'_yy} \right]=
 			\frac{\hbar^2}{2m}
-			\left( -k_y^2\Psi e^{ik'_yy} - e^{ik'_yy}\frac{\partial^2}{\partial x^2}\Psi \right) 
+			\left( -k_y^2\Psi e^{ik'_yy} + e^{ik'_yy}\frac{\partial^2}{\partial x^2}\Psi \right)
 		\end{align}
-		
+
 
 		から、式\eqref{hamil1}は、
 
 		\begin{align}
-			\mathcal{H}= \frac{1}{L_y}\int dx \sum_{k_y}
-			\left[ \Psi_\uparrow^\ast \left( -\frac{\hbar^2k_y^2}{2m}-\mu_F \right)\Psi_\uparrow
-			+\Psi_\uparrow^\ast \left(- \frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}\right)\Psi_\uparrow
-			+\Psi_\downarrow^\ast \Delta_0^\ast \Psi_\uparrow \right. \nonumber \\ \left.+
-			\Psi_\downarrow^\ast \left( -\frac{\hbar^2k_y^2}{2m}-\mu_F \right)\Psi_\downarrow
-			+\Psi_\downarrow^\ast \left(- \frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2} \right) \Psi_\downarrow
-			-\Psi_\uparrow^\ast \Delta_0^\ast \Psi_\downarrow \cdots
+			\mathcal{H}=\int dx \sum_{k_y}
+			\left[ \Psi_\uparrow^\dagger \left( \frac{\hbar^2k_y^2}{2m}-\mu_F \right)\Psi_\uparrow
+			+\Psi_\uparrow^\dagger \left(- \frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}\right)\Psi_\uparrow
+			+\Psi_\downarrow^\dagger \Delta_0^\ast \Psi_\uparrow \right. \nonumber \\ \left.+
+			\Psi_\downarrow^\dagger \left( \frac{\hbar^2k_y^2}{2m}-\mu_F \right)\Psi_\downarrow
+			+\Psi_\downarrow^\dagger \left(- \frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2} \right) \Psi_\downarrow
+			-\Psi_\uparrow^\dagger \Delta_0^\ast \Psi_\downarrow \cdots
 			\right]
 			\label{hamil2}
 		\end{align}
@@ -197,14 +200,69 @@
 		代入した式は、
 
 		\begin{align}
-			\mathcal{H}= \frac{1}{L_y}\int dx \sum_{k_y}
-			\left[ \Psi^\ast_\uparrow \left( -\frac{\hbar^2k_y^2}{2m}-\mu_F \right)\Psi_\uparrow
-			+\Psi^\ast_\uparrow \left( \Psi_\uparrow\left(x+1\right)-2\Psi_\uparrow\left(x\right)+\Psi_\uparrow\left(x-1\right)
-			\right)+\Psi^\ast_\downarrow \Delta_0^\ast \Psi_\uparrow \cdots
+			\mathcal{H}= \sum_{i=1}^N \sum_{k_y}
+			\left[ \Psi^\dagger_{i\uparrow} \left( \frac{\hbar^2k_y^2}{2m}-\mu_F \right)\Psi_{i\uparrow}
+			+\Psi^\dagger_{i\uparrow} \left( \Psi_{i+1\uparrow}\left(x\right)-2\Psi_{i\uparrow}\left(x\right)+\Psi_{i-1\uparrow}\left(x\right)
+			\right)+\Psi^\dagger_{i\downarrow} \Delta_0^\ast \Psi_{i\uparrow} \cdots
 			\right]
 			\label{hamil3}
 		\end{align}
 
+		$N=3$と置くとき、ハミルトニアンを2次形式で表すと、
 
+		\begin{align}
+			\mathcal{H}=
+			\begin{bmatrix}
+				\Psi_{1\uparrow}^\dagger \\
+				\Psi_{1\downarrow}^\dagger \\
+				\Psi_{1\uparrow} \\
+				\Psi_{1\downarrow} \\
+				\Psi_{2\uparrow}^\dagger \\
+				\Psi_{2\downarrow}^\dagger \\
+				\Psi_{2\uparrow} \\
+				\Psi_{2\downarrow} \\
+				\Psi_{3\uparrow}^\dagger \\
+				\Psi_{3\downarrow}^\dagger \\
+				\Psi_{3\uparrow} \\
+				\Psi_{3\downarrow}
+			\end{bmatrix}
+			^T
+			\begin{bmatrix}
+				\varepsilon_{k_y} & 0 & 0 & \Delta_0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+				0 & \varepsilon_{k_y} & -\Delta_0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 & 0 \\
+				0 & -\Delta_0^\ast & -\varepsilon_{k_y} & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 & 0 \\
+				\Delta_0^\ast & 0 & 0 & -\varepsilon_{k_y} & 0 & 0 & 0 & 1 & 0 & 0 & 0 & 0 \\
+				1 & 0 & 0 & 0 & \varepsilon_{k_y} & 0 & 0 & \Delta_0 & 1 & 0 & 0 & 0 \\
+				0 & 1 & 0 & 0 & 0 & \varepsilon_{k_y} & -\Delta_0 & 0 & 0 & 1 & 0 & 0 \\
+				0 & 0 & 1 & 0 & 0 & -\Delta_0^\ast & -\varepsilon_{k_y} & 0 & 0 & 0 & 1 & 0 \\
+				0 & 0 & 0 & 1 & \Delta_0^\ast & 0 & 0 & -\varepsilon_{k_y} & 0 & 0 & 0 & 1 \\
+				0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & \varepsilon_{k_y} & 0 & 0 & \Delta_0 \\
+				0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 & \varepsilon_{k_y} & -\Delta_0 & 0 \\
+				0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & -\Delta_0^\ast & -\varepsilon_{k_y} & 0 \\
+				0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & -\Delta_0^\ast & 0 & 0 & -\varepsilon_{k_y}
+			\end{bmatrix}
+			\begin{bmatrix}
+				\Psi_{1\uparrow} \\
+				\Psi_{1\downarrow} \\
+				\Psi_{1\uparrow}^\dagger \\
+				\Psi_{1\downarrow}^\dagger \\
+				\Psi_{2\uparrow} \\
+				\Psi_{2\downarrow} \\
+				\Psi_{2\uparrow}^\dagger \\
+				\Psi_{2\downarrow}^\dagger \\
+				\Psi_{3\uparrow} \\
+				\Psi_{3\downarrow} \\
+				\Psi_{3\uparrow}^\dagger \\
+				\Psi_{3\downarrow}^\dagger \\
+			\end{bmatrix}
+		\end{align}
+
+		ここで
+
+		\begin{align}
+			\varepsilon_{k_y}=\frac{\hbar^2k_y^2}{2m}-\mu_F-2
+		\end{align}
+
+		とおく
 
 \end{document}
