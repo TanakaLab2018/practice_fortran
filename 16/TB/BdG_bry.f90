@@ -1,7 +1,7 @@
 program bussei
   !数の定義
   implicit none
-  integer, parameter :: n=4*5
+  integer, parameter :: n=4*5,m=5
   integer, parameter :: lda=n,ldvl=n,ldvr=n,lwork=10*n
   integer info
   integer i
@@ -10,15 +10,27 @@ program bussei
   !行列Aの出力
   A=0.0
   write(*,*) "Ax=λx call x,λ"
-  do i=1,4
-    A(i,4*i-3)=2.0
+  do i=1,m
+    A(4*i-3,4*i-3)=-5.0-2.0
+    A(4*i-2,4*i-2)=-5.0-2.0
   end do
-  do i=1,3
+  do i=1,m
+    A(4*i-1,4*i-1)=5.0+2.0
+    A(4*i,4*i)=5.0+2.0
+  end do
+  do i=1,m-1
     A(i,4*i+1)=1.0
+    A(4*i+1,i)=1.0
   end do
-  do i=1,3
-    A(i+1,4*i-3)=1.0
+  do i=1,m
+    A(4*i-3,4*i)=3.0
+    A(4*i,4*i-3)=3.0
   end do
+  do i=1,m
+    A(4*i-2,4*i-1)=-3.0
+    A(4*i-2,4*i-1)=-3.0
+  end do
+
 
   !固有値計算
   call dgeev('V','N',n,a,lda,wr,wi,vl,ldvl,vr, ldvr, work, lwork, info )
