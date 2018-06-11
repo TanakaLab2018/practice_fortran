@@ -169,9 +169,24 @@ $\nabla^2$の計算を行う。
 \begin{align}
 \varepsilon_{k_y}=\dfrac{\hbar^2}{2m}(k_y^2+2)-\mu
 \end{align}
-とすると全体の$\mathcal{H}$は行列で書けて
+とすると全体の$\mathcal{H}$は行列で書けて三つ分書くと
 \begin{align}
 \mathcal{H}=
+\begin{bmatrix}
+\psi_{1\uparrow}^\dagger \\ 
+\psi_{1\downarrow}^\dagger \\ 
+\psi_{1\uparrow} \\ 
+\psi_{1\downarrow} \\ 
+\psi_{2\uparrow}^\dagger \\ 
+\psi_{2\downarrow}^\dagger \\ 
+\psi_{2\uparrow} \\ 
+\psi_{2\downarrow} \\ 
+\psi_{3\uparrow}^\dagger \\ 
+\psi_{3\downarrow}^\dagger \\ 
+\psi_{3\uparrow} \\ 
+\psi_{3\downarrow}
+\end{bmatrix} 
+^T
  \begin{bmatrix}
 	\varepsilon_{k_y} & 0 & 0 & \Delta_0 & -\Lambda & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
 	0 & \varepsilon_{k_y} & -\Delta_0 & 0 & 0 & -\Lambda & 0 & 0 & 0 & 0 & 0 & 0 \\ 
@@ -186,5 +201,20 @@ $\nabla^2$の計算を行う。
 	0 & 0 & 0 & 0 & 0 & 0 & \Lambda & 0 & 0 & -\Delta_0^{*} & \varepsilon_{k_y} & 0 \\ 
 	0 & 0 & 0 & 0 & 0 & 0 & 0 & \Lambda & \Delta_0^{*} & 0 & 0 & -\varepsilon_{k_y}
  \end{bmatrix} 
+ \begin{bmatrix}
+ \psi_{1\uparrow} \\ 
+ \psi_{1\downarrow} \\ 
+ \psi_{1\uparrow}^\dagger \\ 
+ \psi_{1\downarrow}^\dagger \\ 
+ \psi_{2\uparrow} \\ 
+ \psi_{2\downarrow} \\ 
+ \psi_{2\uparrow}^\dagger \\ 
+ \psi_{2\downarrow}^\dagger \\ 
+ \psi_{3\uparrow} \\ 
+ \psi_{3\downarrow} \\ 
+ \psi_{3\uparrow}^\dagger \\ 
+ \psi_{3\downarrow}^\dagger
+ \end{bmatrix} 
 \end{align}
+となる。ここから$\mathcal{H}$を数値計算で対角化していく。
 \end{document}
