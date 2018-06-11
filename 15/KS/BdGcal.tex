@@ -5,6 +5,7 @@
 \usepackage{here}
 \usepackage{pifont}
 \usepackage[left=2cm, right=2cm]{geometry}
+\setcounter{MaxMatrixCols}{20}
 \begin{document}
 	    \begin{align}
 	   \mathcal{H}=\int\vec{\Psi}^\dagger(x,y)\hat{H}\vec{\Psi}(x,y)dr
@@ -144,8 +145,8 @@ $\nabla^2$の計算を行う。
 \end{align}
 と離散化する。すると$\mathcal{H}$は
 \begin{align}
-\mathcal{H}&=\sum_{i=1}^{2L_y+1}\displaystyle\sum_{k_y}\Big[\psi_{i\uparrow}^{\dagger}\big\{-\dfrac{\hbar^2}{2m}(\dfrac{\partial^{2}}{\partial x^2}-k^{2}_y)-\mu_F\big\}\psi_{i\uparrow}+\psi_{i\uparrow}^{\dagger}\Delta^{*}_0\psi_{i\downarrow}^{\dagger}\cdots\Big]dx\\
-&=\sum_{i=1}^{2L_y+1}\displaystyle\sum_{k_y}\Big[-\dfrac{\hbar^2}{2m}(\psi_{i\uparrow}^{\dagger}\dfrac{\partial^{2}}{\partial x^2}\psi_{i\uparrow})+(\dfrac{\hbar^2k^{2}_y}{2m}-\mu_F)\psi_{i\uparrow}^{\dagger}\psi_{i\uparrow}+\psi_{i\uparrow}^{\dagger}\Delta^{*}_0\psi_{i\downarrow}^{\dagger}\cdots\Big]dx
+\mathcal{H}&=\sum_{i=1}^{L_y+1}\displaystyle\sum_{k_y}\Big[\psi_{i\uparrow}^{\dagger}\big\{-\dfrac{\hbar^2}{2m}(\dfrac{\partial^{2}}{\partial x^2}-k^{2}_y)-\mu_F\big\}\psi_{i\uparrow}+\psi_{i\uparrow}^{\dagger}\Delta^{*}_0\psi_{i\downarrow}^{\dagger}\cdots\Big]dx\\
+&=\sum_{i=1}^{L_y+1}\displaystyle\sum_{k_y}\Big[-\dfrac{\hbar^2}{2m}(\psi_{i\uparrow}^{\dagger}\dfrac{\partial^{2}}{\partial x^2}\psi_{i\uparrow})+(\dfrac{\hbar^2k^{2}_y}{2m}-\mu_F)\psi_{i\uparrow}^{\dagger}\psi_{i\uparrow}+\psi_{i\uparrow}^{\dagger}\Delta^{*}_0\psi_{i\downarrow}^{\dagger}\cdots\Big]dx
 \end{align}
 ここで$\dfrac{\partial^{2}}{\partial x^2}\psi_{i\uparrow}$を差分近似する。関数を次のように近似する。
 \begin{align}
@@ -154,5 +155,36 @@ $\nabla^2$の計算を行う。
 刻み幅$1$で$x$を$i$で書けば
 \begin{align}
 \dfrac{\partial^{2}}{\partial x^2}f(i)=f(i+1)-2f(i)+f(i-1)
+\end{align}
+これより$\mathcal{H}$は
+\begin{align}
+\mathcal{H}
+=\sum_{i=1}^{L_y+1}\displaystyle\sum_{k_y}\Big[\big\{\dfrac{\hbar^2}{2m}(k_y^2+2)-\mu\big\}\psi_{i\uparrow}^{\dagger}\psi_{i\uparrow}-\Lambda\psi_{i\uparrow}^{\dagger}\psi_{i+1\uparrow}-\Lambda\psi_{i\uparrow}^{\dagger}\psi_{i-1\uparrow}+\psi_{i\uparrow}^{\dagger}\Delta^{*}_0\psi_{i\downarrow}^{\dagger}\cdots\Big]dx
+\end{align}
+ここで
+\begin{align}
+\Lambda=\dfrac{\hbar^2}{2m}
+\end{align}
+とおいた。
+\begin{align}
+\varepsilon_{k_y}=\dfrac{\hbar^2}{2m}(k_y^2+2)-\mu
+\end{align}
+とすると全体の$\mathcal{H}$は行列で書けて
+\begin{align}
+\mathcal{H}=
+ \begin{bmatrix}
+	\varepsilon_{k_y} & 0 & 0 & \Delta_0 & -\Lambda & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+	0 & \varepsilon_{k_y} & -\Delta_0 & 0 & 0 & -\Lambda & 0 & 0 & 0 & 0 & 0 & 0 \\ 
+	0 & -\Delta_0^{*} & -\varepsilon_{k_y} & 0 & 0 & 0 & \Lambda & 0 & 0 & 0 & 0 & 0 \\ 
+	\Delta_0^{*} & 0 & 0 & -\varepsilon_{k_y} & 0 & 0 & 0 & \Lambda & 0 & 0 & 0 & 0 \\ 
+	-\Lambda & 0 & 0 & 0 & \varepsilon_{k_y} & 0 & 0 & \Delta_0 & -\Lambda & 0 & 0 & 0 \\ 
+	0 & -\Lambda & 0 & 0 & 0 & \varepsilon_{k_y} & -\Delta_0 & 0 & 0 & -\Lambda & 0 & 0 \\ 
+	0 & 0 & \Lambda & 0 & 0 & -\Delta_0^{*} & -\varepsilon_{k_y} & 0 & 0 & 0 & \Lambda & 0 \\ 
+	0 & 0 & 0 & \Lambda & \Delta_0^{*} & 0 & 0 & -\varepsilon_{k_y} & 0 & 0 & 0 & \Lambda \\ 
+	0 & 0 & 0 & 0 & -\Lambda & 0 & 0 & 0 & \varepsilon_{k_y} & 0 & 0 & \Delta_0 \\ 
+	0 & 0 & 0 & 0 & 0 & -\Lambda & 0 & 0 & 0 & \varepsilon_{k_y} & -\Delta_0 & 0 \\ 
+	0 & 0 & 0 & 0 & 0 & 0 & \Lambda & 0 & 0 & -\Delta_0^{*} & \varepsilon_{k_y} & 0 \\ 
+	0 & 0 & 0 & 0 & 0 & 0 & 0 & \Lambda & \Delta_0^{*} & 0 & 0 & -\varepsilon_{k_y}
+ \end{bmatrix} 
 \end{align}
 \end{document}

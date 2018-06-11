@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2018.4.18)  8 JUN 2018 17:11
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2018.4.18)  11 JUN 2018 12:04
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -177,22 +177,22 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 (./BdGcal.aux)
 \openout1 = `BdGcal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 8.
-LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: dvips
@@ -228,25 +228,25 @@ LaTeX Font Info:    ... okay on input line 8.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 9.
+LaTeX Font Info:    Try loading font information for U+msa on input line 10.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 9.
+LaTeX Font Info:    Try loading font information for U+msb on input line 10.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 ] [2]
-[3] (./BdGcal.aux) ) 
+[3] [4] (./BdGcal.aux) ) 
 Here is how much of TeX's memory you used:
  2131 strings out of 493653
  26854 string characters out of 6148874
- 115015 words of memory out of 5000000
+ 120015 words of memory out of 5000000
  5696 multiletter control sequences out of 15000+600000
  9900 words of font info for 41 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  27i,22n,26p,370b,236s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on BdGcal.dvi (3 pages, 14188 bytes).
+Output written on BdGcal.dvi (4 pages, 17304 bytes).
