@@ -21,7 +21,7 @@
 	  \end{align}
 	  であるから
 	   \begin{align}
-	  \mathcal{H}&=\int\dfrac{1}{\sqrt{L_y}}\displaystyle\sum_{k_y^{'}}\vec{\Psi}^\dagger_{k_y^{'}}(x)e^{-ik_y^{'}y}\hat{H}\dfrac{1}{\sqrt{L_y}}\displaystyle\sum_{k_y}\vec{\Psi}_{k_y}(x)e^{ik_yy}(x,y)dr\\&＝\dfrac{1}{L_y}\underline{\int\displaystyle\sum_{k_y^{'}}\vec{\Psi}^\dagger_{k_y^{'}}(x)e^{-ik_y^{'}y}\hat{H}\displaystyle\sum_{k_y}\vec{\Psi}_{k_y}(x)e^{ik_yy}(x,y)dr}\\
+	  \mathcal{H}&=\int\dfrac{1}{\sqrt{L_y}}\displaystyle\sum_{k_y^{'}}\vec{\Psi}^\dagger_{k_y}(x)e^{-ik_yy}\hat{H}\dfrac{1}{\sqrt{L_y}}\displaystyle\sum_{k_y}\vec{\Psi}_{k_y}(x)e^{ik_yy}(x,y)dr\\&＝\dfrac{1}{L_y}\underline{\int\displaystyle\sum_{k_y^{'}}\vec{\Psi}^\dagger_{k_y}(x)e^{-ik_yy}\hat{H}\displaystyle\sum_{k_y}\vec{\Psi}_{k_y}(x)e^{ik_yy}(x,y)dr}\\
 	  \label{star}
 	  \end{align}
 	   \\となる。下線部について計算していく。
@@ -112,9 +112,9 @@
 \end{align}
 $\nabla^2$の計算を行う。
 \begin{align}
-\nabla^{2}\psi_{\uparrow}e^{ik_yy}&=(\partial_x^2+\partial_y^2)\psi_{\uparrow}e^{ik_yy}\\
-                                                      &=\partial_x^2\psi_{\uparrow}e^{ik_yy}+\partial_y^2\psi_{\uparrow}e^{ik_yy}\\
-                                                    &=e^{ik_yy}\partial_x^2\psi_{\uparrow}-k^{2}_ye^{ik_yy}\psi_{\uparrow}
+\nabla^{2}\psi_{\uparrow}e^{ik_yy}&=(\partial x^2+\partial y^2)\psi_{\uparrow}e^{ik_yy}\\
+                                                      &=\partial x^2\psi_{\uparrow}e^{ik_yy}+\partial y^2\psi_{\uparrow}e^{ik_yy}\\
+                                                    &=e^{ik_yy}\partial x^2\psi_{\uparrow}-k^{2}_ye^{ik_yy}\psi_{\uparrow}
 \end{align}
 であるから
 \begin{align}
