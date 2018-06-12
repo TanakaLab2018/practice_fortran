@@ -12,8 +12,8 @@ program bussei
 
   !行列Aの出力
   open(17,file='date1.txt',status='replace')
-  !do j=1,m
-    ky=0.0d0!-pi+2.0d0*pi/dble(m-1)*dble(j-1)
+  do j=1,m
+    ky=-pi+2.0d0*pi/dble(m-1)*dble(j-1)
 
   A=0.0d0
   do i=1,m
@@ -24,7 +24,7 @@ program bussei
     A(4*(i-1)+1,4*(i-1)+4)=delta
     A(4*(i-1)+2,4*(i-1)+3)=-delta
     A(4*(i-1)+3,4*(i-1)+2)=-delta
-    A(4*(i-1)+4,4*(i-1)+2)=delta
+    A(4*(i-1)+4,4*(i-1)+1)=delta
   end do
   do i=1,m-1
     A(4*(i-1)+1,4*i+1)=-Lambda
@@ -45,7 +45,7 @@ program bussei
   do i=1,n
     write(17,*) ky,wr(i)
   end do
-  !end do
+  end do
   close(17)
 
   write(*,*) "example completed."
