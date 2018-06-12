@@ -43,7 +43,7 @@ program bussei
 
   !固有値、固有ベクトルの出力
   do i=1,n
-    write(17,*) ky,wi(i)
+    write(17,*) ky,wr(i)
   end do
   !end do
   close(17)
