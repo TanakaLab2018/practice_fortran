@@ -9,7 +9,6 @@ program bussei
 
   !行列Aの出力
   A=0.0
-  write(*,*) "Ax=λx call x,λ"
   do i=1,m
     A(4*i-3,4*i-3)=-5.0-2.0
     A(4*i-2,4*i-2)=-5.0-2.0
@@ -37,12 +36,7 @@ program bussei
 
   !固有値、固有ベクトルの出力
   open(17,file='date1.txt',status='replace')
-  write(17,*) "eigenvalue λ real"
   call force(wr,n,1)
-  write(17,*) "eigenvalue λ imagin"
-  call force(wi,n,1)
-  write(17,*) "eigenvalue vector x imagin"
-  call force(vl,n,n)
   close(17)
 
   write(*,*) "example completed."
