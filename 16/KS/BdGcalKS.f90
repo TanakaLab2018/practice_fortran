@@ -23,7 +23,7 @@ do i=1,n
   H(4*(i-1)+1,4*(i-1)+4)=delta
   H(4*(i-1)+2,4*(i-1)+3)=-delta
   H(4*(i-1)+3,4*(i-1)+2)=-conjg(delta)
-  H(4*(i-1)+4,4*(i-1)+2)=conjg(delta)
+  H(4*(i-1)+4,4*(i-1)+1)=conjg(delta)
 end do
 do i=1,n-1
   H(4*(i-1)+1,4*i+1)=-Lambda
