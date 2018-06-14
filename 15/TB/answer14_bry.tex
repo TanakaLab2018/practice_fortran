@@ -228,16 +228,16 @@
 			\end{bmatrix}
 			^T
 			\begin{bmatrix}
-				\varepsilon_{k_y} & 0 & 0 & \Delta_0 & \varLambda & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
-				0 & \varepsilon_{k_y} & -\Delta_0 & 0 & 0 & \varLambda & 0 & 0 & 0 & 0 & 0 & 0 \\
+				\varepsilon_{k_y} & 0 & 0 & \Delta_0 & -\varLambda & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+				0 & \varepsilon_{k_y} & -\Delta_0 & 0 & 0 & -\varLambda & 0 & 0 & 0 & 0 & 0 & 0 \\
 				0 & -\Delta_0^\ast & -\varepsilon_{k_y} & 0 & 0 & 0 & \varLambda & 0 & 0 & 0 & 0 & 0 \\
 				\Delta_0^\ast & 0 & 0 & -\varepsilon_{k_y} & 0 & 0 & 0 & \varLambda & 0 & 0 & 0 & 0 \\
-				\varLambda & 0 & 0 & 0 & \varepsilon_{k_y} & 0 & 0 & \Delta_0 & \varLambda & 0 & 0 & 0 \\
-				0 & \varLambda & 0 & 0 & 0 & \varepsilon_{k_y} & -\Delta_0 & 0 & 0 & \varLambda & 0 & 0 \\
+				-\varLambda & 0 & 0 & 0 & \varepsilon_{k_y} & 0 & 0 & \Delta_0 & -\varLambda & 0 & 0 & 0 \\
+				0 & -\varLambda & 0 & 0 & 0 & \varepsilon_{k_y} & -\Delta_0 & 0 & 0 & -\varLambda & 0 & 0 \\
 				0 & 0 & \varLambda & 0 & 0 & -\Delta_0^\ast & -\varepsilon_{k_y} & 0 & 0 & 0 & \varLambda & 0 \\
 				0 & 0 & 0 & \varLambda & \Delta_0^\ast & 0 & 0 & -\varepsilon_{k_y} & 0 & 0 & 0 & \varLambda \\
-				0 & 0 & 0 & 0 & \varLambda & 0 & 0 & 0 & \varepsilon_{k_y} & 0 & 0 & \Delta_0 \\
-				0 & 0 & 0 & 0 & 0 & \varLambda & 0 & 0 & 0 & \varepsilon_{k_y} & -\Delta_0 & 0 \\
+				0 & 0 & 0 & 0 & -\varLambda & 0 & 0 & 0 & \varepsilon_{k_y} & 0 & 0 & \Delta_0 \\
+				0 & 0 & 0 & 0 & 0 & -\varLambda & 0 & 0 & 0 & \varepsilon_{k_y} & -\Delta_0 & 0 \\
 				0 & 0 & 0 & 0 & 0 & 0 & \varLambda & 0 & 0 & -\Delta_0^\ast & -\varepsilon_{k_y} & 0 \\
 				0 & 0 & 0 & 0 & 0 & 0 & 0 & \varLambda & -\Delta_0^\ast & 0 & 0 & -\varepsilon_{k_y}
 			\end{bmatrix}
@@ -260,9 +260,9 @@
 		ここで
 
 		\begin{align}
-			\varepsilon_{k_y}=\frac{\hbar^2k_y^2}{2m}-\mu_F-2
+			\varepsilon_{k_y}=\frac{\hbar^2}{2m}(k_y^2+2)-\mu_F
 		\end{align}
-		
+
 		\begin{align}
 			\varLambda=\frac{\hbar^2}{2m}
 		\end{align}
