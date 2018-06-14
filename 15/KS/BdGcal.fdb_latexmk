@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1528978291 "BdGcal.dvi" "BdGcal.pdf" "BdGcal" 1528978292
+["dvipdf"] 1528978291 "BdGcal.dvi" "BdGcal.pdf" "BdGcal" 1528978561
   "BdGcal.dvi" 1528978291 19172 3ef1d80701824c0bd7fe5887f1f24958 "latex"
   (generated)
   "BdGcal.pdf"
-["latex"] 1528978291 "c:/Users/ryoi0/Documents/atom/practice_fortran/15/KS/BdGcal.tex" "BdGcal.dvi" "BdGcal" 1528978292
+["latex"] 1528978291 "c:/Users/ryoi0/Documents/atom/practice_fortran/15/KS/BdGcal.tex" "BdGcal.dvi" "BdGcal" 1528978561
   "BdGcal.aux" 1528978291 32 7d68815aea8082a62f74f2b7b7b931b8 ""
   "BdGcal.tex" 1528977940 10269 0f94589b3e3949405b10b45a72893382 ""
   "c:/Users/ryoi0/Documents/atom/practice_fortran/15/KS/BdGcal.tex" 1528977940 10269 0f94589b3e3949405b10b45a72893382 ""
@@ -46,6 +46,6 @@
   "c:/texlive/2016/texmf-var/web2c/eptex/platex.fmt" 1491958382 4057270 153f25c5e5e2941b55ddb659afbc7a9c ""
   "c:/texlive/2016/texmf.cnf" 1491958263 673 4ae7b2f49cee444c5343a45b5d0f169c ""
   (generated)
-  "BdGcal.dvi"
-  "BdGcal.log"
   "BdGcal.aux"
+  "BdGcal.log"
+  "BdGcal.dvi"
