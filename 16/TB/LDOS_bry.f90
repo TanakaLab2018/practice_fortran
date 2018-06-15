@@ -19,14 +19,14 @@ program bussei
     E=-3.0d0+t
   A=0.0d0
   do i=1,m
-    A(4*(i-1)+1,4*(i-1)+1)=E+ci*0.000010d0-Lambda*(ky*ky+2)-mu
-    A(4*(i-1)+2,4*(i-1)+2)=E+ci*0.000010d0-Lambda*(ky*ky+2)-mu
-    A(4*(i-1)+3,4*(i-1)+3)=E+ci*0.000010d0+Lambda*(ky*ky+2)+mu
-    A(4*(i-1)+4,4*(i-1)+4)=E+ci*0.000010d0+Lambda*(ky*ky+2)+mu
-    A(4*(i-1)+1,4*(i-1)+4)=E+ci*0.000010d0-delta
-    A(4*(i-1)+2,4*(i-1)+3)=E+ci*0.000010d0+delta
-    A(4*(i-1)+3,4*(i-1)+2)=E+ci*0.000010d0+conjg(delta)
-    A(4*(i-1)+4,4*(i-1)+1)=E+ci*0.000010d0-conjg(delta)
+    A(4*(i-1)+1,4*(i-1)+1)=E+ci*0.000010d0-Lambda*(ky*ky+2)+mu
+    A(4*(i-1)+2,4*(i-1)+2)=E+ci*0.000010d0-Lambda*(ky*ky+2)+mu
+    A(4*(i-1)+3,4*(i-1)+3)=E+ci*0.000010d0+Lambda*(ky*ky+2)-mu
+    A(4*(i-1)+4,4*(i-1)+4)=E+ci*0.000010d0+Lambda*(ky*ky+2)-mu
+    A(4*(i-1)+1,4*(i-1)+4)=-delta
+    A(4*(i-1)+2,4*(i-1)+3)=delta
+    A(4*(i-1)+3,4*(i-1)+2)=conjg(delta)
+    A(4*(i-1)+4,4*(i-1)+1)=-conjg(delta)
   end do
   do i=1,m-1
     A(4*(i-1)+1,4*i+1)=Lambda
@@ -48,7 +48,7 @@ program bussei
   call zgetri(n,A,n,ipiv,work,lwork,info)
 
   !状態密度の導出
-  p=(aimag(A(1,1)+A(2,2)))/pi
+  p=-(aimag(A(1,1)+A(2,2)))/pi
     write(17,*) E,p
   end do
   close(17)
