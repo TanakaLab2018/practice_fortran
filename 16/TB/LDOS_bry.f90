@@ -46,6 +46,7 @@ program bussei
   !逆行列計算
   call zgetrf(n,n,A,n,ipiv,info)
   call zgetri(n,A,n,ipiv,work,lwork,info)
+
   !状態密度の導出
   p=(aimag(A(1,1)+A(2,2)))/pi
     write(17,*) E,p
