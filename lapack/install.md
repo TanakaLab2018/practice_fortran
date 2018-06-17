@@ -30,7 +30,7 @@ Windowsへのインストールは実はかなり面倒くさいです...
 
 1. [lapack.tar.gz](http://netlib.org/lapack/lapack.tgz)からファイルをダウンロードします.
 
-2. [CMAKE](https://cmake.org/download/)の *.msi* のイントーラーをダウンロードします.
+2. [CMAKE](https://cmake.org/download/)の *.msi* のインストーラーをダウンロードします.
 
 3. CMAKEをインストールする. この際PATHを通しておくと楽./
 
@@ -42,7 +42,7 @@ Windowsへのインストールは実はかなり面倒くさいです...
 6. cmake-guiを開きます. 次のコマンドを打ってください.
   > ``` cmake-gui ```
 
-7. lapack-3.の中に *CMakeLists.txt* というファイルがあるので, エクスプローラからCMAKEのウインドウへとドラッグ&ドロップします.
+7. Browse Source... というボタンを押して,  *lapack-3.~* のフォルダを選択する.
 
 8. Browse Build... というボタンを押して, 先程作成した *build_space* をさがして選択してください.
 
