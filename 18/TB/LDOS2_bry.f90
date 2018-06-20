@@ -39,13 +39,13 @@ program bussei
     A(4*i+4,4*(i-1)+4)=-Lambda
 
     A(4*(i-1)+1,4*i+4)=-ci*delta/(2*kf)
-    A(4*(i-1)+2,4*i+3)=ci*delta/(2*kf)
-    A(4*(i-1)+3,4*i+2)=ci*conjg(delta)/(2*kf)
+    A(4*(i-1)+2,4*i+3)=-ci*delta/(2*kf)
+    A(4*(i-1)+3,4*i+2)=-ci*conjg(delta)/(2*kf)
     A(4*(i-1)+4,4*i+1)=-ci*conjg(delta)/(2*kf)
 
     A(4*i+1,4*(i-1)+4)=ci*delta/(2*kf)
-    A(4*i+2,4*(i-1)+3)=-ci*delta/(2*kf)
-    A(4*i+3,4*(i-1)+2)=-ci*conjg(delta)/(2*kf)
+    A(4*i+2,4*(i-1)+3)=ci*delta/(2*kf)
+    A(4*i+3,4*(i-1)+2)=ci*conjg(delta)/(2*kf)
     A(4*i+4,4*(i-1)+1)=ci*conjg(delta)/(2*kf)
   end do
 
@@ -54,7 +54,7 @@ program bussei
   call zgetri(n,A,n,ipiv,work,lwork,info)
 
   !状態密度の導出
-  p=-(aimag(A(1,1)+A(2,2)))/pi
+  p=-(aimag(A(201,201)+A(202,202)))/pi
     write(17,*) E,p
   end do
   close(17)

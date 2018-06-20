@@ -35,13 +35,13 @@ program BdG2
     H(4*i+4,4*(i-1)+4)=Lambda
 
     H(4*(i-1)+1,4*i+4)=ci*delta/(2*kf)
-    H(4*(i-1)+2,4*i+3)=-ci*delta/(2*kf)
-    H(4*(i-1)+3,4*i+2)=-ci*conjg(delta)/(2*kf)
+    H(4*(i-1)+2,4*i+3)=ci*delta/(2*kf)
+    H(4*(i-1)+3,4*i+2)=ci*conjg(delta)/(2*kf)
     H(4*(i-1)+4,4*i+1)=ci*conjg(delta)/(2*kf)
 
     H(4*i+1,4*(i-1)+4)=-ci*delta/(2*kf)
-    H(4*i+2,4*(i-1)+3)=ci*delta/(2*kf)
-    H(4*i+3,4*(i-1)+2)=ci*conjg(delta)/(2*kf)
+    H(4*i+2,4*(i-1)+3)=-ci*delta/(2*kf)
+    H(4*i+3,4*(i-1)+2)=-ci*conjg(delta)/(2*kf)
     H(4*i+4,4*(i-1)+1)=-ci*conjg(delta)/(2*kf)
   end do
 
