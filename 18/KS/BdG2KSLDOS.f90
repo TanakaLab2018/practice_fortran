@@ -11,7 +11,7 @@ program BdG2KSLDOS
   integer :: info, i, j, ipiv(4*n), lwork=4*n*4*n
   !write(*,*) "kx=", "ky="
   !read(*,*) kx
-  z=(delta*ci)/(2*sqrt(mu))
+  z=(delta)/(2*sqrt(mu))
  open(12,file='BdG2KSLDOS.txt', status='replace')
 
 do j=0,m
@@ -26,26 +26,26 @@ do i=1,n
 
 end do
   do i=1,n-1
-    G(4*(i-1)+1,4*i+1)=-Lambda
-    G(4*(i-1)+2,4*i+2)=-Lambda
-    G(4*(i-1)+3,4*i+3)=Lambda
-    G(4*(i-1)+4,4*i+4)=Lambda
+    G(4*(i-1)+1,4*i+1)=Lambda
+    G(4*(i-1)+2,4*i+2)=Lambda
+    G(4*(i-1)+3,4*i+3)=-Lambda
+    G(4*(i-1)+4,4*i+4)=-Lambda
 
-    G(4*(i-1)+1,4*i+4)=-z
-    G(4*(i-1)+2,4*i+3)=-z
-    G(4*(i-1)+3,4*i+2)=conjg(z)
-    G(4*(i-1)+4,4*i+1)=conjg(z)
+    G(4*(i-1)+1,4*i+4)=-z*ci
+    G(4*(i-1)+2,4*i+3)=-z*ci
+    G(4*(i-1)+3,4*i+2)=-conjg(z)*ci
+    G(4*(i-1)+4,4*i+1)=-conjg(z)*ci
 
 
-    G(4*i+1,4*(i-1)+1)=-Lambda
-    G(4*i+2,4*(i-1)+2)=-Lambda
-    G(4*i+3,4*(i-1)+3)=Lambda
-    G(4*i+4,4*(i-1)+4)=Lambda
+    G(4*i+1,4*(i-1)+1)=Lambda
+    G(4*i+2,4*(i-1)+2)=Lambda
+    G(4*i+3,4*(i-1)+3)=-Lambda
+    G(4*i+4,4*(i-1)+4)=-Lambda
 
-    G(4*i+1,4*(i-1)+4)=z
-    G(4*i+2,4*(i-1)+3)=z
-    G(4*i+3,4*(i-1)+2)=-conjg(z)
-    G(4*i+4,4*(i-1)+1)=-conjg(z)
+    G(4*i+1,4*(i-1)+4)=z*ci
+    G(4*i+2,4*(i-1)+3)=z*ci
+    G(4*i+3,4*(i-1)+2)=conjg(z)*ci
+    G(4*i+4,4*(i-1)+1)=conjg(z)*ci
   end do
 !Gの中見ここまで
  call zgetrf(4*n, 4*n, G, 4*n, ipiv, info)
