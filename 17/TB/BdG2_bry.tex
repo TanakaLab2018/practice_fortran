@@ -59,17 +59,22 @@
 		\end{align}
 
 		これを、式\eqref{hamil1}に代入して計算していく。　\\
+
+		以下
+		\begin{align}
+			\eta=\Delta_0\frac{i\partial x}{k_F} \\
+			\eta^{'}=\Delta_0^\ast\frac{i\partial x}{k_F}
+		\end{align}
+		とする
+
+
 		このとき、
-
-		(以下、まだ訂正してない)
-
-
 		\begin{align}
 			\vec{\Psi}_{k_y}^\dagger(x) e^{-ik_yy} \tilde{H}  \vec{\Psi}_{k_y'}(x) e^{ik_y'y} =
-			e^{-ik_yy} \left[ \Psi_\uparrow^\dagger \left( -\frac{\hbar^2}{2m}\nabla^2-\mu_F \right) +\Psi_\downarrow^\dagger \Delta_0^\ast \right] \Psi_\uparrow e^{ik'_yy} \nonumber\\
-			+e^{-ik_yy} \left[ \Psi_\downarrow^\dagger \left( -\frac{\hbar^2}{2m}\nabla^2-\mu_F \right) -\Psi_\uparrow^\dagger \Delta_0^\ast \right] \Psi_\downarrow e^{ik'_yy} \nonumber\\
-			+ e^{-ik_yy} \left[ -\Psi_\downarrow\Delta_0 +\Psi_\uparrow \left( \frac{\hbar^2}{2m}\nabla^2+\mu_F \right) \right] \Psi_\uparrow^\dagger e^{ik'_yy} \nonumber\\
-			+e^{-ik_yy} \left[ \Psi_\uparrow\Delta_0 +\Psi_\downarrow \left( \frac{\hbar^2}{2m}\nabla^2+\mu_F \right) \right] \Psi_\downarrow^\dagger e^{ik'_yy}
+			e^{-ik_yy} \left[ \Psi_\uparrow^\dagger \left( -\frac{\hbar^2}{2m}\nabla^2-\mu_F \right) +\Psi_\downarrow^\dagger \eta \right] \Psi_\uparrow e^{ik'_yy} \nonumber\\
+			+e^{-ik_yy} \left[ \Psi_\downarrow^\dagger \left( -\frac{\hbar^2}{2m}\nabla^2-\mu_F \right) -\Psi_\uparrow^\dagger \eta \right] \Psi_\downarrow e^{ik'_yy} \nonumber\\
+			+ e^{-ik_yy} \left[ -\Psi_\downarrow \eta^{'} +\Psi_\uparrow \left( \frac{\hbar^2}{2m}\nabla^2+\mu_F \right) \right] \Psi_\uparrow^\dagger e^{ik'_yy} \nonumber\\
+			+e^{-ik_yy} \left[ \Psi_\uparrow \eta^{'} +\Psi_\downarrow \left( \frac{\hbar^2}{2m}\nabla^2+\mu_F \right) \right] \Psi_\downarrow^\dagger e^{ik'_yy}
 		\end{align}
 
 		また、
@@ -93,10 +98,10 @@
 			\mathcal{H}=\int dx \sum_{k_y}
 			\left[ \Psi_\uparrow^\dagger \left( \frac{\hbar^2k_y^2}{2m}-\mu_F \right)\Psi_\uparrow
 			+\Psi_\uparrow^\dagger \left(- \frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}\right)\Psi_\uparrow
-			+\Psi_\downarrow^\dagger \Delta_0^\ast \Psi_\uparrow \right. \nonumber \\ \left.+
+			+\Psi_\downarrow^\dagger \eta \Psi_\uparrow \right. \nonumber \\ \left.+
 			\Psi_\downarrow^\dagger \left( \frac{\hbar^2k_y^2}{2m}-\mu_F \right)\Psi_\downarrow
 			+\Psi_\downarrow^\dagger \left(- \frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2} \right) \Psi_\downarrow
-			-\Psi_\uparrow^\dagger \Delta_0^\ast \Psi_\downarrow \cdots
+			-\Psi_\uparrow^\dagger \eta \Psi_\downarrow \cdots
 			\right]
 			\label{hamil2}
 		\end{align}
@@ -155,6 +160,7 @@
 			\label{hamil3}
 		\end{align}
 
+		このとき、$\eta$ のなかの微分を考慮する。
 		$N=3$と置くとき、ハミルトニアンを2次形式で表すと、
 
 		\begin{align}
@@ -175,18 +181,18 @@
 			\end{bmatrix}
 			^T
 			\begin{bmatrix}
-				\varepsilon_{k_y} & 0 & 0 & \Delta_0 & -\varLambda & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
-				0 & \varepsilon_{k_y} & -\Delta_0 & 0 & 0 & -\varLambda & 0 & 0 & 0 & 0 & 0 & 0 \\
-				0 & -\Delta_0^\ast & -\varepsilon_{k_y} & 0 & 0 & 0 & \varLambda & 0 & 0 & 0 & 0 & 0 \\
-				\Delta_0^\ast & 0 & 0 & -\varepsilon_{k_y} & 0 & 0 & 0 & \varLambda & 0 & 0 & 0 & 0 \\
-				-\varLambda & 0 & 0 & 0 & \varepsilon_{k_y} & 0 & 0 & \Delta_0 & -\varLambda & 0 & 0 & 0 \\
-				0 & -\varLambda & 0 & 0 & 0 & \varepsilon_{k_y} & -\Delta_0 & 0 & 0 & -\varLambda & 0 & 0 \\
-				0 & 0 & \varLambda & 0 & 0 & -\Delta_0^\ast & -\varepsilon_{k_y} & 0 & 0 & 0 & \varLambda & 0 \\
-				0 & 0 & 0 & \varLambda & \Delta_0^\ast & 0 & 0 & -\varepsilon_{k_y} & 0 & 0 & 0 & \varLambda \\
-				0 & 0 & 0 & 0 & -\varLambda & 0 & 0 & 0 & \varepsilon_{k_y} & 0 & 0 & \Delta_0 \\
-				0 & 0 & 0 & 0 & 0 & -\varLambda & 0 & 0 & 0 & \varepsilon_{k_y} & -\Delta_0 & 0 \\
-				0 & 0 & 0 & 0 & 0 & 0 & \varLambda & 0 & 0 & -\Delta_0^\ast & -\varepsilon_{k_y} & 0 \\
-				0 & 0 & 0 & 0 & 0 & 0 & 0 & \varLambda & -\Delta_0^\ast & 0 & 0 & -\varepsilon_{k_y}
+				\varepsilon_{k_y} & 0 & 0 & 0 & -\varLambda & 0 & 0 & \zeta & 0 & 0 & 0 & 0 \\
+				0 & \varepsilon_{k_y} & 0 & 0 & 0 & -\varLambda & -\zeta & 0 & 0 & 0 & 0 & 0 \\
+				0 & 0 & -\varepsilon_{k_y} & 0 & 0 & -\zeta^{'} & \varLambda & 0 & 0 & 0 & 0 & 0 \\
+				0 & 0 & 0 & -\varepsilon_{k_y} & \zeta^{'} & 0 & 0 & \varLambda & 0 & 0 & 0 & 0 \\
+				-\varLambda & 0 & 0 & -\zeta & \varepsilon_{k_y} & 0 & 0 & 0 & -\varLambda & 0 & 0 & \zeta \\
+				0 & -\varLambda & \zeta & 0 & 0 & \varepsilon_{k_y} & 0 & 0 & 0 & -\varLambda & -\zeta & 0 \\
+				0 & \zeta^{'} & \varLambda & 0 & 0 & 0 & -\varepsilon_{k_y} & 0 & 0 & -\zeta^{'} & \varLambda & 0 \\
+				-\zeta^{'} & 0 & 0 & \varLambda & 0 & 0 & 0 & -\varepsilon_{k_y} & \zeta^{'} & 0 & 0 & \varLambda \\
+				0 & 0 & 0 & 0 & -\varLambda & 0 & 0 & -\zeta & \varepsilon_{k_y} & 0 & 0 & 0 \\
+				0 & 0 & 0 & 0 & 0 & -\varLambda & \zeta & 0 & 0 & \varepsilon_{k_y} & 0 & 0 \\
+				0 & 0 & 0 & 0 & 0 & \zeta^{'} & \varLambda & 0 & 0 & 0 & -\varepsilon_{k_y} & 0 \\
+				0 & 0 & 0 & 0 & -\zeta^{'} & 0 & 0 & \varLambda & 0 & 0 & 0 & -\varepsilon_{k_y}
 			\end{bmatrix}
 			\begin{bmatrix}
 				\Psi_{1\uparrow} \\
@@ -207,12 +213,12 @@
 		ここで
 
 		\begin{align}
-			\varepsilon_{k_y}=\frac{\hbar^2}{2m}(k_y^2+2)-\mu_F
+			\varepsilon_{k_y}=\frac{\hbar^2}{2m}(k_y^2+2)-\mu_F \\
+			\varLambda=\frac{\hbar^2}{2m}\\
+			\zeta=\dfrac{\Delta_0}{2k_{F}}i\\
+			\zeta^{'}=\dfrac{\Delta_0^{*}}{2k_{F}}i
 		\end{align}
 
-		\begin{align}
-			\varLambda=\frac{\hbar^2}{2m}
-		\end{align}
 
 		とおく
 
