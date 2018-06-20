@@ -1,10 +1,10 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2018.4.18)  20 JUN 2018 16:33
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2018.4.18)  20 JUN 2018 16:44
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
  %&-line parsing enabled.
-**BdGcal.tex
-(./BdGcal.tex
+**reportKS.tex
+(./reportKS.tex
 pLaTeX2e <2017/05/05> (based on LaTeX2e <2017-04-15>)
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2017/texmf-dist/tex/platex/base/jarticle.cls
@@ -174,8 +174,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen139
 \Gm@dimlist=\toks23
 )
-(./BdGcal.aux)
-\openout1 = `BdGcal.aux'.
+(./reportKS.aux)
+\openout1 = `reportKS.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
@@ -241,20 +241,23 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 11.
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-File: BdGcalKSs.png Graphic file (type bmp)
+File: BdG2calKS.png Graphic file (type bmp)
 
-<BdGcalKSs.png>
-File: BdG3KS1.png Graphic file (type bmp)
- <BdG3KS1.png> [1
+<BdG2calKS.png>
+File: BdGKSLDOSedge.png Graphic file (type bmp)
+ <BdGKSLDOSedge.png> [1
 
-] [2] (./BdGcal.aux) ) 
+]
+File: BdGKSLDOSinternal.png Graphic file (type bmp)
+ <BdGKSLDOSinternal.png> [2] [3]
+(./reportKS.aux) ) 
 Here is how much of TeX's memory you used:
- 2154 strings out of 493653
- 27185 string characters out of 6148874
- 95007 words of memory out of 5000000
- 5711 multiletter control sequences out of 15000+600000
+ 2158 strings out of 493653
+ 27341 string characters out of 6148874
+ 94007 words of memory out of 5000000
+ 5713 multiletter control sequences out of 15000+600000
  11431 words of font info for 47 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 27i,9n,26p,222b,285s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,9n,26p,224b,285s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on BdGcal.dvi (2 pages, 2016 bytes).
+Output written on reportKS.dvi (3 pages, 2556 bytes).
