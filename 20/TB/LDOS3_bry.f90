@@ -60,7 +60,7 @@ program bussei
   call zgetri(n,H,n,ipiv,work,lwork,info)
 
   !状態密度の導出
-  p=-(aimag(H(1,1)+H(2,2)+H(3,3)+H(4,4)))/pi
+  p=-(aimag(H(397,397)+H(398,398)))/pi
     write(17,*) E,p
   end do
   close(17)
