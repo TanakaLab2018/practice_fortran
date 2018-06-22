@@ -1,0 +1,137 @@
+\documentclass{jarticle}
+\usepackage{amsmath,amssymb}
+\usepackage{amsmath}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{here}
+\usepackage{pifont}
+\usepackage[left=0.5cm, right=0.5cm]{geometry}
+\setcounter{MaxMatrixCols}{20}
+\begin{document}
+　（2）前回までに行った計算を$p_{x}-ip_{y}wave$に対して行う。すなわち$\hat{\Delta}(r)$を以下のようにする。
+　\begin{align}
+　\hat{\Delta}(r)=\Delta_0\dfrac{\partial x+i\partial y}{k_F}\hat\sigma_1
+　\end{align}
+　このとき
+　 \begin{align}
+　\hat{\sigma_1}=
+　\begin{pmatrix}
+　0 & 1\\
+　1 & 0
+　\end{pmatrix}
+　\end{align}
+　である。従って
+　    \begin{align}
+　\tilde{H}&=
+　\begin{pmatrix}
+　(-\dfrac{\hbar^2}{2m}\nabla^2-\mu_F)\begin{pmatrix}
+　1 & 0 \\
+　0 & 1
+　\end{pmatrix} & \dfrac{\Delta_0}{k_{F}} \begin{pmatrix}
+　0 & \partial x+i\partial y \\
+　\partial x+i\partial y & 0
+　\end{pmatrix} \\
+　-\left(\dfrac{\Delta_0}{k_{F}}\right)^{*}
+　\begin{pmatrix}
+　0 & \partial x-i\partial y \\
+　\partial x-i\partial y& 0
+　\end{pmatrix} & (\dfrac{\hbar^2}{2m}\nabla^2+\mu_F)\begin{pmatrix}
+　1 & 0 \\
+　0 & 1
+　\end{pmatrix}
+　\end{pmatrix}
+　\\&=\begin{pmatrix}
+　\xi & 0 & 0 & \eta \\ 
+　0 & \xi & \eta & 0 \\ 
+　0 & \eta^{'} & -\xi & 0 \\ 
+　\eta^{'} & 0 & 0 & -\xi
+　\end{pmatrix} 
+　\end{align}
+　となる。ここで
+　\begin{align}
+　-\dfrac{\hbar^2}{2m}\nabla^2-\mu_F&=\xi\\
+　\dfrac{\Delta_0}{k_{F}}(\partial x+i\partial y)&=\eta\\
+　\left(\dfrac{\Delta_0}{k_{F}}\right)^{*}(-\partial x+i\partial y)&=\eta^{'}
+　\end{align}
+　とおいた。前回との違いは$\eta$とその中に$x$の微分が入っていることなので、この項を検討していく。例えば
+　\begin{align}
+　\psi_{\uparrow}^{\dagger}e^{-ik_{y}^{'}y}\eta\psi_{\downarrow}^{\dagger}e^{ik_{y}^{'}y}
+　\end{align}
+　は
+　　\begin{align}
+　\psi_{\uparrow}^{\dagger}e^{-ik_{y}^{'}y}\eta\psi_{\downarrow}^{\dagger}e^{ik_{y}^{'}y}&=　\psi_{\uparrow}^{\dagger}e^{-ik_{y}^{'}y}\dfrac{\Delta_0}{k_{F}}(\partial x+i\partial y)\psi_{\downarrow}^{\dagger}e^{ik_{y}^{'}y}\\
+　&=\bigl(\psi_{\uparrow}^{\dagger}e^{-ik_{y}^{'}y}e^{ik_{y}^{'}y}\dfrac{\partial}{\partial x}\psi_{\downarrow}^{\dagger}-k_{y}\psi_{\uparrow}^{\dagger}e^{-ik_{y}^{'}y}e^{ik_{y}^{'}y}\psi_{\downarrow}^{\dagger}\bigr)\dfrac{\Delta_0}{k_{F}}
+　\end{align}
+となる。$\partial x\psi_{\uparrow}$を中心差分を用いて離散化していく。
+\begin{align}
+\dfrac{\partial}{\partial x}f(x)=\dfrac{f(x+h)-f(x-h)}{2h}
+\end{align}
+刻み幅$1$で$x$を$i$で書けば
+\begin{align}
+\dfrac{\partial}{\partial x}f(i)=\dfrac{f(x+i)-f(x-i)}{2}
+\end{align}
+であるから
+これより$\mathcal{H}$の前回からの変更点は例えば
+\begin{align}
+\mathcal{H}
+=\int\sum_{i=1}^{L_y+1}\displaystyle\sum_{k_y}\dfrac{\Delta_0}{k_{F}}\bigl\{\psi_{i\uparrow}^{\dagger}\dfrac{1}{2}\bigl(\psi_{i+1\downarrow}^{\dagger}-\psi_{i-1\downarrow}^{\dagger}\bigr)-k_{y}\psi_{i\uparrow}^{\dagger}\psi_{i\downarrow}^{\dagger}\bigr\}
+\end{align}
+ここで
+\begin{align}
+\Lambda=\dfrac{\hbar^2}{2m}\\
+\varepsilon_{k_y}=\dfrac{\hbar^2}{2m}(k_y^2+2)-\mu\\
+\dfrac{\Delta_0}{2k_{F}}=C\\
+\end{align}
+とすると全体の$\mathcal{H}$は行列で書けて三つ分書くと
+\begin{align}
+\mathcal{H}=
+\begin{bmatrix}
+\psi_{1\uparrow}^\dagger \\ 
+\psi_{1\downarrow}^\dagger \\ 
+\psi_{1\uparrow} \\ 
+\psi_{1\downarrow} \\ 
+\psi_{2\uparrow}^\dagger \\ 
+\psi_{2\downarrow}^\dagger \\ 
+\psi_{2\uparrow} \\ 
+\psi_{2\downarrow} \\ 
+\psi_{3\uparrow}^\dagger \\ 
+\psi_{3\downarrow}^\dagger \\ 
+\psi_{3\uparrow} \\ 
+\psi_{3\downarrow}
+\end{bmatrix} 
+^T
+\begin{bmatrix}
+\varepsilon_{k_y} & 0 & 0 & -2Ck_{y} & -\Lambda & 0 & 0 & C & 0 & 0 & 0 & 0 \\ 
+0 & \varepsilon_{k_y} & -2Ck_{y} & 0 & 0 & -\Lambda & C & 0 & 0 & 0 & 0 & 0 \\ 
+0 & -2Ck_{y}^{*} & -\varepsilon_{k_y} & 0 & 0 & -C^{*} & \Lambda & 0 & 0 & 0 & 0 & 0 \\ 
+-2Ck_{y}^{*} & 0 & 0 & -\varepsilon_{k_y} & -C^{*} & 0 & 0 & \Lambda & 0 & 0 & 0 & 0 \\ 
+-\Lambda & 0 & 0 & -C & \varepsilon_{k_y} & 0 & 0 & -2Ck_{y} & -\Lambda & 0 & 0 & C \\ 
+0 & -\Lambda & -C & 0 & 0 & \varepsilon_{k_y} & -2Ck_{y} & 0 & 0 & -\Lambda & C & 0 \\ 
+0 & C^{*} & \Lambda & 0 & 0 & -2Ck_{y}^{*} & -\varepsilon_{k_y} & 0 & 0 & -C^{*} & \Lambda & 0 \\ 
+C^{*} & 0 & 0 & \Lambda & -2Ck_{y}^{*} & 0 & 0 & -\varepsilon_{k_y} & -C^{*} & 0 & 0 & \Lambda \\ 
+0 & 0 & 0 & 0 & -\Lambda & 0 & 0 & -C & \varepsilon_{k_y} & 0 & 0 & -2Ck_{y} \\ 
+0 & 0 & 0 & 0 & 0 & -\Lambda & -C & 0 & 0 & \varepsilon_{k_y} & -2Ck_{y} & 0 \\ 
+0 & 0 & 0 & 0 & 0 & C^{*} & \Lambda & 0 & 0 & -2Ck_{y}^{*} & -\varepsilon_{k_y} & 0 \\ 
+0 & 0 & 0 & 0 & C^{*} & 0 & 0 & \Lambda & -2Ck_{y}^{*} & 0 & 0 & -\varepsilon_{k_y}
+\end{bmatrix} 
+\begin{bmatrix}
+\psi_{1\uparrow} \\ 
+\psi_{1\downarrow} \\ 
+\psi_{1\uparrow}^\dagger \\ 
+\psi_{1\downarrow}^\dagger \\ 
+\psi_{2\uparrow} \\ 
+\psi_{2\downarrow} \\ 
+\psi_{2\uparrow}^\dagger \\ 
+\psi_{2\downarrow}^\dagger \\ 
+\psi_{3\uparrow} \\ 
+\psi_{3\downarrow} \\ 
+\psi_{3\uparrow}^\dagger \\ 
+\psi_{3\downarrow}^\dagger
+\end{bmatrix} 
+\end{align}
+となる。ここから$\mathcal{H}$を数値計算で対角化していく。
+また$k_{F}$は
+\begin{align}
+\mu=\dfrac{\hbar^{2}k_F^{2}}{2m}
+\end{align}
+から求める。
+\end{document}
