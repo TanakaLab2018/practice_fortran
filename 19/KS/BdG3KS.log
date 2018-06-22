@@ -1,10 +1,10 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2018.4.18)  22 JUN 2018 15:54
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2018.4.18)  22 JUN 2018 16:36
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
  %&-line parsing enabled.
-**BdGcal2KS.tex
-(./BdGcal2KS.tex
+**BdG3KS.tex
+(./BdG3KS.tex
 pLaTeX2e <2017/05/05> (based on LaTeX2e <2017-04-15>)
 Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2017/texmf-dist/tex/platex/base/jarticle.cls
@@ -174,8 +174,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen139
 \Gm@dimlist=\toks23
 )
-(./BdGcal2KS.aux)
-\openout1 = `BdGcal2KS.aux'.
+(./BdG3KS.aux)
+\openout1 = `BdG3KS.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
@@ -202,14 +202,14 @@ LaTeX Font Info:    ... okay on input line 9.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* h-part:(L,W,R)=(14.22636pt, 569.05515pt, 14.22636pt)
 * v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=483.69687pt
+* \textwidth=569.05515pt
 * \textheight=591.5302pt
-* \oddsidemargin=-15.36449pt
-* \evensidemargin=-15.36449pt
+* \oddsidemargin=-58.04362pt
+* \evensidemargin=-58.04362pt
 * \topmargin=-7.86334pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -238,15 +238,19 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 10.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-] [2]
-(./BdGcal2KS.aux) ) 
+]
+Overfull \hbox (11.11617pt too wide) in paragraph at lines 130--130
+[] 
+ []
+
+[2] (./BdG3KS.aux) ) 
 Here is how much of TeX's memory you used:
  2130 strings out of 493653
- 26875 string characters out of 6148874
- 111007 words of memory out of 5000000
+ 26848 string characters out of 6148874
+ 111017 words of memory out of 5000000
  5695 multiletter control sequences out of 15000+600000
  9900 words of font info for 41 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 27i,20n,26p,430b,234s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,20n,26p,267b,234s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on BdGcal2KS.dvi (2 pages, 10384 bytes).
+Output written on BdG3KS.dvi (2 pages, 10752 bytes).
