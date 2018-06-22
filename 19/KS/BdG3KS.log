@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2018.4.18)  22 JUN 2018 16:36
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2018.4.18)  22 JUN 2018 16:48
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -239,7 +239,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 ]
-Overfull \hbox (11.11617pt too wide) in paragraph at lines 130--130
+Overfull \hbox (38.06783pt too wide) in paragraph at lines 130--130
 [] 
  []
 
