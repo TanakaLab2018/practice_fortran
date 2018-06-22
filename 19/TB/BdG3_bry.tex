@@ -51,10 +51,10 @@
 		\begin{align}
 			\mathcal{H}=
 			\begin{bmatrix}
-				-\frac{\hbar^2}{2m}\nabla^2-\mu_F & 0 & 0 & \Delta_0\frac{1}{k_f} \left( \partial x+i\partial y \right)\hat{\sigma}_1 \\
-				0 & -\frac{\hbar^2}{2m}\nabla^2-\mu_F & \Delta_0\frac{1}{k_f} \left( \partial x+i\partial y \right)\hat{\sigma}_1 & 0 \\
-				0 & -\Delta_0^\ast\frac{1}{k_f} \left( \partial x-i\partial y \right)\hat{\sigma}_1 & \frac{\hbar^2}{2m}\nabla^2+\mu_F & 0 \\
-				 -\Delta_0^\ast\frac{1}{k_f} \left( \partial x-i\partial y \right)\hat{\sigma}_1 & 0 & 0 & \frac{\hbar^2}{2m}\nabla^2+\mu_F
+				-\frac{\hbar^2}{2m}\nabla^2-\mu_F & 0 & 0 & \Delta_0\frac{1}{k_f} \left( \partial x+i\partial y \right) \\
+				0 & -\frac{\hbar^2}{2m}\nabla^2-\mu_F & \Delta_0\frac{1}{k_f} \left( \partial x+i\partial y \right) & 0 \\
+				0 & -\Delta_0^\ast\frac{1}{k_f} \left( \partial x-i\partial y \right) & \frac{\hbar^2}{2m}\nabla^2+\mu_F & 0 \\
+				 -\Delta_0^\ast\frac{1}{k_f} \left( \partial x-i\partial y \right) & 0 & 0 & \frac{\hbar^2}{2m}\nabla^2+\mu_F
 			\end{bmatrix}
 		\end{align}
 
@@ -64,8 +64,8 @@
 
 		以下
 		\begin{align}
-			\eta= \\
-			\eta^{'}=
+			\eta=\Delta_0\frac{1}{k_f} \\
+			\eta^{'}=\Delta_0^\ast\frac{1}{k_f}
 		\end{align}
 		とする
 
@@ -73,10 +73,10 @@
 		このとき、
 		\begin{align}
 			\vec{\Psi}_{k_y}^\dagger(x) e^{-ik_yy} \tilde{H}  \vec{\Psi}_{k_y'}(x) e^{ik_y'y} =
-			e^{-ik_yy} \left[ \Psi_\uparrow^\dagger \left( -\frac{\hbar^2}{2m}\nabla^2-\mu_F \right) +\Psi_\downarrow^\dagger \eta \right] \Psi_\uparrow e^{ik'_yy} \nonumber\\
-			+e^{-ik_yy} \left[ \Psi_\downarrow^\dagger \left( -\frac{\hbar^2}{2m}\nabla^2-\mu_F \right) +\Psi_\uparrow^\dagger \eta \right] \Psi_\downarrow e^{ik'_yy} \nonumber\\
-			+ e^{-ik_yy} \left[ \Psi_\downarrow \eta^{'} +\Psi_\uparrow \left( \frac{\hbar^2}{2m}\nabla^2+\mu_F \right) \right] \Psi_\uparrow^\dagger e^{ik'_yy} \nonumber\\
-			+e^{-ik_yy} \left[ \Psi_\uparrow \eta^{'} +\Psi_\downarrow \left( \frac{\hbar^2}{2m}\nabla^2+\mu_F \right) \right] \Psi_\downarrow^\dagger e^{ik'_yy}
+			e^{-ik_yy} \left[ \Psi_\uparrow^\dagger \left( -\frac{\hbar^2}{2m}\nabla^2-\mu_F \right) +\Psi_\downarrow^\dagger \eta \left( \partial x+i\partial y \right) \right] \Psi_\uparrow e^{ik'_yy} \nonumber\\
+			+e^{-ik_yy} \left[ \Psi_\downarrow^\dagger \left( -\frac{\hbar^2}{2m}\nabla^2-\mu_F \right) +\Psi_\uparrow^\dagger \eta \left( \partial x+i\partial y \right) \right] \Psi_\downarrow e^{ik'_yy} \nonumber\\
+			+ e^{-ik_yy} \left[ \Psi_\downarrow -\eta^{'} \left( \partial x-i\partial y \right) +\Psi_\uparrow \left( \frac{\hbar^2}{2m}\nabla^2+\mu_F \right) \right] \Psi_\uparrow^\dagger e^{ik'_yy} \nonumber\\
+			+e^{-ik_yy} \left[ \Psi_\uparrow -\eta^{'} \left( \partial x-i\partial y \right)+\Psi_\downarrow \left( \frac{\hbar^2}{2m}\nabla^2+\mu_F \right) \right] \Psi_\downarrow^\dagger e^{ik'_yy}
 		\end{align}
 
 		また、
@@ -100,10 +100,10 @@
 			\mathcal{H}=\int dx \sum_{k_y}
 			\left[ \Psi_\uparrow^\dagger \left( \frac{\hbar^2k_y^2}{2m}-\mu_F \right)\Psi_\uparrow
 			+\Psi_\uparrow^\dagger \left(- \frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2}\right)\Psi_\uparrow
-			+\Psi_\downarrow^\dagger \eta \Psi_\uparrow \right. \nonumber \\ \left.+
+			+\Psi_\downarrow^\dagger \eta\left( \partial x-k_y \right) \Psi_\uparrow \right. \nonumber \\ \left.+
 			\Psi_\downarrow^\dagger \left( \frac{\hbar^2k_y^2}{2m}-\mu_F \right)\Psi_\downarrow
 			+\Psi_\downarrow^\dagger \left(- \frac{\hbar^2}{2m}\frac{\partial^2}{\partial x^2} \right) \Psi_\downarrow
-			-\Psi_\uparrow^\dagger \eta \Psi_\downarrow \cdots
+			+\Psi_\uparrow^\dagger \eta \left( \partial x-k_y \right) \Psi_\downarrow \cdots
 			\right]
 			\label{hamil2}
 		\end{align}
@@ -151,18 +151,7 @@
 			\Psi_{n\pm 1\uparrow}=\Psi_{n\uparrow}\left(x\pm 1\right)
 		\end{align}
 
-		代入した式は、
-
-		\begin{align}
-			\mathcal{H}= \sum_{i=1}^N \sum_{k_y}
-			\left[ \Psi^\dagger_{i\uparrow} \left( \frac{\hbar^2k_y^2}{2m}-\mu_F \right)\Psi_{i\uparrow}
-			+\Psi^\dagger_{i\uparrow} \left( \Psi_{i+1\uparrow}\left(x\right)-2\Psi_{i\uparrow}\left(x\right)+\Psi_{i-1\uparrow}\left(x\right)
-			\right)+\Psi^\dagger_{i\downarrow} \Delta_0^\ast \Psi_{i\uparrow} \cdots
-			\right]
-			\label{hamil3}
-		\end{align}
-
-		このとき、$\eta$ のなかの微分を考慮する。
+		このとき、微分を考慮する。
 		$N=3$と置くとき、ハミルトニアンを2次形式で表すと、
 
 		\begin{align}
@@ -183,18 +172,18 @@
 			\end{bmatrix}
 			^T
 			\begin{bmatrix}
-				\varepsilon_{k_y} & 0 & 0 & 0 & -\varLambda & 0 & 0 & \zeta & 0 & 0 & 0 & 0 \\
-				0 & \varepsilon_{k_y} & 0 & 0 & 0 & -\varLambda & \zeta & 0 & 0 & 0 & 0 & 0 \\
-				0 & 0 & -\varepsilon_{k_y} & 0 & 0 & \zeta^{'} & \varLambda & 0 & 0 & 0 & 0 & 0 \\
-				0 & 0 & 0 & -\varepsilon_{k_y} & \zeta^{'} & 0 & 0 & \varLambda & 0 & 0 & 0 & 0 \\
-				-\varLambda & 0 & 0 & -\zeta & \varepsilon_{k_y} & 0 & 0 & 0 & -\varLambda & 0 & 0 & \zeta \\
-				0 & -\varLambda & -\zeta & 0 & 0 & \varepsilon_{k_y} & 0 & 0 & 0 & -\varLambda & \zeta & 0 \\
-				0 & -\zeta^{'} & \varLambda & 0 & 0 & 0 & -\varepsilon_{k_y} & 0 & 0 & \zeta^{'} & \varLambda & 0 \\
-				-\zeta^{'} & 0 & 0 & \varLambda & 0 & 0 & 0 & -\varepsilon_{k_y} & \zeta^{'} & 0 & 0 & \varLambda \\
-				0 & 0 & 0 & 0 & -\varLambda & 0 & 0 & -\zeta & \varepsilon_{k_y} & 0 & 0 & 0 \\
-				0 & 0 & 0 & 0 & 0 & -\varLambda & -\zeta & 0 & 0 & \varepsilon_{k_y} & 0 & 0 \\
-				0 & 0 & 0 & 0 & 0 & -\zeta^{'} & \varLambda & 0 & 0 & 0 & -\varepsilon_{k_y} & 0 \\
-				0 & 0 & 0 & 0 & -\zeta^{'} & 0 & 0 & \varLambda & 0 & 0 & 0 & -\varepsilon_{k_y}
+				\varepsilon_{k_y} & 0 & 0 & -k_y\eta & -\varLambda & 0 & 0 & \zeta & 0 & 0 & 0 & 0 \\
+				0 & \varepsilon_{k_y} & -k_y\eta & 0 & 0 & -\varLambda & \zeta & 0 & 0 & 0 & 0 & 0 \\
+				0 & -k_y\eta^{'} & -\varepsilon_{k_y} & 0 & 0 & -\zeta^{'} & \varLambda & 0 & 0 & 0 & 0 & 0 \\
+				-k_y\eta^{'} & 0 & 0 & -\varepsilon_{k_y} & -\zeta^{'} & 0 & 0 & \varLambda & 0 & 0 & 0 & 0 \\
+				-\varLambda & 0 & 0 & -\zeta & \varepsilon_{k_y} & 0 & 0 & -k_y\eta & -\varLambda & 0 & 0 & \zeta \\
+				0 & -\varLambda & -\zeta & 0 & 0 & \varepsilon_{k_y} & -k_y\eta & 0 & 0 & -\varLambda & \zeta & 0 \\
+				0 & \zeta^{'} & \varLambda & 0 & 0 & -k_y\eta^{'} & -\varepsilon_{k_y} & 0 & 0 & -\zeta^{'} & \varLambda & 0 \\
+				\zeta^{'} & 0 & 0 & \varLambda & -k_y\eta^{'} & 0 & 0 & -\varepsilon_{k_y} & -\zeta^{'} & 0 & 0 & \varLambda \\
+				0 & 0 & 0 & 0 & -\varLambda & 0 & 0 & -\zeta & \varepsilon_{k_y} & 0 & 0 & -k_y\eta \\
+				0 & 0 & 0 & 0 & 0 & -\varLambda & -\zeta & 0 & 0 & \varepsilon_{k_y} & -k_y\eta & 0 \\
+				0 & 0 & 0 & 0 & 0 & \zeta^{'} & \varLambda & 0 & 0 & -k_y\eta^{'} & -\varepsilon_{k_y} & 0 \\
+				0 & 0 & 0 & 0 & \zeta^{'} & 0 & 0 & \varLambda & -k_y\eta^{'} & 0 & 0 & -\varepsilon_{k_y}
 			\end{bmatrix}
 			\begin{bmatrix}
 				\Psi_{1\uparrow} \\
@@ -217,9 +206,11 @@
 		\begin{align}
 			\varepsilon_{k_y}=\frac{\hbar^2}{2m}(k_y^2+2)-\mu_F \\
 			\varLambda=\frac{\hbar^2}{2m}\\
-			\zeta=\dfrac{\Delta_0}{2k_{F}}i\\
-			\zeta^{'}=\dfrac{\Delta_0^{*}}{2k_{F}}i\\
-			\mu=\dfrac{\hbar^{2}k_F^{2}}{2m}
+			\zeta=\dfrac{\Delta_0}{2k_{F}}\\
+			\zeta^{'}=\dfrac{\Delta_0^{*}}{2k_{F}}\\
+			\mu=\dfrac{\hbar^{2}k_F^{2}}{2m}\\
+			\eta=\Delta_0\frac{1}{k_f} \\
+			\eta^{'}=\Delta_0^\ast\frac{1}{k_f}
 		\end{align}
 
 		とおく

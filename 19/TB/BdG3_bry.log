@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.14)  21 JUN 2018 14:30
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.14)  22 JUN 2018 13:22
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -230,15 +230,19 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 4.805pt on input line 17.
  [1
 
-] [2] [3] [4]
-(./BdG3_bry.aux) ) 
+] [2]
+Overfull \hbox (57.73886pt too wide) in paragraph at lines 202--202
+[] 
+ []
+
+[3] (./BdG3_bry.aux) ) 
 Here is how much of TeX's memory you used:
- 1912 strings out of 493670
- 21885 string characters out of 6151242
+ 1911 strings out of 493670
+ 21877 string characters out of 6151242
  101153 words of memory out of 5000000
- 5468 multiletter control sequences out of 15000+600000
+ 5467 multiletter control sequences out of 15000+600000
  23302 words of font info for 101 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,15n,26p,219b,254s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 27i,15n,26p,222b,254s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on BdG3_bry.dvi (4 pages, 16440 bytes).
+Output written on BdG3_bry.dvi (3 pages, 16512 bytes).
