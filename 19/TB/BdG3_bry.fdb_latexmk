@@ -1,12 +1,12 @@
 # Fdb version 3
-["dvipdf"] 1529648607 "BdG3_bry.dvi" "BdG3_bry.pdf" "BdG3_bry" 1529648610
-  "BdG3_bry.dvi" 1529648607 15792 65240ba9a034ac8c60b3fae93fba4702 "latex"
+["dvipdf"] 1529653456 "BdG3_bry.dvi" "BdG3_bry.pdf" "BdG3_bry" 1529653458
+  "BdG3_bry.dvi" 1529653456 15796 a71bd42429381e39d4842c1c6cd940c4 "latex"
   (generated)
   "BdG3_bry.pdf"
-["latex"] 1529648606 "c:/Users/tanaka_lab/Documents/practice_fortran/19/TB/BdG3_bry.tex" "BdG3_bry.dvi" "BdG3_bry" 1529648610
-  "BdG3_bry.aux" 1529648607 647 8cf1568eb93a580dca0fbda42c5b7854 ""
-  "BdG3_bry.tex" 1529648605 8507 e4f5924431968fb89b3bb8e8eb5cdce5 ""
-  "c:/Users/tanaka_lab/Documents/practice_fortran/19/TB/BdG3_bry.tex" 1529648605 8507 e4f5924431968fb89b3bb8e8eb5cdce5 ""
+["latex"] 1529653455 "c:/Users/tanaka_lab/Documents/practice_fortran/19/TB/BdG3_bry.tex" "BdG3_bry.dvi" "BdG3_bry" 1529653458
+  "BdG3_bry.aux" 1529653456 651 eead5fda61ace81c68342637ae3ce0f7 ""
+  "BdG3_bry.tex" 1529653453 8511 6221c8a3fae4a81dff73a719f42ef050 ""
+  "c:/Users/tanaka_lab/Documents/practice_fortran/19/TB/BdG3_bry.tex" 1529653453 8511 6221c8a3fae4a81dff73a719f42ef050 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1463054490 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1463054490 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm" 1463054490 856 7404843a5f798859944d7973a47821d5 ""
@@ -72,5 +72,5 @@
   "c:/w32tex/share/texmf-dist/web2c/texmf.cnf" 1474786642 32313 2bf26f105d5b3251d7f5efd1aced7fac ""
   (generated)
   "BdG3_bry.dvi"
-  "BdG3_bry.aux"
   "BdG3_bry.log"
+  "BdG3_bry.aux"
