@@ -15,7 +15,7 @@ program bussei
   !行列Aの出力
   open(17,file='date2.txt',status='replace')
   do j=0,600
-    ky=0.0d0
+    ky=pi/4.0
     kf=sqrt(mu)
     t=0.01d0*j
     E=-3.0d0+t
@@ -60,7 +60,7 @@ program bussei
   call zgetri(n,H,n,ipiv,work,lwork,info)
 
   !状態密度の導出
-  p=-(aimag(H(201,201)+H(202,202)))/pi
+  p=-(aimag(H(1,1)+H(2,2)+H(3,3)+H(4,4)))/pi
     write(17,*) E,p
   end do
   close(17)
