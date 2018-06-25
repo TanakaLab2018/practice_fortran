@@ -262,7 +262,7 @@
             \end{align}
     
             \subsection{xを離散化せよ}
-            式\eqref{macro2}を式\eqref{hamil2}に代入して、行列で表す。このとき、離散化した波動関数を以下の式に定義する。
+            式\eqref{macro2}を式\eqref{hamil1}、\eqref{hamil2}、\eqref{hamil3}に代入して、行列で表す。このとき、離散化した波動関数を以下の式に定義する。
             
             \begin{align}
                 \vec{\Psi}=
@@ -350,6 +350,147 @@
             \end{align}
     
             とおく
+
+            \subsubsection{$P_x$-waveのとき}
+
+            代入した式は、
+
+		    \begin{align}
+			    \mathcal{H}= \sum_{i=1}^N \sum_{k_y}
+			    \left[ \Psi^\dagger_{i\uparrow} \left( \frac{\hbar^2k_y^2}{2m}-\mu_F \right)\Psi_{i\uparrow}
+			    +\Psi^\dagger_{i\uparrow} \left( \Psi_{i+1\uparrow}\left(x\right)-2\Psi_{i\uparrow}\left(x\right)+\Psi_{i-1\uparrow}\left(x\right)
+			    \right)+\Psi^\dagger_{i\downarrow} \Delta_0^\ast \Psi_{i\uparrow} \cdots
+			    \right]
+		    \end{align}
+
+		    このとき、$\eta$ のなかの微分を考慮する。
+		    $N=3$と置くとき、ハミルトニアンを2次形式で表すと、
+
+		    \begin{align}
+			    \mathcal{H}=
+			    \begin{bmatrix}
+				    \Psi_{1\uparrow}^\dagger \\
+				    \Psi_{1\downarrow}^\dagger \\
+				    \Psi_{1\uparrow} \\
+			    	\Psi_{1\downarrow} \\
+				    \Psi_{2\uparrow}^\dagger \\
+				    \Psi_{2\downarrow}^\dagger \\
+			    	\Psi_{2\uparrow} \\
+			    	\Psi_{2\downarrow} \\
+			    	\Psi_{3\uparrow}^\dagger \\
+			    	\Psi_{3\downarrow}^\dagger \\
+			    	\Psi_{3\uparrow} \\
+			    	\Psi_{3\downarrow}
+			    \end{bmatrix}
+			    ^T
+			    \begin{bmatrix}
+			    	\varepsilon_{k_y} & 0 & 0 & 0 & -\varLambda & 0 & 0 & \zeta & 0 & 0 & 0 & 0 \\
+			    	0 & \varepsilon_{k_y} & 0 & 0 & 0 & -\varLambda & \zeta & 0 & 0 & 0 & 0 & 0 \\
+			    	0 & 0 & -\varepsilon_{k_y} & 0 & 0 & \zeta^{'} & \varLambda & 0 & 0 & 0 & 0 & 0 \\
+			    	0 & 0 & 0 & -\varepsilon_{k_y} & \zeta^{'} & 0 & 0 & \varLambda & 0 & 0 & 0 & 0 \\
+			    	-\varLambda & 0 & 0 & -\zeta & \varepsilon_{k_y} & 0 & 0 & 0 & -\varLambda & 0 & 0 & \zeta \\
+			    	0 & -\varLambda & -\zeta & 0 & 0 & \varepsilon_{k_y} & 0 & 0 & 0 & -\varLambda & \zeta & 0 \\
+			    	0 & -\zeta^{'} & \varLambda & 0 & 0 & 0 & -\varepsilon_{k_y} & 0 & 0 & \zeta^{'} & \varLambda & 0 \\
+			    	-\zeta^{'} & 0 & 0 & \varLambda & 0 & 0 & 0 & -\varepsilon_{k_y} & \zeta^{'} & 0 & 0 & \varLambda \\
+			    	0 & 0 & 0 & 0 & -\varLambda & 0 & 0 & -\zeta & \varepsilon_{k_y} & 0 & 0 & 0 \\
+			    	0 & 0 & 0 & 0 & 0 & -\varLambda & -\zeta & 0 & 0 & \varepsilon_{k_y} & 0 & 0 \\
+			    	0 & 0 & 0 & 0 & 0 & -\zeta^{'} & \varLambda & 0 & 0 & 0 & -\varepsilon_{k_y} & 0 \\
+			    	0 & 0 & 0 & 0 & -\zeta^{'} & 0 & 0 & \varLambda & 0 & 0 & 0 & -\varepsilon_{k_y}
+			    \end{bmatrix}
+			    \begin{bmatrix}
+			    	\Psi_{1\uparrow} \\
+			    	\Psi_{1\downarrow} \\
+			    	\Psi_{1\uparrow}^\dagger \\
+			    	\Psi_{1\downarrow}^\dagger \\
+			    	\Psi_{2\uparrow} \\
+			    	\Psi_{2\downarrow} \\
+			    	\Psi_{2\uparrow}^\dagger \\
+			    	\Psi_{2\downarrow}^\dagger \\
+			    	\Psi_{3\uparrow} \\
+			    	\Psi_{3\downarrow} \\
+			    	\Psi_{3\uparrow}^\dagger \\
+			    	\Psi_{3\downarrow}^\dagger \\
+			    \end{bmatrix}
+		    \end{align}
+
+		    ここで
+
+		    \begin{align}
+		    	\varepsilon_{k_y}=\frac{\hbar^2}{2m}(k_y^2+2)-\mu_F \\
+		    	\varLambda=\frac{\hbar^2}{2m}\\
+		    	\zeta=\dfrac{\Delta_0}{2k_{F}}i\\
+		    	\zeta^{'}=\dfrac{\Delta_0^{*}}{2k_{F}}i\\
+		    	\mu=\dfrac{\hbar^{2}k_F^{2}}{2m}
+		    \end{align}
+
+		    とおく
+
+            \subsubsection{$P_x+iP_y$のとき}
+
+            微分を考慮する。
+		    $N=3$と置くとき、ハミルトニアンを2次形式で表すと、
+
+		    \begin{align}
+		    	\mathcal{H}=
+		    	\begin{bmatrix}
+		    		\Psi_{1\uparrow}^\dagger \\
+		    		\Psi_{1\downarrow}^\dagger \\
+		    		\Psi_{1\uparrow} \\
+		    		\Psi_{1\downarrow} \\
+		    		\Psi_{2\uparrow}^\dagger \\
+		    		\Psi_{2\downarrow}^\dagger \\
+		    		\Psi_{2\uparrow} \\
+		    		\Psi_{2\downarrow} \\
+		    		\Psi_{3\uparrow}^\dagger \\
+		    		\Psi_{3\downarrow}^\dagger \\
+		    		\Psi_{3\uparrow} \\
+		    		\Psi_{3\downarrow}
+		    	\end{bmatrix}
+		    	^T
+		    	\begin{bmatrix}
+		    		\varepsilon_{k_y} & 0 & 0 & -k_y\xi & -\varLambda & 0 & 0 & \zeta & 0 & 0 & 0 & 0 \\
+		    		0 & \varepsilon_{k_y} & -k_y\xi & 0 & 0 & -\varLambda & \zeta & 0 & 0 & 0 & 0 & 0 \\
+		    		0 & -k_y\xi^{'} & -\varepsilon_{k_y} & 0 & 0 & -\zeta^{'} & \varLambda & 0 & 0 & 0 & 0 & 0 \\
+		    		-k_y\xi^{'} & 0 & 0 & -\varepsilon_{k_y} & -\zeta^{'} & 0 & 0 & \varLambda & 0 & 0 & 0 & 0 \\
+		    		-\varLambda & 0 & 0 & -\zeta & \varepsilon_{k_y} & 0 & 0 & -k_y\xi & -\varLambda & 0 & 0 & \zeta \\
+		    		0 & -\varLambda & -\zeta & 0 & 0 & \varepsilon_{k_y} & -k_y\xi & 0 & 0 & -\varLambda & \zeta & 0 \\
+		    		0 & \zeta^{'} & \varLambda & 0 & 0 & -k_y\xi^{'} & -\varepsilon_{k_y} & 0 & 0 & -\zeta^{'} & \varLambda & 0 \\
+		    		\zeta^{'} & 0 & 0 & \varLambda & -k_y\xi^{'} & 0 & 0 & -\varepsilon_{k_y} & -\zeta^{'} & 0 & 0 & \varLambda \\
+		    		0 & 0 & 0 & 0 & -\varLambda & 0 & 0 & -\zeta & \varepsilon_{k_y} & 0 & 0 & -k_y\xi \\
+		    		0 & 0 & 0 & 0 & 0 & -\varLambda & -\zeta & 0 & 0 & \varepsilon_{k_y} & -k_y\xi & 0 \\
+		    		0 & 0 & 0 & 0 & 0 & \zeta^{'} & \varLambda & 0 & 0 & -k_y\xi^{'} & -\varepsilon_{k_y} & 0 \\
+		    		0 & 0 & 0 & 0 & \zeta^{'} & 0 & 0 & \varLambda & -k_y\xi^{'} & 0 & 0 & -\varepsilon_{k_y}
+		    	\end{bmatrix}
+		    	\begin{bmatrix}
+		    		\Psi_{1\uparrow} \\
+		    		\Psi_{1\downarrow} \\
+		    		\Psi_{1\uparrow}^\dagger \\
+		    		\Psi_{1\downarrow}^\dagger \\
+		    		\Psi_{2\uparrow} \\
+		    		\Psi_{2\downarrow} \\
+		    		\Psi_{2\uparrow}^\dagger \\
+		    		\Psi_{2\downarrow}^\dagger \\
+		    		\Psi_{3\uparrow} \\
+		    		\Psi_{3\downarrow} \\
+		    		\Psi_{3\uparrow}^\dagger \\
+		    		\Psi_{3\downarrow}^\dagger \\
+		    	\end{bmatrix}
+		    \end{align}
+
+	    	ここで  
+
+	    	\begin{align}
+	    		\varepsilon_{k_y}=\frac{\hbar^2}{2m}(k_y^2+2)-\mu_F \\
+		    	\varLambda=\frac{\hbar^2}{2m}\\
+			    \zeta=\dfrac{\Delta_0}{2k_{F}}\\
+		    	\zeta^{'}=\dfrac{\Delta_0^{*}}{2k_{F}}\\
+		    	\mu=\dfrac{\hbar^{2}k_F^{2}}{2m}\\
+		    	\xi=\Delta_0\frac{1}{k_f} \\
+		    	\xi^{'}=\Delta_0^\ast\frac{1}{k_f}
+		    \end{align}
+
+		とおく
+
     
             \section{結果}
             $\mathcal{H}$を数値計算で対角化した。

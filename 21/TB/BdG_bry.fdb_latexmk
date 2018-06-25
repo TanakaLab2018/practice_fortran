@@ -1,14 +1,14 @@
 # Fdb version 3
-["dvipdf"] 1529894314 "BdG_bry.dvi" "BdG_bry.pdf" "BdG_bry" 1529894316
-  "BdG_bry.dvi" 1529894314 23948 163a6753f08b8dc849e2f6ef007a07c8 "latex"
+["dvipdf"] 1529897276 "BdG_bry.dvi" "BdG_bry.pdf" "BdG_bry" 1529897279
+  "BdG_bry.dvi" 1529897276 34400 ba14091ea35ca3f439320266f4ec176f "latex"
   (generated)
   "BdG_bry.pdf"
-["latex"] 1529894312 "c:/Users/tanaka_lab/Documents/practice_fortran/21/TB/BdG_bry.tex" "BdG_bry.dvi" "BdG_bry" 1529894316
-  "BdG_bry.aux" 1529894314 1579 ae2a37d1c84e4e4b8e8c86608460404f ""
+["latex"] 1529897275 "c:/Users/tanaka_lab/Documents/practice_fortran/21/TB/BdG_bry.tex" "BdG_bry.dvi" "BdG_bry" 1529897279
+  "BdG_bry.aux" 1529897276 1755 16b34a393245aad5b88b860366146502 ""
   "BdG_bry.png" 1529892353 8287 a709e059b68af0cc4643c346ced46921 ""
-  "BdG_bry.tex" 1529894310 17874 3edf8cc151709374cd7cb672e66a6b17 ""
+  "BdG_bry.tex" 1529897272 23905 3b979741f305c5c840351c64641a7e09 ""
   "LDOS_bry.png" 1529892353 22983 605a515411e6c3521aa038fe750823bc ""
-  "c:/Users/tanaka_lab/Documents/practice_fortran/21/TB/BdG_bry.tex" 1529894310 17874 3edf8cc151709374cd7cb672e66a6b17 ""
+  "c:/Users/tanaka_lab/Documents/practice_fortran/21/TB/BdG_bry.tex" 1529897272 23905 3b979741f305c5c840351c64641a7e09 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1463054490 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1463054490 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm" 1463054490 856 7404843a5f798859944d7973a47821d5 ""
@@ -79,6 +79,6 @@
   "extractbb -O figure1.pdf" 0 -1 0 ""
   "figure1.pdf" 1529892211 7789 4be54ed28f3e48c698b50f0cd7f95839 ""
   (generated)
+  "BdG_bry.log"
   "BdG_bry.dvi"
   "BdG_bry.aux"
-  "BdG_bry.log"
