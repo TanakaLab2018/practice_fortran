@@ -493,42 +493,88 @@
 
     
             \section{結果}
-            $\mathcal{H}$を数値計算で対角化した。
-            $N=100$、$k_y$を横軸、固有値を縦軸として分散関係をプロットした。結果は以下のとおりである。
-    
-            \begin{figure}[H]
-                \centering
-                \includegraphics[scale=0.7]{BdG_bry.png}
-                \caption{分散関係}
-                \label{Dispersion1}
-            \end{figure}
-    
-            次に、グリーン関数を用いて状態密度を求める。
-            グリーン関数
+            $\mathcal{H}$を数値計算で対角化し、次に、グリーン関数を用いて状態密度を求めた。
+
+            グリーン関数は、以下の通りである。
     
             \begin{align}
                 G=(E+i\delta-H)^(-1)
                 \label{Green}
             \end{align}
-    
+
             式\eqref{Green}を用いると、表面の状態密度は
     
             \begin{align}
                 \rho=-\frac{1}{\pi}Im(G_{11}+G_{22})
             \end{align}
     
-            で表される。$E$を$-3$から$3$の範囲で動かし、$\rho$をプロットした。このとき$\delta=10^{-3}$とした。
+            で表される。
+
+            \subsubsection{s-waveのとき}
+            $N=100$、$k_y$を横軸、固有値を縦軸として分散関係をプロットした。結果は以下のとおりである。
+    
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.5]{BdG_bry.png}
+                \caption{分散関係1}
+                \label{Dispersion1}
+            \end{figure}
+    
+            $E$を$-3$から$3$の範囲で動かし、$\rho$をプロットした。このとき$\delta=10^{-3}$とした。
             結果を以下に示す。
     
             \begin{figure}[H]
                 \centering
-                \includegraphics[scale=0.7]{LDOS_bry.png}
-                \caption{状態密度}
+                \includegraphics[scale=0.5]{LDOS_bry.png}
+                \caption{状態密度1}
                 \label{LDOS1}
             \end{figure}
     
             図\eqref{LDOS1}から、エネルギーが$-1$から$1$の範囲では状態がないことが分かる。
     
+            \subsubsection{$P_x$-waveのとき}
+            $N=100$、$k_y$を横軸、固有値を縦軸として分散関係をプロットした。結果は以下のとおりである。
     
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.5]{BdG2_bry.png}
+                \caption{分散関係2}
+                \label{Dispersion1}
+            \end{figure}
+    
+            次に、グリーン関数を用いて状態密度を求める。
+            
+            $E$を$-3$から$3$の範囲で動かし、$\rho$をプロットした。このとき$\delta=10^{-3}$とした。
+            結果を以下に示す。
+    
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.5]{LDOS2.png}
+                \caption{状態密度2}
+                \label{LDOS2}
+            \end{figure}
+    
+            \subsubsection{$P_x+iP_y$のとき}
+            $N=100$、$k_y$を横軸、固有値を縦軸として分散関係をプロットした。結果は以下のとおりである。
+    
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.5]{BdG3_bry.png}
+                \caption{分散関係3}
+                \label{Dispersion3}
+            \end{figure}
+    
+            次に、グリーン関数を用いて状態密度を求める。
+           
+            $E$を$-3$から$3$の範囲で動かし、$\rho$をプロットした。このとき$\delta=10^{-3}$とした。
+            結果を以下に示す。
+    
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale=0.5]{LDOS3_bry.png}
+                \caption{状態密度3}
+                \label{LDOS3}
+            \end{figure}
+
     \end{document}
     

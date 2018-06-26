@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.14)  25 JUN 2018 12:30
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.14)  26 JUN 2018 13:06
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -163,7 +163,11 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box44
 \@float@everytoks=\toks22
 \@floatcapt=\box45
-) (./BdG_bry.aux)
+) (./BdG_bry.aux
+
+LaTeX Warning: Label `Dispersion1' multiply defined.
+
+)
 \openout1 = `BdG_bry.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -199,8 +203,7 @@ LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 (Font)              scaled to size 4.805pt on input line 15.
 LaTeX Font Info:    Try loading font information for U+msa on input line 15.
-
-(c:/w32tex/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (c:/w32tex/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 15.
@@ -250,17 +253,31 @@ Overfull \hbox (51.87088pt too wide) in paragraph at lines 478--478
 [] 
  []
 
+[7]
 File: BdG_bry.png Graphic file (type bmp)
-<BdG_bry.png> [7]
+ <BdG_bry.png>
 File: LDOS_bry.png Graphic file (type bmp)
- <LDOS_bry.png> [8] [9] (./BdG_bry.aux) ) 
+ <LDOS_bry.png>
+File: BdG2_bry.png Graphic file (type bmp)
+ <BdG2_bry.png> [8]
+File: LDOS2.png Graphic file (type bmp)
+ <LDOS2.png>
+File: BdG3_bry.png Graphic file (type bmp)
+ <BdG3_bry.png>
+[9]
+File: LDOS3_bry.png Graphic file (type bmp)
+ <LDOS3_bry.png> [10] (./BdG_bry.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1944 strings out of 493670
- 22274 string characters out of 6151242
+ 1963 strings out of 493670
+ 22605 string characters out of 6151242
  101153 words of memory out of 5000000
- 5490 multiletter control sequences out of 15000+600000
+ 5501 multiletter control sequences out of 15000+600000
  24376 words of font info for 106 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  27i,16n,26p,231b,303s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on BdG_bry.dvi (9 pages, 36220 bytes).
+Output written on BdG_bry.dvi (10 pages, 38028 bytes).

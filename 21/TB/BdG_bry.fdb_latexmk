@@ -1,14 +1,17 @@
 # Fdb version 3
-["dvipdf"] 1529897276 "BdG_bry.dvi" "BdG_bry.pdf" "BdG_bry" 1529897279
-  "BdG_bry.dvi" 1529897276 34400 ba14091ea35ca3f439320266f4ec176f "latex"
+["dvipdf"] 1529985965 "BdG_bry.dvi" "BdG_bry.pdf" "BdG_bry" 1529985968
+  "BdG_bry.dvi" 1529985959 36096 a52f127fea8a1686691893bfecc512bb "latex"
   (generated)
   "BdG_bry.pdf"
-["latex"] 1529897275 "c:/Users/tanaka_lab/Documents/practice_fortran/21/TB/BdG_bry.tex" "BdG_bry.dvi" "BdG_bry" 1529897279
-  "BdG_bry.aux" 1529897276 1755 16b34a393245aad5b88b860366146502 ""
+["latex"] 1529985956 "c:/Users/tanaka_lab/Documents/practice_fortran/21/TB/BdG_bry.tex" "BdG_bry.dvi" "BdG_bry" 1529985968
+  "BdG2_bry.png" 1529892393 9479 106f727dd0b43a3c4cffc7d2d87403f1 ""
+  "BdG3_bry.png" 1529892437 8907 11cde869f2f72797670f7f7880090718 ""
   "BdG_bry.png" 1529892353 8287 a709e059b68af0cc4643c346ced46921 ""
-  "BdG_bry.tex" 1529897272 23905 3b979741f305c5c840351c64641a7e09 ""
+  "BdG_bry.tex" 1529985956 25787 3a1f1880fd3a55734ce304146bcf4fd5 ""
+  "LDOS2.png" 1529892393 11143 8194b33f03422034271394805e9bb779 ""
+  "LDOS3_bry.png" 1529892437 11034 53cb1bbab9a1e136e2c37eb5d7e67d22 ""
   "LDOS_bry.png" 1529892353 22983 605a515411e6c3521aa038fe750823bc ""
-  "c:/Users/tanaka_lab/Documents/practice_fortran/21/TB/BdG_bry.tex" 1529897272 23905 3b979741f305c5c840351c64641a7e09 ""
+  "c:/Users/tanaka_lab/Documents/practice_fortran/21/TB/BdG_bry.tex" 1529985956 25787 3a1f1880fd3a55734ce304146bcf4fd5 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1463054490 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1463054490 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm" 1463054490 856 7404843a5f798859944d7973a47821d5 ""
@@ -74,7 +77,11 @@
   "c:/w32tex/share/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1475901098 5898 802d78efe5bf9b662fe2e6503d24bab7 ""
   "c:/w32tex/share/texmf-dist/web2c/eptex/platex.fmt" 1479110149 4058710 c82ab831433264930f7495ca90a8db5c ""
   "c:/w32tex/share/texmf-dist/web2c/texmf.cnf" 1474786642 32313 2bf26f105d5b3251d7f5efd1aced7fac ""
+  "extractbb -O BdG2_bry.png" 0 -1 0 ""
+  "extractbb -O BdG3_bry.png" 0 -1 0 ""
   "extractbb -O BdG_bry.png" 0 -1 0 ""
+  "extractbb -O LDOS2.png" 0 -1 0 ""
+  "extractbb -O LDOS3_bry.png" 0 -1 0 ""
   "extractbb -O LDOS_bry.png" 0 -1 0 ""
   "extractbb -O figure1.pdf" 0 -1 0 ""
   "figure1.pdf" 1529892211 7789 4be54ed28f3e48c698b50f0cd7f95839 ""
