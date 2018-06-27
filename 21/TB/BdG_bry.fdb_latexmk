@@ -1,21 +1,21 @@
 # Fdb version 3
-["dvipdf"] 1530081334 "BdG_bry.dvi" "BdG_bry.pdf" "BdG_bry" 1530081337
-  "BdG_bry.dvi" 1530081333 36428 d070d611f2ccc3544ff339516d611700 "latex"
+["dvipdf"] 1530087487 "BdG_bry.dvi" "BdG_bry.pdf" "BdG_bry" 1530087490
+  "BdG_bry.dvi" 1530087487 37112 51e71cb5be3f5cda5dc53b06fc09dd7f "latex"
   (generated)
   "BdG_bry.pdf"
-["latex"] 1530081325 "c:/Users/tanaka_lab/Documents/practice_fortran/21/TB/BdG_bry.tex" "BdG_bry.dvi" "BdG_bry" 1530081337
+["latex"] 1530087483 "c:/Users/tanaka_lab/Documents/practice_fortran/21/TB/BdG_bry.tex" "BdG_bry.dvi" "BdG_bry" 1530087490
   "BdG2_bry.png" 1529892393 9479 106f727dd0b43a3c4cffc7d2d87403f1 ""
   "BdG3_bry.png" 1529892437 8907 11cde869f2f72797670f7f7880090718 ""
-  "BdG_bry.aux" 1530081333 2864 fd3712b1ba6b09fc25ab068760131baa ""
+  "BdG_bry.aux" 1530087487 2864 fd3712b1ba6b09fc25ab068760131baa ""
   "BdG_bry.png" 1529892353 8287 a709e059b68af0cc4643c346ced46921 ""
-  "BdG_bry.tex" 1530081315 26502 768739c0cff8579d0615ff8f9ede9cb3 ""
+  "BdG_bry.tex" 1530087483 26918 ad6aa5e8b133d25505dedbcffff222e6 ""
   "LDOS2.png" 1529892393 11143 8194b33f03422034271394805e9bb779 ""
   "LDOS2b.png" 1530081240 26243 9d506c6b3b6fbb68304f169a230ef293 ""
   "LDOS3_bry.png" 1529892437 11034 53cb1bbab9a1e136e2c37eb5d7e67d22 ""
   "LDOS3b_bry.png" 1530081251 26127 52409c684e21de92cb61bf9a73031843 ""
   "LDOS_bry.png" 1529892353 22983 605a515411e6c3521aa038fe750823bc ""
   "LDOSb_bry.png" 1530081266 23855 ab5f2fb6b3b8c43fa415ead6c37895b2 ""
-  "c:/Users/tanaka_lab/Documents/practice_fortran/21/TB/BdG_bry.tex" 1530081315 26502 768739c0cff8579d0615ff8f9ede9cb3 ""
+  "c:/Users/tanaka_lab/Documents/practice_fortran/21/TB/BdG_bry.tex" 1530087483 26918 ad6aa5e8b133d25505dedbcffff222e6 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1463054490 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1463054490 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm" 1463054490 856 7404843a5f798859944d7973a47821d5 ""
