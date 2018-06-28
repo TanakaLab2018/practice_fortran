@@ -1,3 +1,4 @@
+!s波の分散関係
 program BdGcalKS
   implicit none
   integer ,PARAMETER :: n=100, m=100
@@ -9,7 +10,7 @@ program BdGcalKS
   integer :: info, i, j
   !write(*,*) "kx=", "ky="
   !read(*,*) kx
- open(10,file='BdGcalKS.txt', status='replace')
+ open(10,file='data.txt', status='replace')
 do j=1,m
   ky=-pi+2.0d0*pi/dble(m-1)*dble(j-1)
 
