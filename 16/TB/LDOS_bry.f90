@@ -13,7 +13,7 @@ program bussei
   !complex(kind(0d0)) :: ,vl(n,n),vr(n,n),work(lwork),wr(n),wi(n)
 
   !行列Aの出力
-  open(17,file='date1.txt',status='replace')
+  open(17,file='date2.txt',status='replace')
   do j=0,600
     ky=0.0d0
     t=0.01d0*j
