@@ -1,4 +1,4 @@
-!px＋ipyのLDOSのバルク
+!px＋ipyのLDOSのバルク 波数＋
 program BdG3LDOSKS
   implicit none
   integer ,PARAMETER :: n=100, m=600
@@ -13,7 +13,7 @@ program BdG3LDOSKS
   !write(*,*) "kx=", "ky="
   !read(*,*) kx
  open(12,file='data.txt', status='replace')
- ky=-pi/4.0d0
+ ky=pi/4.0d0
 C=(delta)/(sqrt(mu)*4.0d0)
 do j=0,m
   E=-3.0d0+dble(j)*0.010d0

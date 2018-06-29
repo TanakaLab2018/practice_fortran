@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2018.4.18)  29 JUN 2018 12:20
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (utf8.euc) (TeX Live 2017) (preloaded format=platex 2018.4.18)  29 JUN 2018 13:48
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -254,48 +254,56 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
 [1
 
 ]
-File: ./figure_fix.pdf Graphic file (type pdf)
- <./figure_fix.pdf> [2] [3]
+File: ../../14/KS/figure_fix.pdf Graphic file (type pdf)
+ <../../14/KS/figure_fix.pdf> [2] [3]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 136.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 136.
  [4] [5] [6] [7]
-File: BdGcalKSs.png Graphic file (type bmp)
- <BdGcalKSs.png> [8]
-File: BdG3KS1.png Graphic file (type bmp)
+File: ../../16/KS/16-1/graph/data.png Graphic file (type bmp)
 
-<BdG3KS1.png> [9] [10]
-File: BdG2calKS.png Graphic file (type bmp)
- <BdG2calKS.png> [11]
-File: BdGKSLDOSedge.png Graphic file (type bmp)
- <BdGKSLDOSedge.png>
-File: BdGKSLDOSinternal.png Graphic file (type bmp)
+<../../16/KS/16-1/graph/data.png> [8]
+File: ../../16/KS/16-2/graph/data.png Graphic file (type bmp)
+ <../../16/KS/16-2/graph/data.png>
+[9] [10] [11]
+File: ../../18/KS/18-1/graph/data.png Graphic file (type bmp)
+ <../../18/KS/18-1/graph/data.png>
+File: ../../18/KS/18-2/graph/data.png Graphic file (type bmp)
 
-<BdGKSLDOSinternal.png> [12] [13]
-Overfull \hbox (123.4261pt too wide) in paragraph at lines 652--652
+<../../18/KS/18-2/graph/data.png> [12]
+File: ../../18/KS/18-3/graph/data.png Graphic file (type bmp)
+ <../../18/KS/18-3/graph/data.png>
+File: ../../18/KS/18-4/graph/data.png Graphic file (type bmp)
+
+<../../18/KS/18-4/graph/data.png> [13] [14]
+Overfull \hbox (123.4261pt too wide) in paragraph at lines 657--657
 [] 
  []
 
-[14]
-File: BdG3calKSax.png Graphic file (type bmp)
- <BdG3calKSax.png> [15]
-File: BdG3KSLDOSinternal.png Graphic file (type bmp)
- <BdG3KSLDOSinternal.png>
-File: BdG3KSLDOSedge1.png Graphic file (type bmp)
- <BdG3KSLDOSedge1.png>
-File: BdG3KSLDOSedge2.png Graphic file (type bmp)
+[15]
+File: ../../20/KS/20-1/graph/data.png Graphic file (type bmp)
+ <../../20/KS/20-1/graph/data.png>
+File: ../../20/KS/20-2/graph/data.png Graphic file (type bmp)
+ <../../20/KS/20-2/graph/data.png>
+[16]
+File: ../../20/KS/20-3/graph/data.png Graphic file (type bmp)
+ <../../20/KS/20-3/graph/data.png> [17]
+File: ../../20/KS/20-4/graph/data.png Graphic file (type bmp)
+ <../../20/KS/20-4/graph/data.png>
+File: ../../20/KS/20-5/graph/data.png Graphic file (type bmp)
 
-<BdG3KSLDOSedge2.png> [16]
-File: BdG3KSLDOSedge1-.png Graphic file (type bmp)
- <BdG3KSLDOSedge1-.png> [17] [18] (./main.aux) ) 
+<../../20/KS/20-5/graph/data.png> [18]
+File: ../../20/KS/20-6/graph/data.png Graphic file (type bmp)
+ <../../20/KS/20-6/graph/data.png>
+[19] [20] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 2239 strings out of 493653
- 28579 string characters out of 6148874
+ 2249 strings out of 493653
+ 29397 string characters out of 6148874
  124041 words of memory out of 5000000
- 5762 multiletter control sequences out of 15000+600000
+ 5766 multiletter control sequences out of 15000+600000
  18001 words of font info for 72 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  27i,22n,26p,425b,289s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (18 pages, 52772 bytes).
+Output written on main.dvi (20 pages, 53436 bytes).

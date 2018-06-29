@@ -1,4 +1,4 @@
-!px波のLDOSのバルク
+!px波のLDOSのエッジ
 program BdG2KSLDOS
   implicit none
   integer ,PARAMETER :: n=100, m=600
@@ -52,7 +52,7 @@ end do
  call zgetrf(4*n, 4*n, G, 4*n, ipiv, info)
  call zgetri(4*n, G, 4*n, ipiv, work, lwork, info)
 ! write(*,*) G(1,1), G(2,2)
- p=-(aimag(G(201,201)+G(202,202)))/pi
+ p=-(aimag(G(1,1)+G(2,2)))/pi
  write(12,*) E,p
 end do
 close(12)
