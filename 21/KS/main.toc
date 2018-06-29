@@ -1,0 +1,5 @@
+\contentsline {section}{\numberline {1}導入}{2}
+\contentsline {section}{\numberline {2}計算・結果}{4}
+\contentsline {subsection}{\numberline {2.1}1の場合}{4}
+\contentsline {subsection}{\numberline {2.2}2の場合}{9}
+\contentsline {subsection}{\numberline {2.3}3の場合}{13}
