@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.14)  29 JUN 2018 13:01
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.14)  29 JUN 2018 13:13
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -255,6 +255,8 @@ File: BdG_bry.png Graphic file (type bmp)
  <BdG_bry.png>
 File: LDOS_bry.png Graphic file (type bmp)
  <LDOS_bry.png>
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 529.
 File: LDOSb_bry.png Graphic file (type bmp)
  <LDOSb_bry.png> [8]
 File: BdG2_bry.png Graphic file (type bmp)
@@ -277,12 +279,12 @@ File: LDOS3d_bry.png Graphic file (type bmp)
  <LDOS3d_bry.png> [12] [13]
 (./BdG_bry.aux) ) 
 Here is how much of TeX's memory you used:
- 1989 strings out of 493670
- 23068 string characters out of 6151242
+ 2004 strings out of 493670
+ 23218 string characters out of 6151242
  101153 words of memory out of 5000000
- 5517 multiletter control sequences out of 15000+600000
- 24376 words of font info for 106 fonts, out of 8000000 for 9000
+ 5526 multiletter control sequences out of 15000+600000
+ 26635 words of font info for 115 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,16n,26p,536b,303s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 27i,16n,26p,537b,359s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on BdG_bry.dvi (13 pages, 41128 bytes).
+Output written on BdG_bry.dvi (13 pages, 41376 bytes).
