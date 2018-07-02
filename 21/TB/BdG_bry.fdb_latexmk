@@ -1,23 +1,23 @@
 # Fdb version 3
-["dvipdf"] 1530497635 "BdG_bry.dvi" "BdG_bry.pdf" "BdG_bry" 1530497638
-  "BdG_bry.dvi" 1530497635 38960 6b8d21e9bb579fda37ede27ec316f034 "latex"
+["dvipdf"] 1530504470 "BdG_bry.dvi" "BdG_bry.pdf" "BdG_bry" 1530504473
+  "BdG_bry.dvi" 1530504470 38960 9308fdf8576442702d508246fb012676 "latex"
   (generated)
   "BdG_bry.pdf"
-["latex"] 1530497631 "c:/Users/tanaka_lab/Documents/practice_fortran/21/TB/BdG_bry.tex" "BdG_bry.dvi" "BdG_bry" 1530497638
+["latex"] 1530504466 "c:/Users/tanaka_lab/Documents/practice_fortran/21/TB/BdG_bry.tex" "BdG_bry.dvi" "BdG_bry" 1530504473
   "BdG2_bry.png" 1530243954 8184 b86f176b59567585c69eea0f9a85f454 ""
   "BdG3_bry.png" 1530244223 7918 b445650e215fdd4e6e579d0ec37951cc ""
-  "BdG_bry.aux" 1530497635 3168 80c6f45e30340568404b882e0036cebd ""
+  "BdG_bry.aux" 1530504470 3168 80c6f45e30340568404b882e0036cebd ""
   "BdG_bry.png" 1530243489 7195 5609ad2d0fd45a038801d6e62db11abf ""
-  "BdG_bry.tex" 1530497630 28472 1e23a1c955b935c270add9f62ab2f93c ""
+  "BdG_bry.tex" 1530504465 28326 fc57b66436acd99232322c6048b9bd95 ""
   "LDOS2.png" 1530497019 11301 d0a531c8a29c44360c3fc203fec4ea05 ""
   "LDOS2b.png" 1530497145 25295 9089a70529d196128521b01644b8f12a ""
   "LDOS3_bry.png" 1530497346 11301 d0a531c8a29c44360c3fc203fec4ea05 ""
   "LDOS3b_bry.png" 1530497230 25295 9089a70529d196128521b01644b8f12a ""
-  "LDOS3c_bry.png" 1530244284 9623 17d901f528f7ebacad6ead6ad0f50b32 ""
+  "LDOS3c_bry.png" 1530497796 9544 f7857f32028fc950f0b4b2ac4cbc4668 ""
   "LDOS3d_bry.png" 1530497583 9309 d15877a07b388c62d8520b82f96f8224 ""
   "LDOS_bry.png" 1530496934 22226 8c0921f92bc6a996440094de9984e908 ""
   "LDOSb_bry.png" 1530496821 24192 5e61b7a80a5daa70b02f444ed8dc327d ""
-  "c:/Users/tanaka_lab/Documents/practice_fortran/21/TB/BdG_bry.tex" 1530497630 28472 1e23a1c955b935c270add9f62ab2f93c ""
+  "c:/Users/tanaka_lab/Documents/practice_fortran/21/TB/BdG_bry.tex" 1530504465 28326 fc57b66436acd99232322c6048b9bd95 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1463054490 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm" 1463054490 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm" 1463054490 856 7404843a5f798859944d7973a47821d5 ""
@@ -104,5 +104,5 @@
   "figure1.pdf" 1529892211 7789 4be54ed28f3e48c698b50f0cd7f95839 ""
   (generated)
   "BdG_bry.log"
-  "BdG_bry.aux"
   "BdG_bry.dvi"
+  "BdG_bry.aux"
