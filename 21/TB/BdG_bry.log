@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.14)  29 JUN 2018 13:13
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.14)  2 JUL 2018 11:16
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -273,10 +273,10 @@ File: LDOS3_bry.png Graphic file (type bmp)
 File: LDOS3b_bry.png Graphic file (type bmp)
 
 <LDOS3b_bry.png> [11]
-File: LDOS3c_bry.png Graphic file (type bmp)
- <LDOS3c_bry.png>
 File: LDOS3d_bry.png Graphic file (type bmp)
- <LDOS3d_bry.png> [12] [13]
+ <LDOS3d_bry.png>
+File: LDOS3c_bry.png Graphic file (type bmp)
+ <LDOS3c_bry.png> [12] [13]
 (./BdG_bry.aux) ) 
 Here is how much of TeX's memory you used:
  2004 strings out of 493670

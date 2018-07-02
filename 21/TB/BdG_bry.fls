@@ -131,6 +131,15 @@ INPUT BdG_bry.png
 INPUT extractbb -O BdG_bry.png
 INPUT LDOS_bry.png
 INPUT extractbb -O LDOS_bry.png
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib9.tfm
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy9.tfm
+INPUT c:/w32tex/share/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
 INPUT LDOSb_bry.png
 INPUT extractbb -O LDOSb_bry.png
 INPUT BdG2_bry.png
@@ -145,4 +154,8 @@ INPUT LDOS3_bry.png
 INPUT extractbb -O LDOS3_bry.png
 INPUT LDOS3b_bry.png
 INPUT extractbb -O LDOS3b_bry.png
+INPUT LDOS3d_bry.png
+INPUT extractbb -O LDOS3d_bry.png
+INPUT LDOS3c_bry.png
+INPUT extractbb -O LDOS3c_bry.png
 INPUT BdG_bry.aux
