@@ -2,7 +2,7 @@ program randam
     implicit none
     integer :: k,clock,nRand,x
     integer,allocatable :: seed(:)
-    real(4) :: rand(100000)
+    real(4) :: rand(100)
     
     x=0.0d0
 !乱数決める
