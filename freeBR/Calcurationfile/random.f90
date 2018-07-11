@@ -14,7 +14,8 @@ program randam
     call RANDOM_NUMBER(rand)
     rand=rand*10
     x=int(rand(3))
-!乱数表示
+
+!乱数表示(一桁)
     write(*,*) x
 
 end program randam
