@@ -10,7 +10,7 @@ program eigenvalue
     DOUBLE precision, PARAMETER :: pi=4.0d0*atan(1.0d0)
     integer :: info, i, j
   
-    open(17,file='date1.txt', status='replace')
+    open(17,file='a1.txt', status='replace')
     
     !行列の入力
     do j=1,m
