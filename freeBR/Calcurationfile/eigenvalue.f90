@@ -1,6 +1,6 @@
 program eigenvalue
-    !文字の定義
     implicit none
+    !文字の定義
     integer, parameter :: l=100
     integer ,PARAMETER :: n=4*l, m=1000
     complex(kind(0d0)) :: H(n,n)=0.0d0, vl(n,n), vr(n,n), work(n*n)
@@ -11,6 +11,7 @@ program eigenvalue
     integer :: info, i, j
   
     open(17,file='date1.txt', status='replace')
+    
     !行列の入力
     do j=1,m
       ky=-pi+2.0d0*pi/dble(m-1)*dble(j-1)
