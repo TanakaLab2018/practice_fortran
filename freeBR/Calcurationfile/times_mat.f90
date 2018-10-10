@@ -29,11 +29,11 @@ PROGRAM dg
       C=(0.0d0,0.0d0)
 
 
-
+      !行列同士で掛け算
       CALL ZGEMM('N','N',M,N,K,ALPHA,A,M,B,K,BETA,C,M)
 
       write(*,*) c
-      
+
       PRINT *, "Example completed."
       STOP
 
