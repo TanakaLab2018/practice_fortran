@@ -1,9 +1,10 @@
-This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.14)  2 JUL 2018 13:07
+This is e-pTeX, Version 3.14159265-p3.7.1-161114-2.6 (sjis) (TeX Live 2016/W32TeX) (preloaded format=platex 2016.11.14)  19 OCT 2018 15:47
 entering extended mode
  restricted \write18 enabled.
+ Source specials enabled.
  %&-line parsing enabled.
-**c:/Users/tanaka_lab/Documents/practice_fortran/21/TB/BdG_bry.tex
-(c:/Users/tanaka_lab/Documents/practice_fortran/21/TB/BdG_bry.tex
+**BdG_bry.tex
+(./BdG_bry.tex
 pLaTeX2e <2016/09/08> (based on LaTeX2e <2016/03/31> patch level 3)
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (c:/w32tex/share/texmf-dist/tex/platex/jsclasses/jsarticle.cls
@@ -278,12 +279,12 @@ File: LDOS3c_bry.png Graphic file (type bmp)
  <LDOS3c_bry.png> [12] [13]
 (./BdG_bry.aux) ) 
 Here is how much of TeX's memory you used:
- 2005 strings out of 493670
- 23375 string characters out of 6151242
+ 2004 strings out of 493670
+ 23218 string characters out of 6151242
  101153 words of memory out of 5000000
  5526 multiletter control sequences out of 15000+600000
  26635 words of font info for 115 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,16n,26p,590b,359s stack positions out of 5000i,500n,10000p,500000b,80000s
+ 27i,16n,26p,537b,359s stack positions out of 5000i,500n,10000p,500000b,80000s
 
-Output written on BdG_bry.dvi (13 pages, 38960 bytes).
+Output written on BdG_bry.dvi (13 pages, 41376 bytes).
